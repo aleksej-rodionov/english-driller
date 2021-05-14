@@ -12,8 +12,9 @@ import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.CardstackLayoutBinding
 
 /**
- * Created by Aleksej Rodionov
- * march 2021
+ * Created by Aleksej Rodionov, march 2021
+ *
+ * I used very cool external library "CardStackView" from github for building a cool swipable card stack (not my own)
  */
 
 private const val TAG = "DrillerFragment"
