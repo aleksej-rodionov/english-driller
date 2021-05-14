@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drillerFragment"
+        android:title="@string/driller"
+        android:icon="@drawable/ic_train"
+        />
+
+    <item
+        android:id="@+id/categoriesFragment"
+        android:title="@string/categories"
+        android:icon="@drawable/ic_categories"
+        />
+
+    <item
+        android:id="@+id/vocabularyFragment"
+        android:title="@string/vocabulary"
+        android:icon="@drawable/ic_list"
+        />
+
+    <item
+        android:id="@+id/settingsFragment"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings"
+        />
+
+</menu>

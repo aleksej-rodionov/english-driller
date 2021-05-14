@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/action_turn_all_words_on"
+        android:title="@string/turn_all_words_on"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_show_only_off"
+        android:checkable="true"
+        android:title="@string/show_only_off"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_choose_all_categories"
+        android:title="@string/show_all_categories"
+        app:showAsAction="never" />
+
+            <item android:id="@+id/action_cat1" android:title="@string/only_cat1" />
+            <item android:id="@+id/action_cat2" android:title="@string/only_cat2" />
+            <item android:id="@+id/action_cat3" android:title="@string/only_cat3"  />
+            <item android:id="@+id/action_cat4" android:title="@string/only_cat4" />
+            <item android:id="@+id/action_cat5" android:title="@string/only_cat5" />
+
+
+
+</menu>
+
+
+
+
+
