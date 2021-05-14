@@ -11,6 +11,11 @@ import dagger.hilt.android.AndroidEntryPoint
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.CardstackLayoutBinding
 
+/**
+ * Created by Aleksej Rodionov
+ * march 2021
+ */
+
 private const val TAG = "DrillerFragment"
 
 @AndroidEntryPoint
