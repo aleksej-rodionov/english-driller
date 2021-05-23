@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.os.Bundle
 import android.view.Menu
@@ -14,12 +14,15 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.RecyclerSimpleLayoutBinding
-import space.rodionov.englishdriller.CategoriesFragmentDirections
+import space.rodionov.englishdriller.ui.CategoriesFragmentDirections
+import space.rodionov.englishdriller.data.CategoryItem
+import space.rodionov.englishdriller.exhaustive
 
 
 //private const val TAG = "CategoriesFragment"
 @AndroidEntryPoint // part 4
-class CategoriesFragment : Fragment(R.layout.recycler_simple_layout), CategoriesAdapter.OnItemClickListener { // part 3 (created)
+class CategoriesFragment : Fragment(R.layout.recycler_simple_layout),
+    CategoriesAdapter.OnItemClickListener { // part 3 (created)
 
     // part 4
     private val viewModel: CategoriesViewModel by viewModels()

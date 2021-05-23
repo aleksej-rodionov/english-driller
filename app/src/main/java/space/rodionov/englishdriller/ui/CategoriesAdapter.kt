@@ -1,14 +1,17 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import space.rodionov.englishdriller.data.CategoryItem
 import space.rodionov.englishdriller.databinding.RecyclerSimpleItemBinding
 
 
-class CategoriesAdapter(private val listener: OnItemClickListener/*, var nativeLanguage: NativeLanguage*/) : ListAdapter<CategoryItem, CategoriesAdapter.CategoriesViewHolder>(DiffCallback()) {
+class CategoriesAdapter(private val listener: OnItemClickListener/*, var nativeLanguage: NativeLanguage*/) : ListAdapter<CategoryItem, CategoriesAdapter.CategoriesViewHolder>(
+    DiffCallback()
+) {
 
 
     inner class CategoriesViewHolder(private val binding: RecyclerSimpleItemBinding) : RecyclerView.ViewHolder(binding.root) {

@@ -1,13 +1,12 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.data
 
 import android.app.Application
-import android.content.Context
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
+import space.rodionov.englishdriller.ApplicationScope
 import space.rodionov.englishdriller.R
 import javax.inject.Inject
 import javax.inject.Provider

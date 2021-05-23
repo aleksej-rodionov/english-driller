@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import androidx.hilt.Assisted
 import androidx.hilt.lifecycle.ViewModelInject
@@ -8,6 +8,8 @@ import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
+import space.rodionov.englishdriller.data.Word
+import space.rodionov.englishdriller.data.WordDao
 
 class AddEditWordViewModel @ViewModelInject constructor(
     private val wordDao: WordDao,

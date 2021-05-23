@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.data
 
 import android.os.Parcelable
 import androidx.room.Entity

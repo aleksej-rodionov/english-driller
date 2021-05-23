@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.data
 
 import android.content.Context
 import android.util.Log

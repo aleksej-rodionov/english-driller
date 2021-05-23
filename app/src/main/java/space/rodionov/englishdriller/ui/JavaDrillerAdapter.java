@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller;
+package space.rodionov.englishdriller.ui;
 
 
 import android.content.Context;
@@ -19,6 +19,7 @@ import com.yuyakaido.android.cardstackview.CardStackView;
 import java.util.Locale;
 
 import space.rodionov.englishdriller.R;
+import space.rodionov.englishdriller.data.Word;
 
 public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.JavaDrillerViewHolder> {
 

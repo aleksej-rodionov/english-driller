@@ -1,7 +1,6 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -21,7 +20,8 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
-import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.*
+import space.rodionov.englishdriller.data.Word
 import space.rodionov.englishdriller.databinding.RecyclerLayoutBinding
 
 private const val TAG = "VocabularyFragment"
@@ -88,11 +88,19 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
             viewModel.vocabularyEvent.collect { event ->
                 when (event) {
                     is VocabularyViewModel.VocabularyEvent.NavigateToAddWordScreen -> {
-                        val action = VocabularyFragmentDirections.actionVocabularyFragmentToAddEditWordFragment(null, requireContext().resources.getString(R.string.new_word))
+                        val action =
+                            VocabularyFragmentDirections.actionVocabularyFragmentToAddEditWordFragment(
+                                null,
+                                requireContext().resources.getString(R.string.new_word)
+                            )
                         findNavController().navigate(action)
                     }
                     is VocabularyViewModel.VocabularyEvent.NavigateToEditWordScreen -> {
-                        val action = VocabularyFragmentDirections.actionVocabularyFragmentToAddEditWordFragment(event.word, requireContext().resources.getString(R.string.edit_word))
+                        val action =
+                            VocabularyFragmentDirections.actionVocabularyFragmentToAddEditWordFragment(
+                                event.word,
+                                requireContext().resources.getString(R.string.edit_word)
+                            )
                         findNavController().navigate(action)
                     }
                     is VocabularyViewModel.VocabularyEvent.ShowWordSavedConfirmationMessage -> {
@@ -143,6 +151,7 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
 
         val pendingQuery = viewModel.searchQuery.value
         if (pendingQuery != null && pendingQuery.isNotEmpty()) {
+            binding.recyclerView.scrollToPosition(0)
             searchItem.expandActionView()
             searchView.setQuery(pendingQuery, false)
         }

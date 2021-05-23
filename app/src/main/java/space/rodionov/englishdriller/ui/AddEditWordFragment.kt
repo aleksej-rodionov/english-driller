@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.os.Bundle
 import android.view.View
@@ -12,7 +12,9 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
+import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.AddEditWordLayoutBinding
+import space.rodionov.englishdriller.exhaustive
 
 @AndroidEntryPoint
 class AddEditWordFragment : Fragment(R.layout.add_edit_word_layout) {

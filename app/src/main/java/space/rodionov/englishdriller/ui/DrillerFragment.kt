@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.os.Bundle
 import android.util.Log
@@ -9,12 +9,13 @@ import androidx.fragment.app.viewModels
 import com.yuyakaido.android.cardstackview.*
 import dagger.hilt.android.AndroidEntryPoint
 import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.data.Word
 import space.rodionov.englishdriller.databinding.CardstackLayoutBinding
 
 /**
  * Created by Aleksej Rodionov, march 2021
  *
- * I used very cool external library "CardStackView" from github for building a cool swipable card stack (not my own)
+ * I used very cool external library "CardStackView" from github for building a cool swipable card stack
  */
 
 private const val TAG = "DrillerFragment"

@@ -1,17 +1,11 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.os.Bundle
 import android.util.Log
-import android.view.MenuItem
 import android.view.View
-import android.widget.CompoundButton
-import android.widget.PopupMenu
-import android.widget.Switch
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.SettingsLayoutBinding
 

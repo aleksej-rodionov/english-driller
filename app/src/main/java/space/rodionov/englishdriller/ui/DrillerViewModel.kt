@@ -1,19 +1,17 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.util.Log
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
-import io.reactivex.Single
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
-import kotlinx.coroutines.flow.collect
-import kotlinx.coroutines.flow.observeOn
-import kotlinx.coroutines.flow.subscribe
-import kotlinx.coroutines.flow.subscribeOn
 import kotlinx.coroutines.launch
+import space.rodionov.englishdriller.data.PreferencesManager
+import space.rodionov.englishdriller.data.Word
+import space.rodionov.englishdriller.data.WordDao
 
 /**
  * created by Aleksej Rodionov, march 2021

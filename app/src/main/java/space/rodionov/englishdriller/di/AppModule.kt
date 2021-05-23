@@ -8,6 +8,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ApplicationComponent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
+import space.rodionov.englishdriller.data.WordDatabase
 import javax.inject.Qualifier
 import javax.inject.Singleton
 

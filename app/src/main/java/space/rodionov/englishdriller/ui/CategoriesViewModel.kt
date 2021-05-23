@@ -1,14 +1,15 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
-import androidx.hilt.Assisted
 import androidx.hilt.lifecycle.ViewModelInject
-import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
+import space.rodionov.englishdriller.data.CategoryItem
+import space.rodionov.englishdriller.data.PreferencesManager
+import space.rodionov.englishdriller.data.WordDao
 
 // part 4 (created)
 class CategoriesViewModel @ViewModelInject constructor(

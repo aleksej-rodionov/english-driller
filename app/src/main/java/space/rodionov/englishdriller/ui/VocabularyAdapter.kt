@@ -1,13 +1,14 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import space.rodionov.englishdriller.data.Word
 import space.rodionov.englishdriller.databinding.RecyclerItemBinding
 
-class VocabularyAdapter(private val listener: VocabularyAdapter.OnVocItemClickListener/*, var nativeLanguage: NativeLanguage*/) :
+class VocabularyAdapter(private val listener: OnVocItemClickListener/*, var nativeLanguage: NativeLanguage*/) :
     ListAdapter<Word, VocabularyAdapter.VocabularyViewHolder>(DiffCallback()) {
 
     inner class VocabularyViewHolder(private val binding: RecyclerItemBinding) :

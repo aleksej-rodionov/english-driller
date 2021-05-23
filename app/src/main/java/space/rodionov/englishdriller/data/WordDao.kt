@@ -1,11 +1,8 @@
-package space.rodionov.englishdriller
+package space.rodionov.englishdriller.data
 
 import androidx.room.*
 import io.reactivex.Single
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.withContext
 
 @Dao
 interface WordDao {
