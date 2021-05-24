@@ -33,7 +33,6 @@ class DrillerViewModel @ViewModelInject constructor(
     // top of the work zone
 
     private val transDirFlow = preferencesManager.translationDirectionFlow
-
     val readTransDir = transDirFlow.asLiveData()
 
 //    private val natLangFlow = preferencesManager.nativeLanguageFlow
