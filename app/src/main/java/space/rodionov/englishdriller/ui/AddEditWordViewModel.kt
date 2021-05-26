@@ -42,7 +42,7 @@ class AddEditWordViewModel @ViewModelInject constructor(
                 word.copy(foreign = wordForeign, rus = wordRus/*, category = word.category*/)
             updateWord(updatedWord)
         } else {
-            val newWord = Word(foreign = wordForeign, rus = wordRus, category = 5)
+            val newWord = Word(foreign = wordForeign, rus = wordRus, category = 7)
             createWord(newWord)
             /*viewModelScope.launch {
                 if (!getAllCategoryNumbers().contains(5)) {

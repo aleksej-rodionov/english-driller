@@ -2,7 +2,41 @@
 <resources>
 
 
-    <string-array name="rus1">	<item>следите за обновлениями!</item>
+    <string-array name="rus1">	<item>это поддерживает меня</item>
+        <item>Полный вперёд (для ...)</item>
+        <item>мы интуитивно учимся справляться с вещами, которые раньше сбивали нас с толку</item>
+        <item>пожалуйста, будьте конкретны</item>
+        <item>простите за опоздание</item>
+        <item>для определенной цели</item>
+        <item>для определенной цели</item>
+        <item>Я резко против</item>
+        <item>приговоренный к смерти</item>
+        <item>это может пригодиться</item>
+        <item>пока мы не остановили этот процесс</item>
+        <item>Я вхожу в новую область знаний</item>
+        <item>счастлив до слез</item>
+        <item>это такая удача</item>
+        <item>Я чувствую себя лишним</item>
+        <item>тоже верно</item>
+        <item>мне это кажется немного надуманным</item>
+        <item>Мы все скоро умрем, и сиквела не будет.</item>
+        <item>То, что вы обиделись, не означает, что вы правы.</item>
+        <item>ты не в состоянии ...</item>
+        <item>ожидается, что в будущем оно увеличится</item>
+        <item>Это также важный шаг в развитии сотрудничества между государственными службами занятости по всей Европе.</item>
+        <item>Пилотный проект направлен на проверку уровня соответствия между классификациями навыков ESCO и LinkedIn.</item>
+        <item>Все эти различия препятствуют трансграничному обмену данными.</item>
+        <item>Это происходит с помощью ...</item>
+        <item>Онлайн-подбор вакансий не только предоставляет соискателям широкий спектр соответствующих возможностей, но также помогает сотрудникам определять новые пути карьерного роста и показывать, какие навыки они могут передавать между профессиями.</item>
+        <item>..., с учетом ... (v + ing / существительное)</item>
+        <item>это меняется со временем</item>
+        <item>У вас будет лучшая жизнь, если вы будете использовать префронтальную кору немного чаще.</item>
+        <item>Я нормально к этому отношусь</item>
+        <item>я готов учиться</item>
+        <item>я готов помочь тебе</item>
+        <item>Я готов и хочу помочь</item>
+        <item>это отражение ухудшающейся ситуации для президента</item>
+        <item>следите за обновлениями!</item>
         <item>он, скорее всего, пойдет в бар</item>
         <item>он вряд ли идиот</item>
         <item>он вряд ли идиот</item>
@@ -350,7 +384,6 @@
         <item>Выражаие и спрашивание мнения</item>
         <item>моя жизнь удалась</item>
         <item>за рамками</item>
-        <item>сформулировать понятия реальности</item>
         <item>озабоченный собой и своими делами.</item>
         <item>я оказался в больнице</item>
         <item>какие доказательства вас убедят?</item>
@@ -371,7 +404,6 @@
         <item>это предполагает усилия</item>
         <item>в целом (в своей целостности)</item>
         <item>сформулировать понятия реальности</item>
-        <item>озабоченный собой и своими делами.</item>
         <item>это значит для меня много</item>
         <item>жопой чую</item>
         <item>осужден за преступление</item>
@@ -638,7 +670,7 @@
         <item>цитировать</item>
         <item>указ, постановлять</item>
         <item>поражение / нанести поражение</item>
-        <item>оспаривать / спор</item>
+        <item>оспаривать</item>
         <item>сваливать / свалка</item>
         <item>тычок, тыкать</item>
         <item>запрос, спрашивать</item>
@@ -659,10 +691,9 @@
         <item>принять … позицию</item>
         <item>повлиять (на), сказаться (на)</item>
         <item>стремиться достаточно низко</item>
-        <item>выделить</item>
+        <item>выделить на ...</item>
         <item>изменять</item>
         <item>поражать</item>
-        <item>изменить (поправить)</item>
         <item>внести поправку, изменить</item>
         <item>ответить на …</item>
         <item>предвосхищать</item>
@@ -736,7 +767,7 @@
         <item>уменьшить</item>
         <item>наносить поражение</item>
         <item>соблаговолить</item>
-        <item>осуждать (как)</item>
+        <item>доносить на ... (кого-то, как на ...) / осуждать ... (кого-то, как ...)</item>
         <item>низложить</item>
         <item>уменьшить</item>
         <item>отговаривать</item>
@@ -747,7 +778,7 @@
         <item>составить законопроект</item>
         <item>осушать</item>
         <item>снять обвинения</item>
-        <item>забить\', бросить</item>
+        <item>"забить", бросить</item>
         <item>окрашивать (волосы)</item>
         <item>устранить</item>
         <item>исходить</item>
@@ -791,12 +822,12 @@
         <item>иметь опеку над ребенком</item>
         <item>иметь обыкновение</item>
         <item>направляться (куда-то)</item>
-        <item>получать известия (от)</item>
+        <item>получать известия от ...</item>
         <item>скрывать</item>
         <item>фукать</item>
         <item>отрицательно влиять на …</item>
         <item>подразумевать, что ... / содержать намек</item>
-        <item>налагать/навязывать/устанавливать в опр. Положении</item>
+        <item>налагать/навязывать/устанавливать в опр. положении</item>
         <item>баловать (кого-то)</item>
         <item>вмешиваться в …</item>
         <item>интерпретировать</item>
@@ -820,10 +851,11 @@
         <item>пырнуть</item>
         <item>смешивать (одно с другим)</item>
         <item>обосновывать</item>
+        <item>издеваться над учителем</item>
         <item>держать в страхе</item>
         <item>встать на колени</item>
         <item>запускать</item>
-        <item>пальцем тронуть\'</item>
+        <item>"пальцем тронуть"</item>
         <item>давать на время</item>
         <item>отпустить (что-л.)</item>
         <item>прикладывать усилия для …</item>
@@ -899,10 +931,11 @@
         <item>дрожать</item>
         <item>сжаться</item>
         <item>кромсать</item>
+        <item>воображать (imagine)</item>
         <item>тасовать</item>
         <item>тщательно анализировать / просеивать (через сито)</item>
         <item>разобрать</item>
-        <item>разбирать (по составным частям)</item>
+        <item>разбирать (по составу)</item>
         <item>повторить это</item>
         <item>заглянуть в документацию</item>
         <item>согласиться на это</item>
@@ -917,7 +950,7 @@
         <item>рассыпаться / пролиться / пролить</item>
         <item>шлепаться</item>
         <item>склонны (к)</item>
-        <item>увидеть, обнаружить, опознать</item>
+        <item>увидеть, опознать</item>
         <item>глазеть</item>
         <item>простаивать</item>
         <item>наступить на</item>
@@ -948,16 +981,16 @@
         <item>соединять</item>
         <item>разворачивать (упаковку)</item>
         <item>расстегнуть молнию</item>
-        <item>убеждать</item>
+        <item>убеждать ... (сделать что-то)</item>
         <item>возвещать, объявлять</item>
-        <item>излить на себя гнев</item>
+        <item>излить гнев на ...</item>
         <item>отважиться</item>
         <item>пробираться вброд</item>
         <item>ослабевать</item>
         <item>ныть</item>
         <item>свистеть</item>
         <item>завоевать доверие</item>
-        <item>иметь обыкновение</item>
+        <item>иметь обыкновение ...</item>
         <item>завернуть</item>
         <item>зевать</item>
         <item>кричать</item>
@@ -998,6 +1031,13 @@
         <item>подчеркнуть роль</item>
         <item>уклоняться от этого</item>
         <item>оттолкнуть тебя</item>
+        <item>поддержать беседу</item>
+        <item>распределять ресурсы для ...</item>
+        <item>решать вопросы</item>
+        <item>оправдываться</item>
+        <item>тратить деньги на ...</item>
+        <item>ограничить его ...</item>
+        <item>отклоняться от ...</item>
         <item>уклоняться от решения суда</item>
         <item>прибраться</item>
         <item>избежать</item>
@@ -1068,7 +1108,7 @@
         <item>доброжелательность</item>
         <item>предвзятость</item>
         <item>Большая яма</item>
-        <item>общий термин</item>
+        <item>зонтичный термин</item>
         <item>мрачный</item>
         <item>будь здоров</item>
         <item>слепые зоны</item>
@@ -1250,7 +1290,7 @@
         <item>скучный</item>
         <item>куча навоза</item>
         <item>в течение всего дня</item>
-        <item>сокращающийся</item>
+        <item>сокращающяяся (о мышце)</item>
         <item>например</item>
         <item>раньше</item>
         <item>ранние этапы</item>
@@ -1308,7 +1348,7 @@
         <item>дезадаптация</item>
         <item>знаком (с)</item>
         <item>голод (в масштабах народа)</item>
-        <item>воображать (imagine)</item>
+
         <item>тарифы (выросли)</item>
         <item>очаровательная</item>
         <item>пост</item>
@@ -1324,7 +1364,6 @@
         <item>меньше сигарет</item>
         <item>стекловолокно</item>
         <item>верность</item>
-        <item>верность</item>
         <item>плод воображения</item>
         <item>гадость</item>
         <item>в итоге</item>
@@ -1336,7 +1375,6 @@
         <item>цветистость</item>
         <item>польщен</item>
         <item>изъян</item>
-        <item>изъян</item>
         <item>стая</item>
         <item>колебания</item>
         <item>бутцы</item>
@@ -1344,7 +1382,6 @@
         <item>прогноз</item>
         <item>предки</item>
         <item>в первую очередь</item>
-        <item>самый главный</item>
         <item>самый главный</item>
         <item>предстоящий, грядущий</item>
         <item>хилый</item>
@@ -1545,13 +1582,12 @@
         <item>наставник</item>
         <item>безжалостный</item>
         <item>гипнотизирующий</item>
-        <item>беспорядочный</item>
         <item>неразборчивый, беспорядочный</item>
         <item>веха</item>
         <item>крышесносный</item>
         <item>трясина</item>
         <item>гангстер</item>
-        <item>издеваться над учителем</item>
+
         <item>мытье полов</item>
         <item>более восприимчивы к</item>
         <item>кроме того</item>
@@ -1732,8 +1768,7 @@
         <item>курорт</item>
         <item>беспокойная волна</item>
         <item>воздаяние</item>
-        <item>на пенсии</item>
-        <item>в отставке</item>
+        <item>на пенсии, в отставке</item>
         <item>скромный</item>
         <item>извлекать</item>
         <item>откровение</item>
@@ -1754,8 +1789,7 @@
         <item>грубый</item>
         <item>ковер</item>
         <item>сельский</item>
-        <item>безжалостный</item>
-        <item>беспощадный</item>
+        <item>безжалостный, беспощадный</item>
         <item>мешок</item>
         <item>целый и невредимый</item>
         <item>спасение</item>
@@ -1913,7 +1947,6 @@
         <item>токсичные отходы</item>
         <item>след (за объектом)</item>
         <item>след (за объектом)</item>
-        <item>след (за объектом)</item>
         <item>тропа</item>
         <item>бродяга</item>
         <item>преходящий</item>
@@ -2050,7 +2083,1011 @@
         <item>непостижимый, немыслимый</item>
         <item>запечатанный, загерметизорованный</item>
         <item>потрясяющая работа</item>
-        <item>потрясающее объяснение ... (какой-то темы)</item>	</string-array>
+        <item>потрясающее объяснение ... (какой-то темы)</item>
+        <item>обязанности</item>
+        <item>с легким характером</item>
+        <item>лаконичный</item>
+        <item>политические преследования</item>
+        <item>ярый православный</item>
+        <item>притянутый за уши</item>
+        <item>великолепная драма</item>
+        <item>сфабрикованные обвинения</item>
+        <item>пронзительный</item>
+        <item>значительное количество ...</item>
+        <item>т.е.</item>
+        <item>вызывающий разногласия</item>
+        <item>без обязательств</item>
+        <item>обедневший</item>
+        <item>социальные льготы</item>
+        <item>жилищно-коммунальные платежи</item>
+        <item>коммунальные платежи</item>
+        <item>стойкий</item>
+        <item>рубашка дровосека</item>
+        <item>сдерживание ...</item>	</string-array>
+    <string-array name="rus5">	"<item>играть (на сцене),
+вести себя</item>"
+        <item>добавлять</item>
+        <item>соглашаться</item>
+        <item>отвечать</item>
+        <item>спорить, ругаться</item>
+        <item>прибывать</item>
+        <item>спрашивать</item>
+        <item>быть</item>
+        <item>становиться</item>
+        <item>начинать</item>
+        <item>верить</item>
+        <item>ломать</item>
+        <item>приносить</item>
+        <item>строить</item>
+        <item>покупать</item>
+        <item>звонить, звать, называть</item>
+        <item>ловить</item>
+        <item>менять</item>
+        <item>проверять</item>
+        <item>выбирать</item>
+        <item>закрывать</item>
+        <item>приходить</item>
+        <item>сравнивать</item>
+        <item>жаловаться</item>
+        <item>продолжать</item>
+        <item>контролировать</item>
+        <item>готовить</item>
+        <item>стоить</item>
+        <item>считать</item>
+        <item>создавать</item>
+        <item>плакать, кричать</item>
+        <item>резать</item>
+        <item>танцевать</item>
+        <item>принимать решение</item>
+        <item>задерживать</item>
+        <item>описывать</item>
+        <item>развивать</item>
+        <item>обсуждать</item>
+        <item>беспокоить</item>
+        <item>делать</item>
+        <item>рисовать</item>
+        <item>мечтать, видеть сон</item>
+        <item>пить</item>
+        <item>водить (транспорт)</item>
+        <item>ронять</item>
+        <item>есть, кушать</item>
+        <item>наслаждаться</item>
+        <item>ожидать</item>
+        <item>объяснять</item>
+        <item>падать</item>
+        <item>кормить</item>
+        <item>чувствовать</item>
+        <item>драться</item>
+        <item>находить</item>
+        <item>заканчивать</item>
+        <item>летать</item>
+        <item>забывать</item>
+        <item>прощать</item>
+        <item>получать, добывать</item>
+        <item>давать</item>
+        <item>идти, уезжать</item>
+        <item>расти</item>
+        <item>случаться</item>
+        <item>иметь, обладать</item>
+        <item>слышать</item>
+        <item>помогать</item>
+        <item>ударять</item>
+        <item>держать</item>
+        <item>надеяться</item>
+        <item>ранить, повреждать</item>
+        <item>присоединяться</item>
+        <item>шутить</item>
+        <item>прыгать</item>
+        <item>хранить, продолжать</item>
+        <item>убивать</item>
+        <item>знать</item>
+        <item>приземляться</item>
+        <item>смеяться</item>
+        <item>учить, изучать</item>
+        <item>покидать, оставлять, уходить</item>
+        <item>позволять (сделать что-то)</item>
+        <item>обманывать, врать</item>
+        <item>нравиться</item>
+        <item>слушать</item>
+        <item>жить</item>
+        <item>выглядеть</item>
+        <item>любить</item>
+        <item>делать, изготавливать</item>
+        <item>встречать</item>
+        <item>скучать</item>
+        <item>двигаться</item>
+        <item>нуждаться</item>
+        <item>предлагать</item>
+        <item>открывать</item>
+        <item>заказывать</item>
+        <item>проходить</item>
+        <item>платить</item>
+        <item>планировать</item>
+        <item>играть</item>
+        <item>защищать</item>
+        <item>тянуть</item>
+        <item>толкать</item>
+        <item>положить, класть</item>
+        <item>надевать</item>
+        <item>читать</item>
+        <item>помнить</item>
+        <item>отдыхать</item>
+        <item>ездить верхом (на лошади, велосипеде)</item>
+        <item>звенеть, звонить</item>
+        <item>рисковать</item>
+        <item>бежать</item>
+        <item>спасать, сохранять</item>
+        <item>сказать</item>
+        <item>видеть</item>
+        <item>продавать</item>
+        <item>отправлять</item>
+        <item>делиться</item>
+        <item>бриться</item>
+        <item>показывать</item>
+        <item>подписывать</item>
+        <item>петь</item>
+        <item>сидеть</item>
+        <item>спать</item>
+        <item>нюхать, иметь запах</item>
+        <item>улыбаться</item>
+        <item>курить</item>
+        <item>чихать</item>
+        <item>решать (проблему, задачу)</item>
+        <item>разговаривать</item>
+        <item>проводить (время), тратить</item>
+        <item>стоять</item>
+        <item>начинать</item>
+        <item>оставаться</item>
+        <item>останавливаться</item>
+        <item>идти к лицу</item>
+        <item>поддерживать</item>
+        <item>удивлять</item>
+        <item>плавать</item>
+        <item>брать</item>
+        "<item>снимать (одежду),
+взлетать (о самолете)</item>"
+        <item>разговаривать</item>
+        <item>пробовать, иметь вкус</item>
+        <item>учить, преподавать</item>
+        <item>рассказывать</item>
+        <item>думать, считать</item>
+        <item>бросать</item>
+        <item>путешествовать</item>
+        <item>пытаться</item>
+        <item>поворачивать</item>
+        <item>использовать</item>
+        <item>посещать</item>
+        <item>ждать</item>
+        <item>просыпаться</item>
+        <item>идти пешком, гулять</item>
+        <item>хотеть</item>
+        <item>мыть, стирать</item>
+        <item>смотреть, наблюдать</item>
+        <item>носить (одежду)</item>
+        <item>работать</item>
+        <item>беспокоиться</item>
+        <item>писать</item>	</string-array>
+    <string-array name="rus6">	<item>о, около, примерно</item>
+        <item>над</item>
+        <item>бухгалтер</item>
+        <item>актер/актриса</item>
+        <item>после</item>
+        <item>день (после полудня)</item>
+        <item>снова</item>
+        <item>против</item>
+        <item>возраст</item>
+        <item>назад (например, 2 дня назад)</item>
+        <item>воздух</item>
+        <item>аэропорт</item>
+        <item>все, весь</item>
+        <item>почти</item>
+        <item>уже</item>
+        <item>также</item>
+        <item>всегда</item>
+        <item>удивительный</item>
+        <item>адрес</item>
+        <item>кресло</item>
+        <item>яйцо</item>
+        <item>упражнение</item>
+        <item>утюг</item>
+        <item>печь, духовка</item>
+        <item>и</item>
+        <item>сердитый</item>
+        <item>животное</item>
+        <item>раздражающий</item>
+        <item>муравей</item>
+        <item>несколько, некоторое количество (в отрицаниях и вопросах), какой-нибудь</item>
+        <item>яблоко</item>
+        <item>абрикос</item>
+        <item>апрель</item>
+        <item>область, сфера, район</item>
+        <item>рука</item>
+        <item>искусство</item>
+        <item>художник</item>
+        <item>баклажан</item>
+        <item>август</item>
+        <item>тетя</item>
+        <item>осень</item>
+        <item>средний</item>
+        <item>ужасный, отвратительный</item>
+        <item>спина</item>
+        <item>рюкзак</item>
+        <item>плохой</item>
+        <item>сумка</item>
+        <item>запеченный</item>
+        <item>балкон</item>
+        <item>мяч, шар</item>
+        <item>воздушный шар</item>
+        <item>банан</item>
+        <item>банк</item>
+        <item>ванная</item>
+        <item>батарейка, аккумулятор</item>
+        <item>пляж</item>
+        <item>бобы, фасоль</item>
+        <item>медведь</item>
+        <item>борода</item>
+        <item>красивый</item>
+        <item>из-за</item>
+        <item>потому что</item>
+        <item>кровать</item>
+        <item>спальня</item>
+        <item>пчела</item>
+        <item>говядина</item>
+        <item>свекла</item>
+        <item>до</item>
+        <item>поведение</item>
+        <item>сзади, позади</item>
+        <item>болгарский перец</item>
+        <item>пояс, ремень</item>
+        <item>ягода</item>
+        <item>между</item>
+        <item>велосипед</item>
+        <item>большой</item>
+        <item>счет</item>
+        <item>птица</item>
+        <item>день рождения</item>
+        <item>печенье</item>
+        <item>горький</item>
+        <item>черный</item>
+        <item>одеяло</item>
+        <item>кровь</item>
+        <item>блузка</item>
+        <item>голубой, синий</item>
+        <item>вареный</item>
+        <item>кость</item>
+        <item>книга</item>
+        <item>сапог, ботинок</item>
+        <item>скучный</item>
+        <item>босс</item>
+        <item>бутылка</item>
+        <item>глубокая тарелка, миска</item>
+        <item>коробка, боксировать</item>
+        <item>мальчик</item>
+        <item>браслет</item>
+        <item>смелый</item>
+        <item>хлеб</item>
+        <item>завтрак</item>
+        <item>мост</item>
+        <item>яркий</item>
+        <item>брат</item>
+        <item>коричневый</item>
+        <item>синяк</item>
+        <item>здание</item>
+        <item>булочка</item>
+        <item>автобус</item>
+        <item>куст</item>
+        <item>бизнесмен</item>
+        <item>занятой</item>
+        <item>но</item>
+        <item>масло</item>
+        <item>ягодицы</item>
+        <item>пока</item>
+        <item>капуста</item>
+        <item>кафе</item>
+        <item>торт</item>
+        <item>календарь</item>
+        <item>спокойный</item>
+        <item>камера</item>
+        <item>уметь, мочь (сделать что-то)</item>
+        <item>кепка</item>
+        <item>автомобиль</item>
+        <item>открытка, карточка (банковская)</item>
+        <item>кардиган, кофта</item>
+        <item>осторожный</item>
+        <item>ковер</item>
+        <item>морковь</item>
+        <item>дело</item>
+        <item>наличка</item>
+        <item>кот, кошка</item>
+        <item>центр (города)</item>
+        <item>век</item>
+        <item>стул</item>
+        <item>дешевый</item>
+        <item>щека</item>
+        <item>сыр</item>
+        <item>вишня</item>
+        <item>грудь</item>
+        <item>курица, цыпленок</item>
+        <item>руководитель, главный</item>
+        <item>ребенок</item>
+        <item>подбородок</item>
+        <item>шоколад</item>
+        <item>выбор</item>
+        <item>Рождество</item>
+        <item>церковь</item>
+        <item>кинотеатр</item>
+        <item>круг</item>
+        <item>обстоятельство</item>
+        <item>город</item>
+        <item>чистый</item>
+        <item>ясный</item>
+        <item>умный</item>
+        <item>клиент</item>
+        <item>облачный</item>
+        <item>неуклюжий</item>
+        <item>морское побережье</item>
+        <item>пальто</item>
+        <item>таракан</item>
+        <item>кофе</item>
+        <item>холодный, холодно</item>
+        <item>коллега</item>
+        <item></item>
+        <item>цветной</item>
+        <item>удобный, уютный</item>
+        <item>компания, фирма</item>
+        <item>компьютер</item>
+        <item>кухонная плита</item>
+        <item>прохладный, прохладно</item>
+        <item>кукуруза</item>
+        "<item>кашель
+кашлять</item>"
+        <item>страна</item>
+        <item>кабачок</item>
+        <item>двоюродный брат/сестра</item>
+        <item>корова</item>
+        <item>безумный, сумасшедший</item>
+        <item>крем, сливки</item>
+        <item>людный, переполненный</item>
+        <item>огурец</item>
+        <item>чашка</item>
+        <item>творог</item>
+        <item>любопытный</item>
+        <item>штора</item>
+        <item>таможня</item>
+        <item>котлета</item>
+        <item>молочные продукты</item>
+        <item>танец</item>
+        <item>опасный</item>
+        <item>темный</item>
+        <item>дочь</item>
+        <item>день</item>
+        <item>мертвый</item>
+        <item>дорогой</item>
+        <item>смерть</item>
+        <item>декабрь</item>
+        <item>решение</item>
+        <item>градус</item>
+        <item>задержка</item>
+        <item>очень вкусный</item>
+        <item>доставка</item>
+        <item>десерт</item>
+        <item>пункт назначения</item>
+        <item>словарь</item>
+        <item>другой, разный</item>
+        <item>трудный, тяжелый</item>
+        <item>ужин</item>
+        <item>грязный</item>
+        <item>скидка</item>
+        <item>блюдо</item>
+        <item>расстояние</item>
+        <item>головокружение</item>
+        <item>врач</item>
+        <item>собака</item>
+        <item>дверь</item>
+        <item>вниз</item>
+        "<item>платье
+одевать(ся)</item>"
+        <item>напиток</item>
+        <item>водитель</item>
+        <item>утка</item>
+        <item>во время</item>
+        <item>обязанность</item>
+        <item>каждый (по отдельности)</item>
+        <item>ухо</item>
+        <item>ранний, рано</item>
+        <item>сережка</item>
+        <item>Пасха</item>
+        <item>легкий, нетрудный</item>
+        <item>восемь</item>
+        <item>восемнадцать</item>
+        <item>восемьдесят</item>
+        <item>локоть</item>
+        <item>элегантный</item>
+        <item>слон</item>
+        <item>одиннадцать</item>
+        <item>смущенный</item>
+        <item></item>
+        <item>энергичный</item>
+        <item>инженер</item>
+        <item>достаточно</item>
+        <item>вход</item>
+        <item>вечер</item>
+        <item>каждый</item>
+        <item>извините (просим разрешение)</item>
+        <item>выход</item>
+        <item>дорогой (о цене)</item>
+        <item>опыт</item>
+        <item>глаз</item>
+        <item>бровь</item>
+        <item>лицо</item>
+        <item>фабрика, завод</item>
+        <item>справедливый, честный</item>
+        <item>знаменитый</item>
+        <item>далекий</item>
+        <item>быстрый, быстро</item>
+        <item>толстый, жирный</item>
+        <item>отец</item>
+        <item>страх</item>
+        <item>февраль</item>
+        <item>забор</item>
+        <item>жар</item>
+        <item>мало (с исчисляемыми существительными)</item>
+        <item>поле</item>
+        <item>пятнадцать</item>
+        <item>пятый</item>
+        <item>пятьдесят</item>
+        <item>фильм</item>
+        <item>прекрасный, прекрасно</item>
+        <item>палец на руке</item>
+        <item>огонь, пожар</item>
+        <item>первый</item>
+        <item>рыба</item>
+        <item>в хорошей форме</item>
+        <item>пять</item>
+        <item>квартира</item>
+        <item>стюардесса, бортпроводник</item>
+        <item>пол, этаж</item>
+        <item>мука</item>
+        <item>цветок</item>
+        <item>грипп</item>
+        <item>туманный</item>
+        <item>ступня</item>
+        <item>для, в течение (времени)</item>
+        <item>лоб</item>
+        <item>лес</item>
+        <item>вилка</item>
+        <item>сорок</item>
+        <item>четыре</item>
+        <item>четырнадцать</item>
+        <item>четвертый</item>
+        <item>лиса</item>
+        <item>бесплатный, свободный</item>
+        <item>пятница</item>
+        <item>холодильник</item>
+        <item>жареный</item>
+        <item>друг</item>
+        <item>дружелюбный</item>
+        <item>лягушка</item>
+        <item>из</item>
+        <item>фрукты</item>
+        <item>сковородка</item>
+        <item>сытый, полный</item>
+        <item>веселье</item>
+        <item>мебель</item>
+        <item>игра</item>
+        <item>мусор</item>
+        <item>чеснок</item>
+        <item>жираф</item>
+        <item>девочка</item>
+        <item>стакан, стекло</item>
+        <item>очки</item>
+        <item>перчатка</item>
+        <item>цель</item>
+        <item>хороший, добрый</item>
+        <item>гусь</item>
+        <item>дедушка</item>
+        <item>бабушка</item>
+        <item>виноград</item>
+        <item>трава</item>
+        <item>зеленый</item>
+        <item>серый</item>
+        <item>гость</item>
+        <item>привычка</item>
+        <item>волосы</item>
+        <item>коридор</item>
+        <item>ветчина</item>
+        <item>кисть руки</item>
+        <item>красивый (о мужчине)</item>
+        <item>счастливый</item>
+        <item>трудолюбивый</item>
+        <item>твердый, трудный, жесткий, усердно</item>
+        <item>шляпа</item>
+        <item>быть вынужденным (сделать что-то)</item>
+        <item>он</item>
+        <item>голова</item>
+        <item>здоровый</item>
+        <item>сердце</item>
+        <item>тяжелый</item>
+        <item>пятка</item>
+        <item>здравствуйте</item>
+        <item>ее/ей</item>
+        <item>тут, сюда</item>
+        <item>привет</item>
+        <item>высокий (об объектах)</item>
+        <item>его/ему</item>
+        <item>праздник, каникулы, отпуск</item>
+        <item>честный</item>
+        <item>мед</item>
+        <item>капюшон</item>
+        <item>лошадь</item>
+        <item>больница</item>
+        <item>горячий, жаркий, жарко</item>
+        <item>гостиница</item>
+        <item>час</item>
+        <item>дом (помещение)</item>
+        <item>как, каким образом</item>
+        <item>сто</item>
+        <item>голодный</item>
+        <item>муж</item>
+        <item>я</item>
+        <item>мороженое</item>
+        <item>если</item>
+        <item>важный</item>
+        <item>невозможный</item>
+        <item>впереди</item>
+        <item>в</item>
+        <item>информация</item>
+        <item>насекомое</item>
+        <item>страховка</item>
+        <item>интересный</item>
+        <item>перекресток, точка пересечения</item>
+        <item>приглашение</item>
+        <item>остров</item>
+        <item>оно (о неодушевленном в единственном числе)</item>
+        <item>его, ее / ему, ей (о неодушевленном)</item>
+        <item>жакет, пиджак, куртка</item>
+        <item>варенье</item>
+        <item>январь</item>
+        <item>ревнивый</item>
+        <item>джинсы</item>
+        <item></item>
+        <item>журналист</item>
+        <item>сок</item>
+        <item>июль</item>
+        <item>июнь</item>
+        <item>только что, просто</item>
+        <item>чайник</item>
+        <item>ключ, клавиша</item>
+        <item>клавиатура</item>
+        <item>добрый</item>
+        <item>кухня</item>
+        <item>колено</item>
+        <item>нож</item>
+        <item>знание</item>
+        <item>озеро</item>
+        <item>баранина, ягненок</item>
+        <item>лампа</item>
+        <item>язык</item>
+        <item>ноутбук</item>
+        <item>большой, просторный</item>
+        <item>последний, прошлый</item>
+        <item>поздний, поздно, опоздавший</item>
+        <item>адвокат, юрист</item>
+        <item>ленивый</item>
+        <item>лист</item>
+        <item>левый, налево</item>
+        <item>нога</item>
+        <item>лимон</item>
+        <item>меньше, менее</item>
+        <item>урок</item>
+        <item>буква, письмо</item>
+        <item>спасатель</item>
+        <item>светлый, легкий</item>
+        "<item>лев
+львица</item>"
+        <item>губы</item>
+        "<item>список
+перечислять</item>"
+        <item>литература</item>
+        <item>мало (с неисчисляемыми существительными)</item>
+        <item>гостиная, зал</item>
+        <item>длинный, долгий</item>
+        <item>много</item>
+        <item>громкий</item>
+        <item>низкий, низко</item>
+        <item>везучий, счастливый</item>
+        <item>багаж</item>
+        <item>обед</item>
+        <item>журнал</item>
+        <item>девичья фамилия</item>
+        <item>почта</item>
+        <item>основной, главный</item>
+        <item>мужчина</item>
+        <item>мандарин</item>
+        <item>манго</item>
+        <item>много (с исчисляемыми существительными в отрицаниях и вопросах)</item>
+        <item>карта</item>
+        <item>март</item>
+        <item>рынок</item>
+        <item>женатый/замужняя</item>
+        <item>май</item>
+        <item>иметь разрешение (сделать что-то)</item>
+        <item>может быть</item>
+        <item>прием пищи</item>
+        <item>значение, смысл</item>
+        <item>мясо</item>
+        <item>механик</item>
+        <item>встреча, собрание</item>
+        <item>дыня</item>
+        <item>память, воспоминание</item>
+        <item>микроволновка</item>
+        <item>полночь</item>
+        <item>молоко</item>
+        <item>миллион</item>
+        <item>минута</item>
+        <item>зеркало</item>
+        <item>ошибка</item>
+        <item>современный</item>
+        <item>понедельник</item>
+        <item>обезьяна</item>
+        <item>месяц</item>
+        <item>луна</item>
+        <item>больше, более</item>
+        <item>утро</item>
+        <item>мать</item>
+        <item>гора</item>
+        <item>мышь</item>
+        <item>рот</item>
+        <item>много (с неисчисляемыми существительными в отрицаниях и вопросах)</item>
+        <item>гриб</item>
+        <item>музыка</item>
+        <item>музыкант</item>
+        <item>быть должным, обязанным (сделать что-то)</item>
+        <item>усы</item>
+        <item>мой/мне</item>
+        <item>ноготь</item>
+        <item>имя, название</item>
+        <item>няня</item>
+        <item>салфетка</item>
+        <item>узкий</item>
+        <item>природа</item>
+        <item>близкий</item>
+        <item>шея</item>
+        <item>ожерелье</item>
+        <item>отрицательный</item>
+        <item>сосед</item>
+        <item>племянник</item>
+        <item>нервный</item>
+        <item>нейтральный</item>
+        <item>никогда</item>
+        <item>канун Нового года</item>
+        <item>новый</item>
+        <item>газета</item>
+        <item>следующий (год, неделя)</item>
+        <item>милый, хороший, приятный</item>
+        <item>племянница</item>
+        <item>ночь</item>
+        <item>девять</item>
+        <item>девятнадцать</item>
+        <item>девяносто</item>
+        <item>нет</item>
+        <item>шумный</item>
+        <item>лапша</item>
+        <item>нос</item>
+        <item>не</item>
+        <item>записка, запись</item>
+        <item>тетрадь</item>
+        <item>ноябрь</item>
+        <item>сейчас, теперь</item>
+        <item>медсестра</item>
+        <item>орех</item>
+        <item>овсянка</item>
+        <item>октябрь</item>
+        <item>офис</item>
+        <item>часто</item>
+        <item>растительное масло</item>
+        <item>старый</item>
+        <item>на</item>
+        <item>один</item>
+        <item>лук</item>
+        <item>только</item>
+        <item>возможность</item>
+        <item>или</item>
+        <item>оранжевый</item>
+        <item>орган</item>
+        <item>наш/нам</item>
+        <item>упаковка, посылка</item>
+        <item>страница</item>
+        <item>боль</item>
+        <item>пара (вещей, объектов)</item>
+        <item>кастрюля</item>
+        <item>бумага</item>
+        <item>родители</item>
+        <item>парк</item>
+        <item>часть</item>
+        <item>вечеринка</item>
+        <item>страсть</item>
+        <item>тротуар</item>
+        <item>мир</item>
+        <item>персик</item>
+        <item>груша</item>
+        <item>ручка</item>
+        <item>карандаш</item>
+        <item>перец</item>
+        <item>разрешение (на въезд/выезд/проживание)</item>
+        <item>человек, персона</item>
+        <item>аптека</item>
+        <item>телефон</item>
+        <item>фото</item>
+        <item>картина, фотография</item>
+        <item>пирог</item>
+        <item>кусок, часть</item>
+        <item>свинья</item>
+        <item>подушка</item>
+        <item>пилот</item>
+        <item>ананас</item>
+        <item>розовый</item>
+        <item>самолет</item>
+        <item>растение</item>
+        <item>тарелка</item>
+        <item>спектакль</item>
+        <item>пожалуйста, прошу</item>
+        <item>удовольствие</item>
+        <item>слива</item>
+        <item>сантехник</item>
+        <item>полиция</item>
+        <item>полицейский</item>
+        <item>вежливый</item>
+        <item>бедный, плохой (язык, знания)</item>
+        <item>свинина</item>
+        <item>каша</item>
+        <item>положительный</item>
+        <item>почта</item>
+        <item>картофель</item>
+        <item>мощный</item>
+        <item>подарок</item>
+        <item>цена</item>
+        <item>вероятно</item>
+        <item>проблема</item>
+        <item>тыква</item>
+        <item>школьник</item>
+        <item>фиолетовый</item>
+        <item>дамская сумка, кошелек</item>
+        <item>пижама</item>
+        <item>быстрый</item>
+        <item>тихий</item>
+        <item>заяц</item>
+        <item>радио</item>
+        <item>дождливый, дождливо</item>
+        <item>малина</item>
+        <item>крыса</item>
+        <item>готовый</item>
+        <item>настоящий</item>
+        <item>действительно</item>
+        <item>причина</item>
+        <item>красный</item>
+        <item>ресторан</item>
+        <item>результат</item>
+        <item>рис</item>
+        <item>богатый</item>
+        <item>правый, направо</item>
+        <item>река</item>
+        <item>дорога</item>
+        <item>крыша</item>
+        <item>комната</item>
+        <item>округлый</item>
+        <item>грубый</item>
+        <item>насморк</item>
+        <item>салат</item>
+        <item>соль</item>
+        <item>соленый</item>
+        <item>песок</item>
+        <item>бутерброд</item>
+        <item>суббота</item>
+        <item>соус</item>
+        <item>колбаса, сосиска</item>
+        <item>шарф</item>
+        <item>школа</item>
+        <item>наука</item>
+        <item>ножницы</item>
+        <item>морепродукты</item>
+        <item>сезон, время года</item>
+        <item>второй</item>
+        <item>секунда</item>
+        <item></item>
+        <item>сентябрь</item>
+        <item>семь</item>
+        <item>семнадцать</item>
+        <item>семьдесят</item>
+        <item>она</item>
+        <item>простыня</item>
+        <item>полка</item>
+        <item>корабль</item>
+        <item>рубашка</item>
+        <item>обувь</item>
+        <item>магазин</item>
+        <item>продавец</item>
+        <item>низкий, короткий</item>
+        <item>шорты</item>
+        <item>должен, следует (сделать что-то)</item>
+        <item>плечо</item>
+        <item>душ</item>
+        <item>больной</item>
+        <item>с (определенного времени)</item>
+        <item>холостой/незамужняя</item>
+        <item>раковина</item>
+        <item>сестра</item>
+        <item>шесть</item>
+        <item>шестнадцать</item>
+        <item>шестьдесят</item>
+        <item>размер</item>
+        <item>кожа</item>
+        <item>юбка</item>
+        <item>небо</item>
+        <item>перекус</item>
+        <item>змея</item>
+        <item>снежный, снежно</item>
+        <item>итак, таким образом, поэтому</item>
+        <item>мыло</item>
+        <item>носок</item>
+        <item>розетка</item>
+        <item>газировка</item>
+        <item>диван</item>
+        <item>несколько, некоторое количество (в утверждениях)</item>
+        <item>иногда</item>
+        <item>сын</item>
+        <item>песня</item>
+        <item>скоро</item>
+        <item>извините (просим прощения)</item>
+        <item>душа</item>
+        <item>суп</item>
+        <item>кислый</item>
+        <item>скорость</item>
+        <item>специи</item>
+        <item>острый</item>
+        <item>паук</item>
+        <item>позвоночник</item>
+        <item>ложка</item>
+        <item>пятно, точка</item>
+        <item>весна</item>
+        <item>квадрат, квадратный</item>
+        <item>белка</item>
+        <item>лестница, ступеньки</item>
+        <item>станция, вокзал</item>
+        <item>живот, желудок</item>
+        <item>камень</item>
+        <item>история, рассказ</item>
+        <item>прямой, ровный</item>
+        <item>клубника</item>
+        <item>улица</item>
+        <item>сила</item>
+        <item>студент</item>
+        <item></item>
+        <item>успех</item>
+        <item>сахар</item>
+        <item>костюм</item>
+        <item>чемодан</item>
+        <item>лето</item>
+        <item>солнце</item>
+        <item>воскресенье</item>
+        <item>фамилия</item>
+        <item>свитер</item>
+        <item>сладкий</item>
+        <item>опухший</item>
+        <item>футболка</item>
+        <item>стол</item>
+        <item>талантливый</item>
+        <item>задача, задание</item>
+        <item>такси</item>
+        <item>чай</item>
+        <item>учитель</item>
+        <item>температура</item>
+        <item>десять</item>
+        <item>тест</item>
+        <item>чем (в сравнениях)</item>
+        <item>спасибо</item>
+        <item>тот/те</item>
+        <item>океан</item>
+        <item>море</item>
+        <item>театр</item>
+        <item>их/им</item>
+        <item>затем, потом, тогда</item>
+        <item>там, туда</item>
+        <item>они</item>
+        <item></item>
+        <item>третий</item>
+        <item>тринадцать</item>
+        <item>тридцать</item>
+        <item>этот/эти</item>
+        <item>тысяча</item>
+        <item>три</item>
+        <item>горло</item>
+        <item>через, сквозь</item>
+        <item>четверг</item>
+        <item>билет</item>
+        <item>галстук</item>
+        <item>колготы</item>
+        <item>чаевые</item>
+        <item>по направлению к</item>
+        <item>сегодня</item>
+        <item>палец на ноге</item>
+        <item>вместе</item>
+        <item>туалет</item>
+        <item>помидор</item>
+        <item>завтра</item>
+        <item>язык</item>
+        <item>сегодня вечером, ночью</item>
+        <item>тоже, слишком</item>
+        <item>зуб</item>
+        <item>полотенце</item>
+        <item>небольшой город, городок</item>
+        <item>игрушка</item>
+        <item>поезд</item>
+        <item>кроссовки</item>
+        <item>трамвай</item>
+        <item>дерево</item>
+        <item>штаны</item>
+        <item>вторник</item>
+        <item>телевизор</item>
+        <item>двенадцать</item>
+        <item>двадцать</item>
+        <item>два</item>
+        <item>дядя</item>
+        <item>под</item>
+        <item>нижнее белье</item>
+        <item>университет</item>
+        <item>вверх</item>
+        <item>обычно</item>
+        <item>ваза</item>
+        <item>овощи</item>
+        <item>очень</item>
+        <item>деревня</item>
+        <item>официант/официантка</item>
+        <item>стена</item>
+        <item>бумажник</item>
+        <item>шкаф</item>
+        <item>тепло, теплый</item>
+        <item>вода</item>
+        <item>арбуз</item>
+        <item>мы</item>
+        <item>погода</item>
+        <item>свадьба</item>
+        <item>среда</item>
+        <item>неделя</item>
+        <item>что, какой</item>
+        <item>колесо</item>
+        <item>когда</item>
+        <item>где, куда</item>
+        <item>белый</item>
+        <item>кто</item>
+        <item>почему, зачем</item>
+        <item>жена</item>
+        <item>для образования будущего времени</item>
+        <item>окно</item>
+        <item>ветрено</item>
+        <item>вино</item>
+        <item>зима</item>
+        <item>провод</item>
+        <item>с</item>
+        <item>без</item>
+        <item>женщина</item>
+        <item>слово</item>
+        <item>рабочий</item>
+        <item>мир (планета)</item>
+        <item>хотелось бы (сделать что-то)</item>
+        <item>рана</item>
+        <item>двор</item>
+        <item>год</item>
+        <item>желтый</item>
+        <item>да</item>
+        <item>вчера</item>
+        <item>еще не</item>
+        <item>йогурт</item>
+        <item>не за что</item>
+        <item>ты, вы</item>
+        <item>молодой</item>
+        <item>твой, ваш / тебе, вам</item>
+        <item>ноль</item>	</string-array>
 
 
 

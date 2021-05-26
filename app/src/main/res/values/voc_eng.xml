@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string-array name="eng1">	<item>stay tuned for more updates!</item>
+    <string-array name="eng1">	<item>it keeps me up</item>
+        <item>Full steam ahead (for ...)</item>
+        <item>we intuitively learn how to handle things it used to baffle us</item>
+        <item>please be specific</item>
+        <item>apologies for the delay</item>
+        <item>for a specific purpose</item>
+        <item>for a particular purpose</item>
+        <item>I\'m rapidly opposed</item>
+        <item>sentenced to death</item>
+        <item>it may come in handy</item>
+        <item>as long as we haven\'t stopped this process</item>
+        <item>I am entering a new area of expertise</item>
+        <item>happy to tears</item>
+        <item>it\'s such luck</item>
+        <item>I feel redundant</item>
+        <item>it is truth too</item>
+        <item>it seems a bit far-fetched to me</item>
+        <item>We\'re all gonna die soon, and there\'s no sequel.</item>
+        <item>Just because you\'re offended, doesn\'t mean you\'re right.</item>
+        <item>you\'re in no position to ...</item>
+        <item>it is expected to increase in the future</item>
+        <item>This is also a significant step in fostering collaboration between public employment services across Europe.</item>
+        <item>The pilot project aimed at testing the level of correspondence between ESCO and LinkedIn skills classifications</item>
+        <item>All these differences hinder the cross-border exchange of data</item>
+        <item>It does so, by ...</item>
+        <item>Not only does online job matching provide job seekers with a wide range of relevant opportunities, it also helps employees to identify new career paths and show what transferable skills they have between occupations.</item>
+        <item>..., allowing for ... (v+ing/noun)</item>
+        <item>it changes over time</item>
+        <item>You\'re gonna have a better life if you use your prefrontal cortex a little more often.</item>
+        <item>I\'m cool about this</item>
+        <item>i\'m willing to learn</item>
+        <item>i\'m willing to help you</item>
+        <item>I\'m ready and willing to help</item>
+        <item>it\'s a reflection of deteriorating situation for president</item>
+        <item>stay tuned for more updates!</item>
         <item>he will most likely go to a bar</item>
         <item>he is unlikely an idiot</item>
         <item>he is hardly an idiot</item>
@@ -349,7 +383,6 @@
         <item>Expressing and Asking for the Opinion</item>
         <item>my life is complete</item>
         <item>beyond the scope of</item>
-        <item>to articulate a notions of reality</item>
         <item>preoccupied with oneself and one\'s affairs.</item>
         <item>I ended up in the hospital</item>
         <item>what kind of evidence would convince you?</item>
@@ -370,7 +403,6 @@
         <item>it involves effort</item>
         <item>in its entirety</item>
         <item>to articulate a notions of reality</item>
-        <item>preoccupied with oneself and one\'s affairs.</item>
         <item>that means a lot to me</item>
         <item>I smell it</item>
         <item>convicted of crime</item>
@@ -637,7 +669,7 @@
         <item>to cite, to quote</item>
         <item>(to) decree</item>
         <item>(to) defeat</item>
-        <item>(to) dispute</item>
+        <item>to dispute</item>
         <item>(to) dump</item>
         <item>(to) plod</item>
         <item>(to) query</item>
@@ -658,10 +690,9 @@
         <item>to adopt … position</item>
         <item>to affect (on)</item>
         <item>to aim low enough</item>
-        <item>to allocate</item>
+        <item>to allocate to ...</item>
         <item>to alter</item>
         <item>to amaze</item>
-        <item>to amend</item>
         <item>to amend</item>
         <item>to answer to</item>
         <item>to anticipate</item>
@@ -735,7 +766,7 @@
         <item>to decrease</item>
         <item>to defeat</item>
         <item>to deign (to)</item>
-        <item>to denounce (as)</item>
+        <item>to denounce ... as ...</item>
         <item>to depose</item>
         <item>to diminish</item>
         <item>to discourage</item>
@@ -790,7 +821,7 @@
         <item>to have a custody of the child</item>
         <item>to have wont</item>
         <item>to head (smwhre)</item>
-        <item>to hear from</item>
+        <item>to hear from ...</item>
         <item>to hide, conceal</item>
         <item>to huff</item>
         <item>to impair …</item>
@@ -819,6 +850,7 @@
         <item>to jab</item>
         <item>to jumble (one into another)</item>
         <item>to justify</item>
+        <item>to mock the teacher</item>
         <item>to keep at bay</item>
         <item>to kneel</item>
         <item>to launch</item>
@@ -898,6 +930,7 @@
         <item>to shiver</item>
         <item>to shrank</item>
         <item>to shred</item>
+        <item>fancy</item>
         <item>to shuffle</item>
         <item>to sift</item>
         <item>to dismantle</item>
@@ -947,16 +980,16 @@
         <item>to unite</item>
         <item>to unwrap</item>
         <item>to unzip</item>
-        <item>to urge</item>
+        <item>to urge to ...</item>
         <item>to usher / to announce</item>
-        <item>to vent anger on myself</item>
+        <item>to vent anger on ...</item>
         <item>to venture</item>
         <item>to wade</item>
         <item>to weaken</item>
         <item>to weep</item>
         <item>to whistle</item>
         <item>to win the trust (of) …</item>
-        <item>to wont</item>
+        <item>to wont ...</item>
         <item>to wrap</item>
         <item>to yawn</item>
         <item>to yell</item>
@@ -997,6 +1030,13 @@
         <item>to stress the role of</item>
         <item>to dodge around this</item>
         <item>to push you away</item>
+        <item>to keep the conversation going</item>
+        <item>to distribute resources for...</item>
+        <item>to tackle questions</item>
+        <item>to make excuses</item>
+        <item>to spend money on/for ...</item>
+        <item>to confine it to ...</item>
+        <item>to deviate from ...</item>
         <item>to dodge around the court ruling</item>
         <item>to tidy up</item>
         <item>to avoid</item>
@@ -1307,7 +1347,7 @@
         <item>maladaptation</item>
         <item>familiar (with)</item>
         <item>famine</item>
-        <item>fancy</item>
+
         <item>fares (encreased)</item>
         <item>fascinating</item>
         <item>fastings</item>
@@ -1323,7 +1363,6 @@
         <item>fewer cigarettes</item>
         <item>fibreglass (frames)</item>
         <item>fidelity</item>
-        <item>fidelity</item>
         <item>figment of the imagination</item>
         <item>filth</item>
         <item>finally</item>
@@ -1335,14 +1374,12 @@
         <item>flamboyance</item>
         <item>flattered</item>
         <item>flaw</item>
-        <item>flaw</item>
         <item>flock</item>
         <item>fluctuations</item>
         <item>football boots</item>
         <item>for the time being</item>
         <item>forecast</item>
         <item>forefathers</item>
-        <item>foremost</item>
         <item>foremost</item>
         <item>foremost</item>
         <item>forthcoming</item>
@@ -1545,12 +1582,11 @@
         <item>merciless</item>
         <item>mesmerizing</item>
         <item>messy</item>
-        <item>messy</item>
         <item>milestone</item>
         <item>mind-blowing</item>
         <item>mire</item>
         <item>mobster</item>
-        <item>mocking the teacher</item>
+
         <item>mopping the floor</item>
         <item>more susceptible to</item>
         <item>moreover</item>
@@ -1732,7 +1768,6 @@
         <item>restless wave</item>
         <item>retaliation</item>
         <item>retired</item>
-        <item>retired</item>
         <item>retiring</item>
         <item>retrieve</item>
         <item>revelation</item>
@@ -1753,7 +1788,6 @@
         <item>rude</item>
         <item>rug</item>
         <item>rural</item>
-        <item>ruthless</item>
         <item>ruthless</item>
         <item>sack</item>
         <item>safe and sound</item>
@@ -1913,7 +1947,6 @@
         <item>trace</item>
         <item>track</item>
         <item>trail</item>
-        <item>trail</item>
         <item>tramp</item>
         <item>transient</item>
         <item>treacherous</item>
@@ -2049,6 +2082,1008 @@
         <item>inconceivable</item>
         <item>sealed</item>
         <item>terrific job</item>
-        <item>terrific explanation of ...</item>	</string-array>
+        <item>terrific explanation of ...</item>
+        <item>duties</item>
+        <item>easygoing</item>
+        <item>concise</item>
+        <item>political persecution</item>
+        <item>ardent orthodox</item>
+        <item>far-fetched</item>
+        <item>superb drama</item>
+        <item>trumped up charges</item>
+        <item>poignant</item>
+        <item>substantial number of ...</item>
+        <item>i.e.</item>
+        <item>divisive</item>
+        <item>with no commitment</item>
+        <item>impoverished</item>
+        <item>social benefits</item>
+        <item>housing and utility payments</item>
+        <item>utility payments</item>
+        <item>steadfast</item>
+        <item>lumberjack shirt</item>
+        <item>deterrence of ...</item>	</string-array>
+    <string-array name="eng5">	<item>to act</item>
+        <item>to add</item>
+        <item>to agree</item>
+        <item>to answer</item>
+        <item>to argue</item>
+        <item>to arrive</item>
+        <item>to ask</item>
+        <item>to be (was/were – been)</item>
+        <item>to become (became – become)</item>
+        <item>to begin (began – begun)</item>
+        <item>to believe</item>
+        <item>to break (broke – broken)</item>
+        <item>to bring (brought – brought)</item>
+        <item>to build (built – built)</item>
+        <item>to buy (bought – bought)</item>
+        <item>to call</item>
+        <item>to catch (caught – caught)</item>
+        <item>to change</item>
+        <item>to check</item>
+        <item>to choose (chose – chosen)</item>
+        <item>to close</item>
+        <item>to come (came – come)</item>
+        <item>to compare</item>
+        <item>to complain</item>
+        <item>to continue</item>
+        <item>to control</item>
+        <item>to cook</item>
+        <item>to cost (cost – cost)</item>
+        <item>to count</item>
+        <item>to create</item>
+        <item>to cry</item>
+        <item>to cut (cut – cut)</item>
+        <item>to dance</item>
+        <item>to decide</item>
+        <item>to delay</item>
+        <item>to describe</item>
+        <item>to develop</item>
+        <item>to discuss</item>
+        <item>to disturb</item>
+        <item>to do (did – done)</item>
+        <item>to draw (drew – drawn)</item>
+        <item>to dream (dreamt – dreamt)</item>
+        <item>to drink (drank – drunk)</item>
+        <item>to drive (drove – driven)</item>
+        <item>to drop</item>
+        <item>to eat (ate – eaten)</item>
+        <item>to enjoy</item>
+        <item>to expect</item>
+        <item>to explain</item>
+        <item>to fall (fell – fallen)</item>
+        <item>to feed (fed – fed)</item>
+        <item>to feel (felt – felt)</item>
+        <item>to fight (fought – fought)</item>
+        <item>to find (found – found)</item>
+        <item>to finish</item>
+        <item>to fly (flew – flown)</item>
+        <item>to forget (forgot – forgotten)</item>
+        <item>to forgive (forgave – forgiven)</item>
+        <item>to get (got – got)</item>
+        <item>to give (gave – given)</item>
+        <item>to go (went – gone)</item>
+        <item>to grow (grew – grown)</item>
+        <item>to happen</item>
+        <item>to have (had – had)</item>
+        <item>to hear (heard – heard)</item>
+        <item>to help</item>
+        <item>to hit (hit – hit)</item>
+        <item>to hold (held – held)</item>
+        <item>to hope</item>
+        <item>to hurt (hurt – hurt)</item>
+        <item>to join</item>
+        <item>to joke</item>
+        <item>to jump</item>
+        <item>to keep (kept – kept)</item>
+        <item>to kill</item>
+        <item>to know (knew – known)</item>
+        <item>to land</item>
+        <item>to laugh</item>
+        <item>to learn (learnt – learnt)</item>
+        <item>to leave (left – left)</item>
+        <item>to let (let – let)</item>
+        <item>to lie</item>
+        <item>to like</item>
+        <item>to listen</item>
+        <item>to live</item>
+        <item>to look</item>
+        <item>to love</item>
+        <item>to make (made – made)</item>
+        <item>to meet (met – met)</item>
+        <item>to miss</item>
+        <item>to move</item>
+        <item>to need</item>
+        <item>to offer</item>
+        <item>to open</item>
+        <item>to order</item>
+        <item>to pass</item>
+        <item>to pay</item>
+        <item>to plan</item>
+        <item>to play</item>
+        <item>to protect</item>
+        <item>to pull</item>
+        <item>to push</item>
+        <item>to put (put – put)</item>
+        <item>to put on</item>
+        <item>to read (read – read)</item>
+        <item>to remember</item>
+        <item>to rest</item>
+        <item>to ride (rode – ridden)</item>
+        <item>to ring (rang – rung)</item>
+        <item>to risk</item>
+        <item>to run (ran – run)</item>
+        <item>to save</item>
+        <item>to say (said – said)</item>
+        <item>to see (saw – seen)</item>
+        <item>to sell (sold – sold)</item>
+        <item>to send (sent – sent)</item>
+        <item>to share</item>
+        <item>to shave</item>
+        <item>to show (showed – shown)</item>
+        <item>to sign</item>
+        <item>to sing (sang – sung)</item>
+        <item>to sit (sat – sat)</item>
+        <item>to sleep (slept – slept)</item>
+        <item>to smell (smelt – smelt)</item>
+        <item>to smile</item>
+        <item>to smoke</item>
+        <item>to sneeze</item>
+        <item>to solve</item>
+        <item>to speak (spoke – spoken)</item>
+        <item>to spend (spent – spent)</item>
+        <item>to stand (stood – stood)</item>
+        <item>to start</item>
+        <item>to stay</item>
+        <item>to stop</item>
+        <item>to suit</item>
+        <item>to support</item>
+        <item>to surprise</item>
+        <item>to swim (swam – swum)</item>
+        <item>to take (took – taken)</item>
+        <item>to take off</item>
+        <item>to talk</item>
+        <item>to taste</item>
+        <item>to teach (taught – taught)</item>
+        <item>to tell (told – told)</item>
+        <item>to think (thought – thought)</item>
+        <item>to throw (threw – thrown)</item>
+        <item>to travel</item>
+        <item>to try</item>
+        <item>to turn</item>
+        <item>to use</item>
+        <item>to visit</item>
+        <item>to wait</item>
+        <item>to wake up (woke – woken)</item>
+        <item>to walk</item>
+        <item>to want</item>
+        <item>to wash</item>
+        <item>to watch</item>
+        <item>to wear (wore – worn)</item>
+        <item>to work</item>
+        <item>to worry</item>
+        <item>to write (wrote – written)</item>	</string-array>
+    <string-array name="eng6">	<item>about</item>
+        <item>above</item>
+        <item>accountant</item>
+        <item>actor/actress</item>
+        <item>after</item>
+        <item>afternoon</item>
+        <item>again</item>
+        <item>against</item>
+        <item>age</item>
+        <item>ago</item>
+        <item>air</item>
+        <item>airport</item>
+        <item>all</item>
+        <item>almost</item>
+        <item>already</item>
+        <item>also</item>
+        <item>always</item>
+        <item>amazing</item>
+        <item>address</item>
+        <item>armchair</item>
+        <item>egg</item>
+        <item>exercise</item>
+        <item>iron</item>
+        <item>oven</item>
+        <item>and</item>
+        <item>angry</item>
+        <item>animal</item>
+        <item>annoying</item>
+        <item>ant</item>
+        <item>any</item>
+        <item>apple</item>
+        <item>apricot</item>
+        <item>April</item>
+        <item>area</item>
+        <item>arm</item>
+        <item>art</item>
+        <item>artist</item>
+        <item>aubergine (AmE: eggplant)</item>
+        <item>August</item>
+        <item>aunt</item>
+        <item>autumn (AmE: fall)</item>
+        <item>average</item>
+        <item>awful</item>
+        <item>back</item>
+        <item>backpack</item>
+        <item>bad</item>
+        <item>bag</item>
+        <item>baked</item>
+        <item>balcony</item>
+        <item>ball</item>
+        <item>balloon</item>
+        <item>banana</item>
+        <item>bank</item>
+        <item>bathroom</item>
+        <item>battery</item>
+        <item>beach</item>
+        <item>beans</item>
+        <item>bear</item>
+        <item>beard</item>
+        <item>beautiful</item>
+        <item>because of</item>
+        <item>because</item>
+        <item>bed</item>
+        <item>bedroom</item>
+        <item>bee</item>
+        <item>beef</item>
+        <item>beetroot</item>
+        <item>before</item>
+        <item>behavior</item>
+        <item>behind</item>
+        <item>bell pepper</item>
+        <item>belt</item>
+        <item>berry</item>
+        <item>between</item>
+        <item>bicycle</item>
+        <item>big</item>
+        <item>bill</item>
+        <item>bird</item>
+        <item>birthday</item>
+        <item>biscuit (AmE: cookie)</item>
+        <item>bitter</item>
+        <item>black</item>
+        <item>blanket</item>
+        <item>blood</item>
+        <item>blouse</item>
+        <item>blue</item>
+        <item>boiled</item>
+        <item>bone</item>
+        <item>book</item>
+        <item>boot</item>
+        <item>boring</item>
+        <item>boss</item>
+        <item>bottle</item>
+        <item>bowl</item>
+        <item>box</item>
+        <item>boy</item>
+        <item>bracelet</item>
+        <item>brave</item>
+        <item>bread</item>
+        <item>breakfast</item>
+        <item>bridge</item>
+        <item>bright</item>
+        <item>brother</item>
+        <item>brown</item>
+        <item>bruise</item>
+        <item>building</item>
+        <item>bun</item>
+        <item>bus</item>
+        <item>bush</item>
+        <item>businessman (pl. businessmen)</item>
+        <item>busy</item>
+        <item>but</item>
+        <item>butter</item>
+        <item>buttocks</item>
+        <item>bye</item>
+        <item>cabbage</item>
+        <item>café</item>
+        <item>cake</item>
+        <item>calendar</item>
+        <item>calm</item>
+        <item>camera</item>
+        <item>can</item>
+        <item>cap</item>
+        <item>car</item>
+        <item>card</item>
+        <item>cardigan</item>
+        <item>careful</item>
+        <item>carpet</item>
+        <item>carrot</item>
+        <item>case</item>
+        <item>cash</item>
+        <item>cat</item>
+        <item>centre (AmE: center)</item>
+        <item>century</item>
+        <item>chair</item>
+        <item>cheap</item>
+        <item>cheek</item>
+        <item>cheese</item>
+        <item>cherry</item>
+        <item>chest</item>
+        <item>chicken</item>
+        <item>chief</item>
+        <item>child (pl. children)</item>
+        <item>chin</item>
+        <item>chocolate</item>
+        <item>choice</item>
+        <item>Christmas</item>
+        <item>church</item>
+        <item>cinema</item>
+        <item>circle</item>
+        <item>circumstance</item>
+        <item>city</item>
+        <item>clean</item>
+        <item>clear</item>
+        <item>clever</item>
+        <item>client</item>
+        <item>cloudy</item>
+        <item>clumsy</item>
+        <item>coast</item>
+        <item>coat</item>
+        <item>cockroach</item>
+        <item>coffee</item>
+        <item>cold</item>
+        <item>colleague (AmE: co-worker)</item>
+        <item>Colour (AmE: color) ― цвет</item>
+        <item>colourful</item>
+        <item>comfortable</item>
+        <item>company</item>
+        <item>computer</item>
+        <item>cooker (AmE: stove)</item>
+        <item>cool</item>
+        <item>corn</item>
+        "<item>cough
+to cough</item>"
+        <item>country</item>
+        <item>courgette (AmE: zucchini)</item>
+        <item>cousin</item>
+        <item>cow</item>
+        <item>crazy</item>
+        <item>cream</item>
+        <item>crowded</item>
+        <item>cucumber</item>
+        <item>cup</item>
+        <item>curd</item>
+        <item>curious</item>
+        <item>curtain</item>
+        <item>customs</item>
+        <item>cutlet</item>
+        <item>dairy</item>
+        <item>dance</item>
+        <item>dangerous</item>
+        <item>dark</item>
+        <item>daughter</item>
+        <item>day</item>
+        <item>dead</item>
+        <item>dear</item>
+        <item>death</item>
+        <item>December</item>
+        <item>decision</item>
+        <item>degree</item>
+        <item>delay</item>
+        <item>delicious</item>
+        <item>delivery</item>
+        <item>dessert</item>
+        <item>destination</item>
+        <item>dictionary</item>
+        <item>different</item>
+        <item>difficult</item>
+        <item>dinner</item>
+        <item>dirty</item>
+        <item>discount</item>
+        <item>dish</item>
+        <item>distance</item>
+        <item>dizziness</item>
+        <item>doctor</item>
+        <item>dog</item>
+        <item>door</item>
+        <item>down</item>
+        "<item>dress
+to dress</item>"
+        <item>drink</item>
+        <item>driver</item>
+        <item>duck</item>
+        <item>during</item>
+        <item>duty</item>
+        <item>each</item>
+        <item>ear</item>
+        <item>early</item>
+        <item>earring</item>
+        <item>Easter</item>
+        <item>easy</item>
+        <item>eight</item>
+        <item>eighteen</item>
+        <item>eighty</item>
+        <item>elbow</item>
+        <item>elegant</item>
+        <item>elephant</item>
+        <item>eleven</item>
+        <item>embarrassed</item>
+        <item>Emotions ― эмоции</item>
+        <item>energetic</item>
+        <item>engineer</item>
+        <item>enough</item>
+        <item>entrance</item>
+        <item>evening</item>
+        <item>every</item>
+        <item>excuse me</item>
+        <item>exit</item>
+        <item>expensive</item>
+        <item>experience</item>
+        <item>eye</item>
+        <item>eyebrow</item>
+        <item>face</item>
+        <item>factory</item>
+        <item>fair</item>
+        <item>famous</item>
+        <item>far</item>
+        <item>fast</item>
+        <item>fat</item>
+        <item>father</item>
+        <item>fear</item>
+        <item>February</item>
+        <item>fence</item>
+        <item>fever</item>
+        <item>few</item>
+        <item>field</item>
+        <item>fifteen</item>
+        <item>fifth</item>
+        <item>fifty</item>
+        <item>film (AmE: movie)</item>
+        <item>fine</item>
+        <item>finger</item>
+        <item>fire</item>
+        <item>first</item>
+        <item>fish</item>
+        <item>fit</item>
+        <item>five</item>
+        <item>flat (AmE: an apartment)</item>
+        <item>flight attendant</item>
+        <item>floor</item>
+        <item>flour</item>
+        <item>flower</item>
+        <item>flu</item>
+        <item>foggy</item>
+        <item>foot (pl. feet)</item>
+        <item>for</item>
+        <item>forehead</item>
+        <item>forest</item>
+        <item>fork</item>
+        <item>forty</item>
+        <item>four</item>
+        <item>fourteen</item>
+        <item>fourth</item>
+        <item>fox</item>
+        <item>free</item>
+        <item>Friday</item>
+        <item>fridge</item>
+        <item>fried</item>
+        <item>friend</item>
+        <item>friendly</item>
+        <item>frog</item>
+        <item>from</item>
+        <item>fruit</item>
+        <item>frying pan</item>
+        <item>full</item>
+        <item>fun</item>
+        <item>furniture</item>
+        <item>game</item>
+        <item>garbage</item>
+        <item>garlic</item>
+        <item>giraffe</item>
+        <item>girl</item>
+        <item>glass</item>
+        <item>glasses</item>
+        <item>glove</item>
+        <item>goal</item>
+        <item>good</item>
+        <item>goose (pl. geese)</item>
+        <item>grandfather</item>
+        <item>grandmother</item>
+        <item>grapes</item>
+        <item>grass</item>
+        <item>green</item>
+        <item>grey</item>
+        <item>guest</item>
+        <item>habit</item>
+        <item>hair</item>
+        <item>hall</item>
+        <item>ham</item>
+        <item>hand</item>
+        <item>handsome</item>
+        <item>happy</item>
+        <item>hard-working</item>
+        <item>hard</item>
+        <item>hat</item>
+        <item>have to</item>
+        <item>he</item>
+        <item>head</item>
+        <item>healthy</item>
+        <item>heart</item>
+        <item>heavy</item>
+        <item>heel</item>
+        <item>hello</item>
+        <item>her</item>
+        <item>here</item>
+        <item>hi</item>
+        <item>high</item>
+        <item>his/him</item>
+        <item>holiday (AmE: vacation)</item>
+        <item>honest</item>
+        <item>honey</item>
+        <item>hood</item>
+        <item>horse</item>
+        <item>hospital</item>
+        <item>hot</item>
+        <item>hotel</item>
+        <item>hour</item>
+        <item>house</item>
+        <item>how</item>
+        <item>hundred</item>
+        <item>hungry</item>
+        <item>husband</item>
+        <item>I</item>
+        <item>ice cream</item>
+        <item>if</item>
+        <item>important</item>
+        <item>impossible</item>
+        <item>in front of</item>
+        <item>in</item>
+        <item>information</item>
+        <item>insect</item>
+        <item>insurance</item>
+        <item>interesting</item>
+        <item>intersection</item>
+        <item>invitation</item>
+        <item>island</item>
+        <item>it</item>
+        <item>its/it</item>
+        <item>jacket</item>
+        <item>jam</item>
+        <item>January</item>
+        <item>jealous</item>
+        <item>jeans</item>
+        <item>Job ― работа</item>
+        <item>journalist</item>
+        <item>juice</item>
+        <item>July</item>
+        <item>June</item>
+        <item>just</item>
+        <item>kettle</item>
+        <item>key</item>
+        <item>keyboard</item>
+        <item>kind</item>
+        <item>kitchen</item>
+        <item>knee</item>
+        <item>knife</item>
+        <item>knowledge</item>
+        <item>lake</item>
+        <item>lamb</item>
+        <item>lamp</item>
+        <item>language</item>
+        <item>laptop</item>
+        <item>large</item>
+        <item>last</item>
+        <item>late</item>
+        <item>lawyer</item>
+        <item>lazy</item>
+        <item>leaf</item>
+        <item>left</item>
+        <item>leg</item>
+        <item>lemon</item>
+        <item>less</item>
+        <item>lesson</item>
+        <item>letter</item>
+        <item>lifeguard</item>
+        <item>light</item>
+        "<item>lion
+lioness</item>"
+        <item>lips</item>
+        "<item>list
+to list</item>"
+        <item>literature</item>
+        <item>little</item>
+        <item>living room</item>
+        <item>long</item>
+        <item>lot of</item>
+        <item>loud</item>
+        <item>low</item>
+        <item>lucky</item>
+        <item>luggage (AmE: baggage)</item>
+        <item>lunch</item>
+        <item>magazine</item>
+        <item>maiden name</item>
+        <item>mail</item>
+        <item>main</item>
+        <item>man (pl. men)</item>
+        <item>mandarin</item>
+        <item>mango</item>
+        <item>many</item>
+        <item>map</item>
+        <item>March</item>
+        <item>market</item>
+        <item>married</item>
+        <item>May</item>
+        <item>may</item>
+        <item>maybe</item>
+        <item>meal</item>
+        <item>meaning</item>
+        <item>meat</item>
+        <item>mechanic</item>
+        <item>meeting</item>
+        <item>melon</item>
+        <item>memory</item>
+        <item>microwave</item>
+        <item>midnight</item>
+        <item>milk</item>
+        <item>million</item>
+        <item>minute</item>
+        <item>mirror</item>
+        <item>mistake</item>
+        <item>modern</item>
+        <item>Monday</item>
+        <item>monkey</item>
+        <item>month</item>
+        <item>moon</item>
+        <item>more</item>
+        <item>morning</item>
+        <item>mother (AmE: mom, BrE: mum)</item>
+        <item>mountain</item>
+        <item>mouse (pl. mice)</item>
+        <item>mouth</item>
+        <item>much</item>
+        <item>mushroom</item>
+        <item>music</item>
+        <item>musician</item>
+        <item>must</item>
+        <item>mustache</item>
+        <item>my/me</item>
+        <item>nail</item>
+        <item>name</item>
+        <item>nanny</item>
+        <item>napkin</item>
+        <item>narrow</item>
+        <item>nature</item>
+        <item>near</item>
+        <item>neck</item>
+        <item>necklace</item>
+        <item>negative</item>
+        <item>neighbour (AmE: neighbor)</item>
+        <item>nephew</item>
+        <item>nervous</item>
+        <item>neutral</item>
+        <item>never</item>
+        <item>New Year’s Eve</item>
+        <item>new</item>
+        <item>newspaper</item>
+        <item>next</item>
+        <item>nice</item>
+        <item>niece</item>
+        <item>night</item>
+        <item>nine</item>
+        <item>nineteen</item>
+        <item>ninety</item>
+        <item>no</item>
+        <item>noisy</item>
+        <item>noodles</item>
+        <item>nose</item>
+        <item>not</item>
+        <item>note</item>
+        <item>notebook</item>
+        <item>November</item>
+        <item>now</item>
+        <item>nurse</item>
+        <item>nut</item>
+        <item>oatmeal</item>
+        <item>October</item>
+        <item>office</item>
+        <item>often</item>
+        <item>oil</item>
+        <item>old</item>
+        <item>on</item>
+        <item>one</item>
+        <item>onion</item>
+        <item>only</item>
+        <item>opportunity</item>
+        <item>or</item>
+        <item>orange</item>
+        <item>organ</item>
+        <item>our/us</item>
+        <item>package</item>
+        <item>page</item>
+        <item>pain</item>
+        <item>pair</item>
+        <item>pan</item>
+        <item>paper</item>
+        <item>parents</item>
+        <item>park</item>
+        <item>part</item>
+        <item>party</item>
+        <item>passion</item>
+        <item>pavement (AmE: sidewalk)</item>
+        <item>peace</item>
+        <item>peach</item>
+        <item>pear</item>
+        <item>pen</item>
+        <item>pencil</item>
+        <item>pepper</item>
+        <item>permit</item>
+        <item>person (pl. people)</item>
+        <item>pharmacy (AmE: drug store)</item>
+        <item>phone</item>
+        <item>photo</item>
+        <item>picture</item>
+        <item>pie</item>
+        <item>piece</item>
+        <item>pig</item>
+        <item>pillow</item>
+        <item>pilot</item>
+        <item>pineapple</item>
+        <item>pink</item>
+        <item>plane</item>
+        <item>plant</item>
+        <item>plate</item>
+        <item>play</item>
+        <item>please</item>
+        <item>pleasure</item>
+        <item>plum</item>
+        <item>plumber</item>
+        <item>police</item>
+        <item>policeman (pl. policemen)</item>
+        <item>polite</item>
+        <item>poor</item>
+        <item>pork</item>
+        <item>porridge</item>
+        <item>positive</item>
+        <item>post office</item>
+        <item>potato</item>
+        <item>powerful</item>
+        <item>present</item>
+        <item>price</item>
+        <item>probably</item>
+        <item>problem</item>
+        <item>pumpkin</item>
+        <item>pupil</item>
+        <item>purple</item>
+        <item>purse</item>
+        <item>pyjamas (AmE: pajamas)</item>
+        <item>quick</item>
+        <item>quiet</item>
+        <item>rabbit</item>
+        <item>radio</item>
+        <item>rainy</item>
+        <item>raspberry</item>
+        <item>rat</item>
+        <item>ready</item>
+        <item>real</item>
+        <item>really</item>
+        <item>reason</item>
+        <item>red</item>
+        <item>restaurant</item>
+        <item>result</item>
+        <item>rice</item>
+        <item>rich</item>
+        <item>right</item>
+        <item>river</item>
+        <item>road</item>
+        <item>roof</item>
+        <item>room</item>
+        <item>round</item>
+        <item>rude</item>
+        <item>running nose</item>
+        <item>salad</item>
+        <item>salt</item>
+        <item>salty</item>
+        <item>sand</item>
+        <item>sandwich</item>
+        <item>Saturday</item>
+        <item>sauce</item>
+        <item>sausage</item>
+        <item>scarf</item>
+        <item>school</item>
+        <item>science</item>
+        <item>scissors</item>
+        <item>seafood</item>
+        <item>season</item>
+        <item>second</item>
+        <item>second</item>
+        <item>Senses ― чувства</item>
+        <item>September</item>
+        <item>seven</item>
+        <item>seventeen</item>
+        <item>seventy</item>
+        <item>she</item>
+        <item>sheet</item>
+        <item>shelf</item>
+        <item>ship</item>
+        <item>shirt</item>
+        <item>shoes</item>
+        <item>shop (AmE: store)</item>
+        <item>shop assistant</item>
+        <item>short</item>
+        <item>shorts</item>
+        <item>should</item>
+        <item>shoulder</item>
+        <item>shower</item>
+        <item>sick</item>
+        <item>since</item>
+        <item>single</item>
+        <item>sink</item>
+        <item>sister</item>
+        <item>six</item>
+        <item>sixteen</item>
+        <item>sixty</item>
+        <item>size</item>
+        <item>skin</item>
+        <item>skirt</item>
+        <item>sky</item>
+        <item>snack</item>
+        <item>snake</item>
+        <item>snowy</item>
+        <item>so</item>
+        <item>soap</item>
+        <item>sock</item>
+        <item>socket</item>
+        <item>soda</item>
+        <item>sofa</item>
+        <item>some</item>
+        <item>sometimes</item>
+        <item>son</item>
+        <item>song</item>
+        <item>soon</item>
+        <item>sorry</item>
+        <item>soul</item>
+        <item>soup</item>
+        <item>sour</item>
+        <item>speed</item>
+        <item>spices</item>
+        <item>spicy</item>
+        <item>spider</item>
+        <item>spine</item>
+        <item>spoon</item>
+        <item>spot</item>
+        <item>spring</item>
+        <item>square</item>
+        <item>squirrel</item>
+        <item>stairs</item>
+        <item>station</item>
+        <item>stomach</item>
+        <item>stone</item>
+        <item>story</item>
+        <item>straight</item>
+        <item>strawberry</item>
+        <item>street</item>
+        <item>strength</item>
+        <item>student</item>
+        <item>Study ― учеба</item>
+        <item>success</item>
+        <item>sugar</item>
+        <item>suit</item>
+        <item>suitcase</item>
+        <item>summer</item>
+        <item>sun</item>
+        <item>Sunday</item>
+        <item>surname (AmE: last name)</item>
+        <item>sweater</item>
+        <item>sweet</item>
+        <item>swollen</item>
+        <item>T-shirt</item>
+        <item>table</item>
+        <item>talented</item>
+        <item>task</item>
+        <item>taxi (AmE: cab)</item>
+        <item>tea</item>
+        <item>teacher</item>
+        <item>temperature</item>
+        <item>ten</item>
+        <item>test</item>
+        <item>than</item>
+        <item>thank you</item>
+        <item>that/those</item>
+        <item>the ocean</item>
+        <item>the sea</item>
+        <item>theatre (AmE: theater)</item>
+        <item>their/them</item>
+        <item>then</item>
+        <item>there</item>
+        <item>they</item>
+        <item>Thinking ― мышление</item>
+        <item>third</item>
+        <item>thirteen</item>
+        <item>thirty</item>
+        <item>this/these</item>
+        <item>thousand</item>
+        <item>three</item>
+        <item>throat</item>
+        <item>through</item>
+        <item>Thursday</item>
+        <item>ticket</item>
+        <item>tie</item>
+        <item>tights</item>
+        <item>tip</item>
+        <item>to</item>
+        <item>today</item>
+        <item>toe</item>
+        <item>together</item>
+        <item>toilet</item>
+        <item>tomato</item>
+        <item>tomorrow</item>
+        <item>tongue</item>
+        <item>tonight</item>
+        <item>too</item>
+        <item>tooth (pl. teeth)</item>
+        <item>towel</item>
+        <item>town</item>
+        <item>toy</item>
+        <item>train</item>
+        <item>trainers (AmE: sneakers)</item>
+        <item>tram (AmE: trolley)</item>
+        <item>tree</item>
+        <item>trousers (AmE: pants)</item>
+        <item>Tuesday</item>
+        <item>TV</item>
+        <item>twelve</item>
+        <item>twenty</item>
+        <item>two</item>
+        <item>uncle</item>
+        <item>under</item>
+        <item>underwear</item>
+        <item>university</item>
+        <item>up</item>
+        <item>usually</item>
+        <item>vase</item>
+        <item>vegetables</item>
+        <item>very</item>
+        <item>village</item>
+        <item>waiter/waitress</item>
+        <item>wall</item>
+        <item>wallet</item>
+        <item>wardrobe (AmE: closet)</item>
+        <item>warm</item>
+        <item>water</item>
+        <item>watermelon</item>
+        <item>we</item>
+        <item>weather</item>
+        <item>wedding</item>
+        <item>Wednesday</item>
+        <item>week</item>
+        <item>what</item>
+        <item>wheel</item>
+        <item>when</item>
+        <item>where</item>
+        <item>white</item>
+        <item>who</item>
+        <item>why</item>
+        <item>wife</item>
+        <item>will</item>
+        <item>window</item>
+        <item>windy</item>
+        <item>wine</item>
+        <item>winter</item>
+        <item>wire</item>
+        <item>with</item>
+        <item>without</item>
+        <item>woman (pl. women)</item>
+        <item>word</item>
+        <item>worker</item>
+        <item>world</item>
+        <item>would like to</item>
+        <item>wound</item>
+        <item>yard</item>
+        <item>year</item>
+        <item>yellow</item>
+        <item>yes</item>
+        <item>yesterday</item>
+        <item>yet</item>
+        <item>yogurt</item>
+        <item>you are welcome</item>
+        <item>you</item>
+        <item>young</item>
+        <item>your/you</item>
+        <item>zero</item>	</string-array>
 
 </resources>
