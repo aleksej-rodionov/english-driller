@@ -206,6 +206,14 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
                 viewModel.onChooseCategoryClick(5)
                 true
             }
+            R.id.action_cat6 -> {
+                viewModel.onChooseCategoryClick(6)
+                true
+            }
+            R.id.action_cat7 -> {
+                viewModel.onChooseCategoryClick(7)
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }

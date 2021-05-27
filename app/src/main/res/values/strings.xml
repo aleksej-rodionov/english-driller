@@ -27,12 +27,16 @@
     <string name="cat2">Фразовые глаголы</string>
     <string name="cat3">Обычные глаголы</string>
     <string name="cat4">Просто разные слова</string>
-    <string name="cat5">Свои слова</string>
+    <string name="cat5">Топ 800 слов</string>
+    <string name="cat6">Топ 200 глаголов</string>
+    <string name="cat7">Свои слова</string>
     <string name="only_cat1">Только речевые связки</string>
     <string name="only_cat2">Только фразовые глаголы</string>
     <string name="only_cat3">Только обычные глаголы</string>
     <string name="only_cat4">Только просто слова</string>
-    <string name="only_cat5">Только свои слова</string>
+    <string name="only_cat5">Только топ 800 слов</string>
+    <string name="only_cat6">Только топ 200 глаголов</string>
+    <string name="only_cat7">Только свои слова</string>
 
     <string name="archived">Слово отправлено в архив</string>
     <string name="preview1">Чтобы увидеть перевод, нажмите на карточку.

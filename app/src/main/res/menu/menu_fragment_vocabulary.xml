@@ -28,6 +28,8 @@
             <item android:id="@+id/action_cat3" android:title="@string/only_cat3"  />
             <item android:id="@+id/action_cat4" android:title="@string/only_cat4" />
             <item android:id="@+id/action_cat5" android:title="@string/only_cat5" />
+            <item android:id="@+id/action_cat6" android:title="@string/only_cat6" />
+            <item android:id="@+id/action_cat7" android:title="@string/only_cat7" />
 
 
 

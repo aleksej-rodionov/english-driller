@@ -68,7 +68,7 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
             }
         }
         .map { preferences ->
-            val categoryChosen = preferences[PreferencesKeys.CATEGORY_CHOSEN] ?: 0 // сам поставил нуль, хуй знает чем это кончится
+            val categoryChosen = preferences[PreferencesKeys.CATEGORY_CHOSEN] ?: 0 // сам поставил нуль, не знаю чем это кончится
 //            val nativToForeign = preferences[PreferencesKeys.NATIV_TO_FOREIGN] ?: false
 //            FilterPreferences(categoryChosen, nativToForeign)
             categoryChosen
