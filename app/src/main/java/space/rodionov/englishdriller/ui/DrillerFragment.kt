@@ -12,12 +12,6 @@ import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.data.Word
 import space.rodionov.englishdriller.databinding.CardstackLayoutBinding
 
-/**
- * Created by Aleksej Rodionov, march 2021
- *
- * I used very cool external library "CardStackView" from github for building a cool swipable card stack
- */
-
 private const val TAG = "DrillerFragment"
 
 @AndroidEntryPoint
@@ -25,8 +19,7 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
 
     private val viewModel: DrillerViewModel by viewModels()
     private lateinit var currentWord: Word
-    //    private var nativToForeign: Boolean = false
-    private lateinit var drillerAdapter: JavaDrillerAdapter/*? = null*/
+    private lateinit var drillerAdapter: JavaDrillerAdapter
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -51,19 +44,15 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
         drillerLayoutManager.setCanScrollHorizontal(true)
         drillerLayoutManager.setCanScrollVertical(true)
         drillerLayoutManager.setSwipeableMethod(SwipeableMethod.AutomaticAndManual)
-//        val drillerAdapter = DrillerAdapter()
         binding.apply {
             cardStackView.apply {
                 viewModel.readTransDir.observe(viewLifecycleOwner) {
                     drillerAdapter.setNativToForeign(it)
                 }
-                /*viewModel.readNatLang.observe(viewLifecycleOwner) {
-                    drillerAdapter.setNativeLanguage(it)
-                }*/
                 adapter = drillerAdapter
                 layoutManager = drillerLayoutManager
                 setHasFixedSize(true)
-                itemAnimator = null // ХЗ НАДО ЛИ
+                itemAnimator = null
 
             }
         }

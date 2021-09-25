@@ -18,14 +18,4 @@ class SettingsViewModel @ViewModelInject constructor(
     fun saveTransDir(nativToForeign: Boolean) = viewModelScope.launch {
         preferencesManager.updateTranslationDirection(nativToForeign)
     }
-
-/*
-    private val natLangFlow = preferencesManager.nativeLanguageFlow
-
-    val readNatLang = natLangFlow.asLiveData()
-
-    fun saveNatLang(nativeLanguage: NativeLanguage) = viewModelScope.launch {
-        preferencesManager.updateNativeLanguage(nativeLanguage)
-    }*/
-
 }

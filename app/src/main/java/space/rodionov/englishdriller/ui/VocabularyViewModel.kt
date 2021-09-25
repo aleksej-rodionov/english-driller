@@ -15,50 +15,43 @@ private const val TAG = "VocabularyViewModel"
 class VocabularyViewModel @ViewModelInject constructor(
     private val wordDao: WordDao,
     private val preferencesManager: PreferencesManager,
-    @Assisted private val state: SavedStateHandle // part 11 navargs
+    @Assisted private val state: SavedStateHandle
 ) : ViewModel() {
 
-    private val vocabularyEventChannel = Channel<VocabularyEvent>() // SEALED_EVENT 2,
-    val vocabularyEvent = vocabularyEventChannel.receiveAsFlow() // SEALED_EVENT samt 4,
+    private val vocabularyEventChannel = Channel<VocabularyEvent>()
+    val vocabularyEvent = vocabularyEventChannel.receiveAsFlow()
 
-    var categoryChosen = state.get<Int>("categoryChosen") // part 11
+    var categoryChosen = state.get<Int>("categoryChosen")
 
-    //    val searchQuery = MutableStateFlow("") // before part11 nav args implemented
-    val searchQuery = state.getLiveData("searchQuery", "") // part 11 nav args new line in the code
+    val searchQuery = state.getLiveData("searchQuery", "")
 
     val catNumFlow = preferencesManager.categoryNumberFlow
     val catNumOnlyOffFlow = preferencesManager.catNumNatLangOnlyOffFlow
-//    private val natLangFlow = preferencesManager.nativeLanguageFlow
 
     private val wordsFlow = combine(
-        searchQuery.asFlow(), // part 11 added ".asFlow()"
+        searchQuery.asFlow(),
         catNumOnlyOffFlow
-    ) { query, /*categoryChosen*/ filterPreferences ->
-        Pair(query, /*categoryChosen*/ filterPreferences)
-    }.flatMapLatest { (query, /*categoryChosen*/ filterPreferences) ->
-        wordDao.getWords(query, filterPreferences.categoryChosen, /*filterPreferences.nativeLanguage,*/ filterPreferences.onlyOff)
+    ) { query, filterPreferences ->
+        Pair(query, filterPreferences)
+    }.flatMapLatest { (query, filterPreferences) ->
+        wordDao.getWords(query, filterPreferences.categoryChosen, filterPreferences.onlyOff)
     }
 
-    val words = wordsFlow.asLiveData() // PAY ATTEITION - THIS INSTEAD OF MLIVEDATALIST?
+    val words = wordsFlow.asLiveData()
 
     val categoryNumber = catNumFlow.asLiveData()
-//    val readNatLang = natLangFlow.asLiveData()
 
     suspend fun getCategoryName(categoryNumber: Int) = wordDao.getCategoryName(categoryNumber)
 
-//    suspend fun getCategoryNameFlow(): Flow<String> = combine( catNumFlow, natLangFlow ) {
-//            cN, nL -> wordDao.getCategoryName(cN, nL)
-//    }
 
     fun onShowOnlyOffClick(onlyOff: Boolean) = viewModelScope.launch {
         preferencesManager.updateShowOnlyOff(onlyOff)
     }
 
     fun onChooseCategoryClick(chosenCategory: Int) = viewModelScope.launch {
-        preferencesManager.updateCategoryChosen(chosenCategory) // I NEED TO USE THIS METHOD !!! (OR CHANGE FROM INT TO CATEGORYITEM??)
+        preferencesManager.updateCategoryChosen(chosenCategory)
     }
 
-    // part9(created), part11(filled)
     fun onWordSelected(word: Word) = viewModelScope.launch {
         vocabularyEventChannel.send(VocabularyEvent.NavigateToEditWordScreen(word))
     }
@@ -79,7 +72,7 @@ class VocabularyViewModel @ViewModelInject constructor(
     suspend fun turnAllWordsOn(categoryNumber: Int) = wordDao.turnAllWordsOn(categoryNumber)
 
     fun onNewWordClick() = viewModelScope.launch {
-        vocabularyEventChannel.send(VocabularyEvent.NavigateToAddWordScreen) // SEALED_EVENT 3
+        vocabularyEventChannel.send(VocabularyEvent.NavigateToAddWordScreen)
     }
 
     fun onAddEditResult(result: Int) {
@@ -93,8 +86,8 @@ class VocabularyViewModel @ViewModelInject constructor(
         vocabularyEventChannel.send(VocabularyEvent.ShowWordSavedConfirmationMessage(text))
     }
 
-    sealed class VocabularyEvent { // SEALED_EVENT 0
-        object NavigateToAddWordScreen : VocabularyEvent() // SEALED_EVENT 1
+    sealed class VocabularyEvent {
+        object NavigateToAddWordScreen : VocabularyEvent()
         data class ShowUndoDeleteWordMessage(val word: Word) : VocabularyEvent()
         data class NavigateToEditWordScreen(val word: Word) : VocabularyEvent()
         data class ShowWordSavedConfirmationMessage(val msg: String) : VocabularyEvent()

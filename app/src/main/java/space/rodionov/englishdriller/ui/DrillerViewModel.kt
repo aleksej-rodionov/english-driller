@@ -13,11 +13,6 @@ import space.rodionov.englishdriller.data.PreferencesManager
 import space.rodionov.englishdriller.data.Word
 import space.rodionov.englishdriller.data.WordDao
 
-/**
- * created by Aleksej Rodionov, march 2021
- *
- */
-
 private const val TAG = "DrillerViewModel"
 
 class DrillerViewModel @ViewModelInject constructor(
@@ -30,16 +25,9 @@ class DrillerViewModel @ViewModelInject constructor(
     val m1word = wordDao.get1wordRx()
     val composite = CompositeDisposable()
 
-    // top of the work zone
 
     private val transDirFlow = preferencesManager.translationDirectionFlow
     val readTransDir = transDirFlow.asLiveData()
-
-//    private val natLangFlow = preferencesManager.nativeLanguageFlow
-//
-//    val readNatLang = natLangFlow.asLiveData()
-
-    // bottom of the work zone
 
     fun getLivedataList(): LiveData<List<Word>> {
         return mLivedataList
@@ -49,7 +37,7 @@ class DrillerViewModel @ViewModelInject constructor(
         m4words.subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(object :
-                SingleObserver<List<Word>> { // почитать почему тута object:-ом заменен джавный new
+                SingleObserver<List<Word>> {
                 override fun onSubscribe(d: Disposable) {
                     composite.add(d)
                 }

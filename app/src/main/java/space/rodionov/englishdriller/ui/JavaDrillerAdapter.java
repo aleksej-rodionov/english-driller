@@ -33,15 +33,10 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
         this.nativToForeign = nativToForeign;
     }
 
-//    public void setNativeLanguage(NativeLanguage nativeLanguage) {
-//        this.nativeLanguage = nativeLanguage;
-//    }
-
-    protected JavaDrillerAdapter(@NonNull DiffUtil.ItemCallback diffCallback, Boolean nativToForeign, Context context/*, NativeLanguage nativeLanguage*/) {
+    protected JavaDrillerAdapter(@NonNull DiffUtil.ItemCallback diffCallback, Boolean nativToForeign, Context context) {
         super(diffCallback);
         this.nativToForeign = nativToForeign;
         this.context = context;
-//        this.nativeLanguage = nativeLanguage;
     }
 
     public class JavaDrillerViewHolder extends CardStackView.ViewHolder {
@@ -59,8 +54,8 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
                 if (position != CardStackView.NO_POSITION) {
                     tvDowner.setVisibility(View.VISIBLE);
                     if (btnSpeak.getVisibility() == View.INVISIBLE) {
-                        btnSpeak.setVisibility(View.VISIBLE); // UNCOMMENT THIS AFTER IMPLEMENTING SOUNDS!!
-                        btnSpeak.setEnabled(true); // UNCOMMENT THIS AFTER IMPLEMENTING SOUNDS!!
+                        btnSpeak.setVisibility(View.VISIBLE);
+                        btnSpeak.setEnabled(true);
                     }
                 }
             });
@@ -76,7 +71,7 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
                 }
             });
 
-            mTTS = new TextToSpeech(context, new TextToSpeech.OnInitListener() { // or another context?
+            mTTS = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
                 @Override
                 public void onInit(int status) {
                     if (status == TextToSpeech.SUCCESS) {
@@ -110,19 +105,9 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
 
         if (!nativToForeign) {
             holder.tvUpper.setText(currentWord.getForeign());
-            /*if (nativeLanguage == NativeLanguage.RUS) {*/
                 holder.tvDowner.setText(currentWord.getRus());
-            /*} else if (nativeLanguage == NativeLanguage.ENG) {
-                holder.tvDowner.setText(currentWord.getEng());
-            }*/
-//            holder.btnSpeak.setVisibility(View.INVISIBLE); // CUT THIS LINE AFTER IMPLEMENTING SOUNDS!!
-//            holder.btnSpeak.setEnabled(false); // CUT THIS LINE AFTER IMPLEMENTING SOUNDS!!
         } else if (nativToForeign) {
-            /*if (nativeLanguage == NativeLanguage.RUS) {*/
                 holder.tvUpper.setText(currentWord.getRus());
-            /*} else if (nativeLanguage == NativeLanguage.ENG) {
-                holder.tvUpper.setText(currentWord.getEng());
-            }*/
             holder.tvDowner.setText(currentWord.getForeign());
             holder.btnSpeak.setVisibility(View.INVISIBLE);
             holder.btnSpeak.setEnabled(false);
@@ -148,12 +133,6 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
 
     private void speak(TextView tv) {
         String text = tv.getText().toString();
-//        float pitch = (float) mSeekBarPitch.getProgress() / 50;
-//        if (pitch < 0.1) pitch = 0.1f;
-//        float speed = (float) mSeekBarSpeed.getProgress() / 50;
-//        if (speed < 0.1) speed = 0.1f;
-//        mTTS.setPitch(pitch);
-//        mTTS.setSpeechRate(speed);
         mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
 

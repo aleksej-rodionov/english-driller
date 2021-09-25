@@ -36,37 +36,28 @@ interface WordDao {
 
     suspend fun getCategoryName(categoryNumber: Int/*, nativeLanguage: NativeLanguage*/) =
         if (categoryNumber != 0) {
-            /*when (nativeLanguage) {
-                NativeLanguage.RUS -> */getCategoryNameRus(categoryNumber)
-//                NativeLanguage.ENG -> getCategoryNameEng(categoryNumber)
-//            }
+            getCategoryNameRus(categoryNumber)
         } else {
-            /*when (nativeLanguage) {
-                NativeLanguage.RUS -> */"Все слова"
-//                NativeLanguage.ENG -> "All categories"
-//            }
+            "Все слова"
         }
 
     @Query("SELECT categoryNameRus FROM category_table WHERE categoryNumber = :categoryNumber")
     suspend fun getCategoryNameRus(categoryNumber: Int): String
 
-//    @Query("SELECT categoryNameEng FROM category_table WHERE categoryNumber = :categoryNumber")
-//    suspend fun getCategoryNameEng(categoryNumber: Int): String
-
     @Query("SELECT * FROM word_table WHERE category IN (:categoryList) AND shown = 1 ORDER BY RANDOM() LIMIT 4")
-    fun get4wordsOld(categoryList: List<Int>): Flow<List<Word>> // are "?-s" needed? // SINGLE??
+    fun get4wordsOld(categoryList: List<Int>): Flow<List<Word>>
 
     @Query("SELECT * FROM word_table WHERE category IN (:categoryList) AND shown = 1 ORDER BY RANDOM() LIMIT 1")
-    fun get1wordOld(categoryList: List<Int>): Flow<Word> // are "?-s" needed? // SINGLE??
+    fun get1wordOld(categoryList: List<Int>): Flow<Word>
 
     @Query("SELECT * FROM word_table WHERE category IN (SELECT categoryNumber FROM category_table WHERE categoryShown = 1) AND shown = 1 ORDER BY RANDOM() LIMIT 4")
-    fun get4words(): Flow<List<Word>> // are "?-s" needed? // SINGLE??
+    fun get4words(): Flow<List<Word>>
 
     @Query("SELECT * FROM word_table WHERE category IN (SELECT categoryNumber FROM category_table WHERE categoryShown = 1) AND shown = 1 ORDER BY RANDOM() LIMIT 1")
-    suspend fun get1word(): Word // are "?-s" needed? // убрать суспенд и добавить флоу<>
+    suspend fun get1word(): Word
 
     @Query("SELECT * FROM word_table WHERE category IN (SELECT categoryNumber FROM category_table WHERE categoryShown = 1) AND shown = 1 ORDER BY RANDOM() LIMIT 4")
-    fun get4wordsRx(): Single<List<Word>> // are "?-s" needed? // SINGLE??
+    fun get4wordsRx(): Single<List<Word>>
 
     @Query("SELECT * FROM word_table WHERE category IN (SELECT categoryNumber FROM category_table WHERE categoryShown = 1) AND shown = 1 ORDER BY RANDOM() LIMIT 1")
     fun get1wordRx(): Single<Word>
@@ -77,23 +68,14 @@ interface WordDao {
     fun getWords(
         query: String,
         category: Int,
-        /*nativeLanguage: NativeLanguage,*/
         onlyOff: Boolean
     ): Flow<List<Word>> =
         if (category != 0) {
-//            when (nativeLanguage) {
-                /*NativeLanguage.RUS -> */getWordsSortedByForeignNatRus(query, category, onlyOff)
-//                NativeLanguage.ENG -> getWordsSortedByForeignNatEng(query, category, onlyOff)
-//            }
+            getWordsSortedByForeignNatRus(query, category, onlyOff)
         } else {
-            /*when (nativeLanguage) {
-                NativeLanguage.RUS ->*/ getAllWordsSortedByCategoryNatRus(query, onlyOff)
-//                NativeLanguage.ENG -> getAllWordsSortedByCategoryNatEng(query, onlyOff)
-//            }
+            getAllWordsSortedByCategoryNatRus(query, onlyOff)
         }
 
-//    @Query("SELECT * FROM word_table WHERE category = :category AND (`nativ` LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY category DESC")
-//    fun getWordsSortedByCategory(searchQuery: String, category: Int): Flow<List<Word>>
 
     @Query("SELECT * FROM word_table WHERE category = :category AND (shown != :onlyOff OR shown = 0) AND (rus LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY `foreign` ASC")
     fun getWordsSortedByForeignNatRus(
@@ -104,22 +86,6 @@ interface WordDao {
 
     @Query("SELECT * FROM word_table WHERE (shown != :onlyOff OR shown = 0) AND (rus LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY category")
     fun getAllWordsSortedByCategoryNatRus(searchQuery: String, onlyOff: Boolean): Flow<List<Word>>
-
-//    @Query("SELECT * FROM word_table WHERE category = :category AND (shown != :onlyOff OR shown = 0) AND (eng LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY `foreign` ASC")
-//    fun getWordsSortedByForeignNatEng(
-//        searchQuery: String,
-//        category: Int,
-//        onlyOff: Boolean
-//    ): Flow<List<Word>>
-
-//    @Query("SELECT * FROM word_table WHERE (shown != :onlyOff OR shown = 0) AND (eng LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY category")
-//    fun getAllWordsSortedByCategoryNatEng(searchQuery: String, onlyOff: Boolean): Flow<List<Word>>
-
-//    @Query("SELECT * FROM word_table WHERE (`nativ` LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY `foreign` ASC")
-//    fun getAllWordsSortedByForeign(searchQuery: String): Flow<List<Word>>
-
-//    @Query("SELECT * FROM word_table")
-//    fun getAllWords(): Flow<List<Word>>
 
     @Query("UPDATE word_table SET shown = 1 WHERE category = :categoryNumber")
     suspend fun turnAllWordsOn(categoryNumber: Int)

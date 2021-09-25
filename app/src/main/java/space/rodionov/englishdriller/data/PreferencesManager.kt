@@ -15,9 +15,8 @@ import javax.inject.Singleton
 
 private const val TAG = "PreferencesManager"
 
-//enum class NativeLanguage { RUS, ENG }
 
-data class FilterCatNumNatLangOnlyOff(val categoryChosen: Int, /*val nativeLanguage: NativeLanguage,*/ val onlyOff: Boolean)
+data class FilterCatNumNatLangOnlyOff(val categoryChosen: Int, val onlyOff: Boolean)
 
 @Singleton
 class PreferencesManager @Inject constructor(@ApplicationContext context: Context) {
@@ -34,29 +33,10 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
             }
         }
         .map { preferences ->
-            val categoryChosen = preferences[PreferencesKeys.CATEGORY_CHOSEN] ?: 0 // сам поставил нуль, хуй знает чем это кончится
-//            val nativeLanguage = NativeLanguage.valueOf(
-//                preferences[PreferencesKeys.NATIVE_LANGUAGE] ?: NativeLanguage.RUS.name
-//            )
+            val categoryChosen = preferences[PreferencesKeys.CATEGORY_CHOSEN] ?: 0
             val onlyOff = preferences[PreferencesKeys.ONLY_OFF] ?: false
-            FilterCatNumNatLangOnlyOff(categoryChosen, /*nativeLanguage, */onlyOff)
+            FilterCatNumNatLangOnlyOff(categoryChosen, onlyOff)
         }
-
-    /*val nativeLanguageFlow = dataStore.data
-        .catch { exception ->
-            if (exception is IOException) {
-                Log.e(TAG, "Error reading preferences", exception)
-                emit(emptyPreferences())
-            } else {
-                throw exception
-            }
-        }
-        .map { preferences ->
-            val nativeLanguage = NativeLanguage.valueOf(
-                preferences[PreferencesKeys.NATIVE_LANGUAGE] ?: NativeLanguage.RUS.name
-            )
-            nativeLanguage
-        }*/
 
     val categoryNumberFlow = dataStore.data
         .catch { exception ->
@@ -68,9 +48,7 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
             }
         }
         .map { preferences ->
-            val categoryChosen = preferences[PreferencesKeys.CATEGORY_CHOSEN] ?: 0 // сам поставил нуль, не знаю чем это кончится
-//            val nativToForeign = preferences[PreferencesKeys.NATIV_TO_FOREIGN] ?: false
-//            FilterPreferences(categoryChosen, nativToForeign)
+            val categoryChosen = preferences[PreferencesKeys.CATEGORY_CHOSEN] ?: 0
             categoryChosen
         }
 
@@ -85,7 +63,6 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
         }
         .map { preferences ->
             val nativToForeign = preferences[PreferencesKeys.NATIV_TO_FOREIGN] ?: false
-//            FilterTranslationDirection(nativToForeign)
             Log.d(TAG, "So, trans nativeTOForeign: " + nativToForeign)
             nativToForeign
         }
@@ -111,17 +88,9 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
         }
     }
 
-//    suspend fun updateNativeLanguage(nativeLanguage: NativeLanguage) {
-//        dataStore.edit { preferences ->
-//            preferences[PreferencesKeys.NATIVE_LANGUAGE] = nativeLanguage.name
-//        }
-//    }
-
     private object PreferencesKeys {
         val CATEGORY_CHOSEN = preferencesKey<Int>("category_chosen")
         val NATIV_TO_FOREIGN = preferencesKey<Boolean>("nativ_to_foreign")
         val ONLY_OFF = preferencesKey<Boolean>("only_off")
-//        val NATIVE_LANGUAGE = preferencesKey<String>("native_language")
     }
-
 }
