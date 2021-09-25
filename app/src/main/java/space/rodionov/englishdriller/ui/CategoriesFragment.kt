@@ -14,7 +14,6 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.RecyclerSimpleLayoutBinding
-import space.rodionov.englishdriller.ui.CategoriesFragmentDirections
 import space.rodionov.englishdriller.data.CategoryItem
 import space.rodionov.englishdriller.exhaustive
 

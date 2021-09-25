@@ -2,7 +2,7 @@ package space.rodionov.englishdriller.data
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 // part 2
 @Entity(tableName = "word_table")

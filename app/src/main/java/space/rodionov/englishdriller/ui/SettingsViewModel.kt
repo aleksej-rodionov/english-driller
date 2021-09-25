@@ -1,13 +1,15 @@
 package space.rodionov.englishdriller.ui
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.data.PreferencesManager
+import javax.inject.Inject
 
-class SettingsViewModel @ViewModelInject constructor(
+@HiltViewModel
+class SettingsViewModel @Inject constructor(
     private val preferencesManager: PreferencesManager
 ) : ViewModel() {
 

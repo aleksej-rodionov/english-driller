@@ -1,18 +1,20 @@
 package space.rodionov.englishdriller.ui
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.data.CategoryItem
 import space.rodionov.englishdriller.data.PreferencesManager
 import space.rodionov.englishdriller.data.WordDao
+import javax.inject.Inject
 
 // part 4 (created)
-class CategoriesViewModel @ViewModelInject constructor(
+@HiltViewModel
+class CategoriesViewModel @Inject constructor(
     private val wordDao: WordDao,
     private val preferencesManager: PreferencesManager/*, //DOBAVIL 17.04 // Dagger automatically Injected it, 'cause we added @Inject in PM.class
     @Assisted private val state: SavedStateHandle*/

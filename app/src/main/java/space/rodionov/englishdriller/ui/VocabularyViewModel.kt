@@ -1,18 +1,20 @@
 package space.rodionov.englishdriller.ui
 
 import androidx.hilt.Assisted
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.data.PreferencesManager
 import space.rodionov.englishdriller.data.Word
 import space.rodionov.englishdriller.data.WordDao
+import javax.inject.Inject
 
 private const val TAG = "VocabularyViewModel"
 
-class VocabularyViewModel @ViewModelInject constructor(
+@HiltViewModel
+class VocabularyViewModel @Inject constructor(
     private val wordDao: WordDao,
     private val preferencesManager: PreferencesManager,
     @Assisted private val state: SavedStateHandle

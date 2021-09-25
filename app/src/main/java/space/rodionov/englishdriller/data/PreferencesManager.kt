@@ -2,10 +2,8 @@ package space.rodionov.englishdriller.data
 
 import android.content.Context
 import android.util.Log
-import androidx.datastore.preferences.createDataStore
-import androidx.datastore.preferences.edit
-import androidx.datastore.preferences.emptyPreferences
-import androidx.datastore.preferences.preferencesKey
+import androidx.datastore.preferences.*
+import androidx.datastore.preferences.core.*
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.flow.map
@@ -13,15 +11,24 @@ import java.io.IOException
 import javax.inject.Inject
 import javax.inject.Singleton
 
-private const val TAG = "PreferencesManager"
+private const val TAG = "PrefManager LOGS"
 
+private val Context.dataStore by preferencesDataStore("user_preferences")
 
 data class FilterCatNumNatLangOnlyOff(val categoryChosen: Int, val onlyOff: Boolean)
 
 @Singleton
 class PreferencesManager @Inject constructor(@ApplicationContext context: Context) {
 
-    private val dataStore = context.createDataStore("user_preferences")
+    private val dataStore = context.dataStore
+
+    private object PreferencesKeys {
+        val CATEGORY_CHOSEN = intPreferencesKey("category_chosen")
+        val NATIV_TO_FOREIGN = booleanPreferencesKey("nativ_to_foreign")
+        val ONLY_OFF = booleanPreferencesKey("only_off")
+    }
+
+//=============================GETTERS==================================
 
     val catNumNatLangOnlyOffFlow = dataStore.data
         .catch { exception ->
@@ -67,6 +74,8 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
             nativToForeign
         }
 
+//===============================SETTERS===========================================
+
     suspend fun updateCategoryChosen(categoryChosen: Int) {
         dataStore.edit { preferences ->
             preferences[PreferencesKeys.CATEGORY_CHOSEN] = categoryChosen
@@ -88,9 +97,5 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
         }
     }
 
-    private object PreferencesKeys {
-        val CATEGORY_CHOSEN = preferencesKey<Int>("category_chosen")
-        val NATIV_TO_FOREIGN = preferencesKey<Boolean>("nativ_to_foreign")
-        val ONLY_OFF = preferencesKey<Boolean>("only_off")
-    }
+
 }

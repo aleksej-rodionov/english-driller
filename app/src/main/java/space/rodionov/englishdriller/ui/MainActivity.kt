@@ -9,23 +9,27 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_main.*
 import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.databinding.ActivityMainBinding
 
 @AndroidEntryPoint // part 4
 // part 1-2
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.findNavController()
-        bottom_nav.setupWithNavController(navController)
+        binding.bottomNav.setupWithNavController(navController)
 
-        setSupportActionBar(toolbar)
+        setSupportActionBar(binding.toolbar)
         setupActionBarWithNavController(navController)
 
     }

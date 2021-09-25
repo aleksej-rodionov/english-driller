@@ -1,8 +1,8 @@
 package space.rodionov.englishdriller.ui
 
 import android.util.Log
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.*
+import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.SingleObserver
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -12,10 +12,12 @@ import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.data.PreferencesManager
 import space.rodionov.englishdriller.data.Word
 import space.rodionov.englishdriller.data.WordDao
+import javax.inject.Inject
 
 private const val TAG = "DrillerViewModel"
 
-class DrillerViewModel @ViewModelInject constructor(
+@HiltViewModel
+class DrillerViewModel @Inject constructor(
     private val wordDao: WordDao,
     private val preferencesManager: PreferencesManager
 ) : ViewModel() {
