@@ -12,6 +12,6 @@ data class Word( // переделал val на var, но только пото�
     val foreign: String,
     val category: Int,
     var shown: Boolean = true,
-    @PrimaryKey(autoGenerate = true) var id: Int = 0
+    @PrimaryKey(autoGenerate = true) val id: Int = 0
 ) : Parcelable {
 }
