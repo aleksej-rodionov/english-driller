@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import space.rodionov.englishdriller.data.Word
+import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.databinding.RecyclerItemBinding
 
 class VocabularyAdapter(private val listener: OnVocItemClickListener/*, var nativeLanguage: NativeLanguage*/) :

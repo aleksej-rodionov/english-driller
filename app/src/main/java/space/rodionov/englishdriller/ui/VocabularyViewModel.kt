@@ -7,7 +7,7 @@ import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.data.PreferencesManager
-import space.rodionov.englishdriller.data.Word
+import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.data.WordDao
 import javax.inject.Inject
 

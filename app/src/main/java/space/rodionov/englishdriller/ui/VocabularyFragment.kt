@@ -21,7 +21,7 @@ import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.*
-import space.rodionov.englishdriller.data.Word
+import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.databinding.RecyclerLayoutBinding
 
 private const val TAG = "VocabularyFragment"

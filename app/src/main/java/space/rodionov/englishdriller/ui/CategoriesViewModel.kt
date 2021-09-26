@@ -7,7 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
-import space.rodionov.englishdriller.data.CategoryItem
+import space.rodionov.englishdriller.feature_words.domain.model.Category
 import space.rodionov.englishdriller.data.PreferencesManager
 import space.rodionov.englishdriller.data.WordDao
 import javax.inject.Inject
@@ -29,13 +29,13 @@ class CategoriesViewModel @Inject constructor(
 
     val readNatLang = natLangFlow.asLiveData()*/
 
-    fun onCategoryCheckedChanged(categoryItem: CategoryItem, isChecked: Boolean) = viewModelScope.launch {
-        wordDao.updateCategory(categoryItem.copy(categoryShown = isChecked))
+    fun onCategoryCheckedChanged(category: Category, isChecked: Boolean) = viewModelScope.launch {
+        wordDao.updateCategory(category.copy(categoryShown = isChecked))
     }
 
-    fun onVocabularyClick(categoryItem: CategoryItem) = viewModelScope.launch { // part 11
-        categoriesEventChannel.send(CategoriesEvent.NavigateToVocabularyScreen(categoryItem))
-        preferencesManager.updateCategoryChosen(categoryItem.categoryNumber) //DOBAVIL 17.04
+    fun onVocabularyClick(category: Category) = viewModelScope.launch { // part 11
+        categoriesEventChannel.send(CategoriesEvent.NavigateToVocabularyScreen(category))
+        preferencesManager.updateCategoryChosen(category.categoryNumber) //DOBAVIL 17.04
     }
 
     fun turnAllCategoriessOn() = viewModelScope.launch {
@@ -44,7 +44,7 @@ class CategoriesViewModel @Inject constructor(
 
     // part 11
     sealed class CategoriesEvent {
-        data class NavigateToVocabularyScreen(val categoryItem: CategoryItem) : CategoriesEvent() // part 11
+        data class NavigateToVocabularyScreen(val category: Category) : CategoriesEvent() // part 11
     }
 
 }

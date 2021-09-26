@@ -14,7 +14,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.RecyclerSimpleLayoutBinding
-import space.rodionov.englishdriller.data.CategoryItem
+import space.rodionov.englishdriller.feature_words.domain.model.Category
 import space.rodionov.englishdriller.exhaustive
 
 
@@ -53,7 +53,7 @@ class CategoriesFragment : Fragment(R.layout.recycler_simple_layout),
             viewModel.categoriesEvent.collect { event ->
                 when (event) {
                     is CategoriesViewModel.CategoriesEvent.NavigateToVocabularyScreen -> {
-                        val action = CategoriesFragmentDirections.actionCategoriesFragmentToVocabularyFragment(event.categoryItem.categoryNumber)
+                        val action = CategoriesFragmentDirections.actionCategoriesFragmentToVocabularyFragment(event.category.categoryNumber)
                         findNavController().navigate(action)
                     }
                 }.exhaustive
@@ -63,12 +63,12 @@ class CategoriesFragment : Fragment(R.layout.recycler_simple_layout),
         setHasOptionsMenu(true)
     }
 
-    override fun onVocabularyClick(categoryItem: CategoryItem) {
-        viewModel.onVocabularyClick(categoryItem)
+    override fun onVocabularyClick(category: Category) {
+        viewModel.onVocabularyClick(category)
     }
 
-    override fun onSwitchClick(categoryItem: CategoryItem, isChecked: Boolean) {
-        viewModel.onCategoryCheckedChanged(categoryItem, isChecked)
+    override fun onSwitchClick(category: Category, isChecked: Boolean) {
+        viewModel.onCategoryCheckedChanged(category, isChecked)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

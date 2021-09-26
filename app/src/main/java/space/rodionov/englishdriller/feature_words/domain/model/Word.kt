@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller.data
+package space.rodionov.englishdriller.feature_words.domain.model
 import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -11,7 +11,9 @@ data class Word( // переделал val на var, но только пото�
     val rus: String,
     val foreign: String,
     val category: Int,
-    var shown: Boolean = true,
+    val shown: Boolean = true,
     @PrimaryKey(autoGenerate = true) val id: Int = 0
 ) : Parcelable {
+
+
 }

@@ -19,7 +19,7 @@ import com.yuyakaido.android.cardstackview.CardStackView;
 import java.util.Locale;
 
 import space.rodionov.englishdriller.R;
-import space.rodionov.englishdriller.data.Word;
+import space.rodionov.englishdriller.feature_words.domain.model.Word;
 
 public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.JavaDrillerViewHolder> {
 

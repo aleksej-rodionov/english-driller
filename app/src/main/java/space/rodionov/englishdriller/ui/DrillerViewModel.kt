@@ -10,7 +10,7 @@ import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.data.PreferencesManager
-import space.rodionov.englishdriller.data.Word
+import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.data.WordDao
 import javax.inject.Inject
 
@@ -81,8 +81,8 @@ class DrillerViewModel @Inject constructor(
             })
     }
 
-    fun update(word: Word) = viewModelScope.launch {
-        wordDao.update(word)
+    fun update(word: Word, isShown: Boolean) = viewModelScope.launch {
+        wordDao.update(word.copy(shown = isShown))
     }
 
 }

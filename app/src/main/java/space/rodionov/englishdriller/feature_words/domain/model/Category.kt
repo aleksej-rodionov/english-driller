@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller.data
+package space.rodionov.englishdriller.feature_words.domain.model
 
 import android.os.Parcelable
 import androidx.room.Entity
@@ -7,10 +7,10 @@ import kotlinx.android.parcel.Parcelize
 
 @Entity(tableName = "category_table")
 @Parcelize
-data class CategoryItem(
+data class Category(
     val categoryNameRus: String,
     val categoryNumber: Int,
     val categoryShown: Boolean = true,
-    @PrimaryKey(autoGenerate = true) var id: Int = 0
+    @PrimaryKey(autoGenerate = true) val id: Int = 0
 ) : Parcelable {
 }

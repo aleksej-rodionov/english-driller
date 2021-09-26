@@ -48,7 +48,7 @@
         tools:layout="@layout/add_edit_word_layout" >
         <argument
             android:name="word"
-            app:argType="space.rodionov.englishdriller.data.Word"
+            app:argType="space.rodionov.englishdriller.feature_words.domain.model.Word"
             app:nullable="true"
             android:defaultValue="@null" />
         <argument

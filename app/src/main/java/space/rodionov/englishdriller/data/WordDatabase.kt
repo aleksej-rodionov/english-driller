@@ -8,10 +8,12 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.ApplicationScope
 import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.feature_words.domain.model.Category
+import space.rodionov.englishdriller.feature_words.domain.model.Word
 import javax.inject.Inject
 import javax.inject.Provider
 
-@Database(entities = [Word::class, CategoryItem::class], version = 1, exportSchema = false)
+@Database(entities = [Word::class, Category::class], version = 1, exportSchema = false)
 abstract class WordDatabase : RoomDatabase() {
 
     abstract fun wordDao(): WordDao
@@ -30,13 +32,13 @@ abstract class WordDatabase : RoomDatabase() {
             val dao = database.get().wordDao()
 
             applicationScope.launch {
-                dao.insertCategory(CategoryItem("Фразочки и речевые связки", 1))
-                dao.insertCategory(CategoryItem("Фразовые глаголы", 2))
-                dao.insertCategory(CategoryItem("Обычные глаголы", 3))
-                dao.insertCategory(CategoryItem("Просто обычные слова", 4))
-                dao.insertCategory(CategoryItem("Топ 800 базовых слов", 5))
-                dao.insertCategory(CategoryItem("Топ 200 базовых глаголов", 6))
-                dao.insertCategory(CategoryItem("Свои слова", 7))
+                dao.insertCategory(Category("Фразочки и речевые связки", 1))
+                dao.insertCategory(Category("Фразовые глаголы", 2))
+                dao.insertCategory(Category("Обычные глаголы", 3))
+                dao.insertCategory(Category("Просто обычные слова", 4))
+                dao.insertCategory(Category("Топ 800 базовых слов", 5))
+                dao.insertCategory(Category("Топ 200 базовых глаголов", 6))
+                dao.insertCategory(Category("Свои слова", 7))
 
                 val rus1 = context.resources.getStringArray(R.array.rus1).toList()
                 val rus2 = context.resources.getStringArray(R.array.rus2).toList()

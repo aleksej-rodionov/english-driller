@@ -9,7 +9,7 @@ import androidx.fragment.app.viewModels
 import com.yuyakaido.android.cardstackview.*
 import dagger.hilt.android.AndroidEntryPoint
 import space.rodionov.englishdriller.R
-import space.rodionov.englishdriller.data.Word
+import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.databinding.CardstackLayoutBinding
 
 private const val TAG = "DrillerFragment"
@@ -66,8 +66,7 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
 
     override fun onCardSwiped(direction: Direction?) {
         if (direction == Direction.Bottom) {
-            currentWord.shown = false
-            viewModel.update(currentWord)
+            viewModel.update(currentWord, false)
         }
         viewModel.removeAndAddWord(currentWord)
         Log.d(TAG, currentWord.foreign + " is removed. (drlr)")

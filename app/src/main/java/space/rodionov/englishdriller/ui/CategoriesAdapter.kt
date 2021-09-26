@@ -5,11 +5,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import space.rodionov.englishdriller.data.CategoryItem
+import space.rodionov.englishdriller.feature_words.domain.model.Category
 import space.rodionov.englishdriller.databinding.RecyclerSimpleItemBinding
 
 
-class CategoriesAdapter(private val listener: OnItemClickListener/*, var nativeLanguage: NativeLanguage*/) : ListAdapter<CategoryItem, CategoriesAdapter.CategoriesViewHolder>(
+class CategoriesAdapter(private val listener: OnItemClickListener/*, var nativeLanguage: NativeLanguage*/) : ListAdapter<Category, CategoriesAdapter.CategoriesViewHolder>(
     DiffCallback()
 ) {
 
@@ -35,11 +35,11 @@ class CategoriesAdapter(private val listener: OnItemClickListener/*, var nativeL
             }
         }
 
-        fun bind(categoryItem: CategoryItem) {
+        fun bind(category: Category) {
             binding.apply {
-                btnSwitch.isChecked = categoryItem.categoryShown
-                btnSwitch.text = if (categoryItem.categoryShown) "On" else "Off"
-                tvCategoryName.text = categoryItem.categoryNameRus
+                btnSwitch.isChecked = category.categoryShown
+                btnSwitch.text = if (category.categoryShown) "On" else "Off"
+                tvCategoryName.text = category.categoryNameRus
                 // color of Checked category should be coded here
             }
         }
@@ -58,15 +58,15 @@ class CategoriesAdapter(private val listener: OnItemClickListener/*, var nativeL
 //    override fun getItemCount(): Int = categoryList.size
 
     interface OnItemClickListener {
-        fun onVocabularyClick(categoryItem: CategoryItem)
-        fun onSwitchClick(categoryItem: CategoryItem, isChecked: Boolean)
+        fun onVocabularyClick(category: Category)
+        fun onSwitchClick(category: Category, isChecked: Boolean)
     }
 
-    class DiffCallback : DiffUtil.ItemCallback<CategoryItem>() {
-        override fun areItemsTheSame(oldItem: CategoryItem, newItem: CategoryItem) =
+    class DiffCallback : DiffUtil.ItemCallback<Category>() {
+        override fun areItemsTheSame(oldItem: Category, newItem: Category) =
             oldItem == newItem
 
-        override fun areContentsTheSame(oldItem: CategoryItem, newItem: CategoryItem) =
+        override fun areContentsTheSame(oldItem: Category, newItem: Category) =
             oldItem.categoryNameRus == newItem.categoryNameRus
 
     }
