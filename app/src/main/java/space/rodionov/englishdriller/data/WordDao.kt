@@ -1,6 +1,7 @@
 package space.rodionov.englishdriller.data
 
 import androidx.room.*
+import io.reactivex.Flowable
 import io.reactivex.Single
 import kotlinx.coroutines.flow.Flow
 import space.rodionov.englishdriller.feature_words.domain.model.Category
@@ -10,7 +11,7 @@ import space.rodionov.englishdriller.feature_words.domain.model.Word
 interface WordDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(word: Word)
+     fun insert(word: Word)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCategory(category: Category)
@@ -66,6 +67,9 @@ interface WordDao {
 
     @Query("SELECT * FROM category_table")
     fun getAllCategories(): Flow<List<Category>>
+
+    @Query("SELECT * FROM category_table")
+    fun getAllCategoriesFlowable(): Flowable<List<Category>>
 
     fun getWords(
         query: String,

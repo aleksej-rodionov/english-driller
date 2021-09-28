@@ -44,7 +44,7 @@ class CategoriesFragment : Fragment(R.layout.recycler_simple_layout),
             }
         }
 
-        viewModel.categoriesFlow().observe(viewLifecycleOwner) {
+        viewModel.cats.observe(viewLifecycleOwner) {
             categoriesAdapter.submitList(it)
         }
 

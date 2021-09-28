@@ -103,7 +103,8 @@ dependencies {
     implementation "androidx.room:room-rxjava2:2.3.0"
 
     // Convert observable to livedata
-    implementation "io.reactivex:rxjava-reactive-streams:1.2.1"
+//    implementation "io.reactivex:rxjava-reactive-streams:1.2.1"
+    implementation "android.arch.lifecycle:reactivestreams:1.1.1"
 
     // Dagger
     implementation 'com.google.dagger:dagger:2.38.1'

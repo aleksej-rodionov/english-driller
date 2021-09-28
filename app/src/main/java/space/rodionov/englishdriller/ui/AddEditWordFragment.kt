@@ -62,4 +62,8 @@ class AddEditWordFragment : Fragment(R.layout.add_edit_word_layout) {
         }
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        viewModel.disposeDisposables()
+    }
 }
