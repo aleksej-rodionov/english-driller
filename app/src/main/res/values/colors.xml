@@ -23,4 +23,5 @@
     <color name="colorSoftBlue">#fff08b</color>
     <color name="colorPaper">#fff6d5</color>
     <color name="colorWords">#0065A4</color>
+    <color name="colorSemiTransparent">#40000000</color>
 </resources>

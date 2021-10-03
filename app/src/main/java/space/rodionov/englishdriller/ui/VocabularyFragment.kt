@@ -80,7 +80,11 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
             viewModel.onAddEditResult(result)
         }
 
-        viewModel.words.observe(viewLifecycleOwner) {
+//        viewModel.words.observe(viewLifecycleOwner) {
+//            vocabularyAdapter.submitList(it)
+//        }
+
+        viewModel.wordsLivedata.observe(viewLifecycleOwner) {
             vocabularyAdapter.submitList(it)
         }
 
@@ -157,7 +161,8 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
         }
 
         searchView.onQueryTextChanged {
-            viewModel.searchQuery.value = it
+//            viewModel.searchQuery.value = it
+            viewModel.searchSubject.onNext(it)
         }
 
         viewLifecycleOwner.lifecycleScope.launch {

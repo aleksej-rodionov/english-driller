@@ -2,6 +2,7 @@ package space.rodionov.englishdriller.data
 
 import androidx.room.*
 import io.reactivex.Flowable
+import io.reactivex.Observable
 import io.reactivex.Single
 import kotlinx.coroutines.flow.Flow
 import space.rodionov.englishdriller.feature_words.domain.model.Category
@@ -70,6 +71,27 @@ interface WordDao {
 
     @Query("SELECT * FROM category_table")
     fun getAllCategoriesFlowable(): Flowable<List<Category>>
+
+    fun getWordsRx(
+        query: String,
+        category: Int,
+        onlyOff: Boolean
+    ): Flowable<List<Word>> =
+        if (category != 0) {
+            getWordsSortedByForeignNatRusRx(query, category, onlyOff)
+        } else {
+            getAllWordsSortedByCategoryNatRusRx(query, onlyOff)
+        }
+
+    @Query("SELECT * FROM word_table WHERE category = :category AND (shown != :onlyOff OR shown = 0) AND (rus LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY `foreign` ASC")
+    fun getWordsSortedByForeignNatRusRx(
+        searchQuery: String,
+        category: Int,
+        onlyOff: Boolean
+    ): Flowable<List<Word>>
+
+    @Query("SELECT * FROM word_table WHERE (shown != :onlyOff OR shown = 0) AND (rus LIKE '%' || :searchQuery || '%' OR `foreign` LIKE '%' || :searchQuery || '%') ORDER BY category")
+    fun getAllWordsSortedByCategoryNatRusRx(searchQuery: String, onlyOff: Boolean): Flowable<List<Word>>
 
     fun getWords(
         query: String,

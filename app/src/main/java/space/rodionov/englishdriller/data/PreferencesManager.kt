@@ -45,6 +45,20 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
             FilterCatNumNatLangOnlyOff(categoryChosen, onlyOff)
         }
 
+    val onlyOffFlow = dataStore.data
+        .catch { exception ->
+            if (exception is IOException) {
+                Log.e(TAG, "Error reading preferences", exception)
+                emit(emptyPreferences())
+            } else {
+                throw exception
+            }
+        }
+        .map { preferences ->
+            val onlyDisabledWords = preferences[PreferencesKeys.ONLY_OFF] ?: false
+            onlyDisabledWords
+        }
+
     val categoryNumberFlow = dataStore.data
         .catch { exception ->
             if (exception is IOException) {
@@ -93,7 +107,7 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
     suspend fun updateShowOnlyOff(onlyOff: Boolean) {
         dataStore.edit { preferences ->
             preferences[PreferencesKeys.ONLY_OFF] = onlyOff
-            Log.d(TAG, "updateTranslationDirection: $onlyOff")
+            Log.d(TAG, "showOnlyOff: $onlyOff")
         }
     }
 

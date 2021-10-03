@@ -3,6 +3,7 @@ package space.rodionov.englishdriller.ui
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.WindowManager
 import android.view.animation.LinearInterpolator
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
@@ -96,6 +97,10 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
         )
     }
 
+    override fun onDetach() {
+        super.onDetach()
+//        requireActivity().window.clearFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+    }
 }
 
 
