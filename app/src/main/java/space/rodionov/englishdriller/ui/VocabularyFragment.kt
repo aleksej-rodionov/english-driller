@@ -80,13 +80,13 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
             viewModel.onAddEditResult(result)
         }
 
-//        viewModel.words.observe(viewLifecycleOwner) {
-//            vocabularyAdapter.submitList(it)
-//        }
-
-        viewModel.wordsLivedata.observe(viewLifecycleOwner) {
+        viewModel.words.observe(viewLifecycleOwner) {
             vocabularyAdapter.submitList(it)
         }
+
+//        viewModel.wordsLivedata.observe(viewLifecycleOwner) {
+//            vocabularyAdapter.submitList(it)
+//        }
 
         viewLifecycleOwner.lifecycleScope.launchWhenStarted {
             viewModel.vocabularyEvent.collect { event ->
