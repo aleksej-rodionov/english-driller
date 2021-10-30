@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stack_driller"
+    app:startDestination="@+id/drillerFragment">
+
+    <fragment
+        android:id="@+id/drillerFragment"
+        android:name="space.rodionov.englishdriller.ui.DrillerFragment"
+        android:label="cardstack_layout"
+        tools:layout="@layout/cardstack_layout" />
+</navigation>

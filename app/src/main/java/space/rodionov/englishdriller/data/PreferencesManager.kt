@@ -23,6 +23,7 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
     private val dataStore = context.dataStore
 
     private object PreferencesKeys {
+        val MODE = intPreferencesKey("mode")
         val CATEGORY_CHOSEN = intPreferencesKey("category_chosen")
         val NATIV_TO_FOREIGN = booleanPreferencesKey("nativ_to_foreign")
         val ONLY_OFF = booleanPreferencesKey("only_off")
@@ -43,6 +44,20 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
             val categoryChosen = preferences[PreferencesKeys.CATEGORY_CHOSEN] ?: 0
             val onlyOff = preferences[PreferencesKeys.ONLY_OFF] ?: false
             FilterCatNumNatLangOnlyOff(categoryChosen, onlyOff)
+        }
+
+    val modeFlow = dataStore.data
+        .catch { exception ->
+            if (exception is IOException) {
+                Log.e(TAG, "Error reading preferences", exception)
+                emit(emptyPreferences())
+            } else {
+                throw exception
+            }
+        }
+        .map { preferences ->
+            val mode = preferences[PreferencesKeys.MODE] ?: 0
+            mode
         }
 
     val onlyOffFlow = dataStore.data
@@ -90,6 +105,13 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
 
 //===============================SETTERS===========================================
 
+    suspend fun updateMode(mode: Int) {
+        dataStore.edit { preferences ->
+            preferences[PreferencesKeys.CATEGORY_CHOSEN] = mode
+            Log.d(TAG, "updateCategoryChosen: $mode")
+        }
+    }
+
     suspend fun updateCategoryChosen(categoryChosen: Int) {
         dataStore.edit { preferences ->
             preferences[PreferencesKeys.CATEGORY_CHOSEN] = categoryChosen
@@ -110,6 +132,4 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
             Log.d(TAG, "showOnlyOff: $onlyOff")
         }
     }
-
-
 }

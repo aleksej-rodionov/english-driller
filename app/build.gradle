@@ -6,7 +6,7 @@ plugins {
 //    id 'kotlin-android-extensions'
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
-    id 'androidx.navigation.safeargs.kotlin'
+    id 'androidx.navigation.safeargs'
     id 'kotlin-parcelize'
 }
 
@@ -61,7 +61,7 @@ dependencies {
     androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
 
     // Fragment
-    implementation "androidx.fragment:fragment-ktx:1.4.0-alpha09"
+    implementation "androidx.fragment:fragment-ktx:1.4.0-alpha10"
 
     // Lifecycle + ViewModel & LiveData
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
@@ -69,8 +69,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-common-java8:2.3.1"
 
     // Navigation Component
-    implementation "androidx.navigation:navigation-fragment-ktx:2.3.5"
-    implementation "androidx.navigation:navigation-ui-ktx:2.3.5"
+    implementation "androidx.navigation:navigation-fragment-ktx:2.4.0-alpha10"
+    implementation "androidx.navigation:navigation-ui-ktx:2.4.0-alpha10"
 
     // Room
     implementation "androidx.room:room-runtime:2.3.0"

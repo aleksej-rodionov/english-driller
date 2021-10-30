@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="edStylable">
+        <attr name="toolbarBG" format="color"/>
+        <attr name="cardBG" format="color"/>
+        <attr name="text1" format="color"/>
+        <attr name="text2" format="color"/>
+        <attr name="switchBtn" format="color"/>
+        <attr name="iconUnselected" format="color"/>
+        <attr name="iconSelected" format="color"/>
+        <attr name="text3" format="color"/>
+    </declare-styleable>
+    
+</resources>

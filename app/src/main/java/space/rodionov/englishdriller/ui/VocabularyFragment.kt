@@ -94,7 +94,7 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
                     is VocabularyViewModel.VocabularyEvent.NavigateToAddWordScreen -> {
                         val action =
                             VocabularyFragmentDirections.actionVocabularyFragmentToAddEditWordFragment(
-                                null,
+                          //null,
                                 requireContext().resources.getString(R.string.new_word)
                             )
                         findNavController().navigate(action)
@@ -102,7 +102,7 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
                     is VocabularyViewModel.VocabularyEvent.NavigateToEditWordScreen -> {
                         val action =
                             VocabularyFragmentDirections.actionVocabularyFragmentToAddEditWordFragment(
-                                event.word,
+                                //event.word,
                                 requireContext().resources.getString(R.string.edit_word)
                             )
                         findNavController().navigate(action)

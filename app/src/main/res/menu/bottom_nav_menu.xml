@@ -2,25 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/drillerFragment"
+        android:id="@+id/stack_driller"
         android:title="@string/driller"
         android:icon="@drawable/ic_train"
         />
 
     <item
-        android:id="@+id/categoriesFragment"
+        android:id="@+id/stack_categories"
         android:title="@string/categories"
         android:icon="@drawable/ic_categories"
         />
 
     <item
-        android:id="@+id/vocabularyFragment"
+        android:id="@+id/stack_vocabulary"
         android:title="@string/vocabulary"
         android:icon="@drawable/ic_list"
         />
 
     <item
-        android:id="@+id/settingsFragment"
+        android:id="@+id/stack_settings"
         android:title="@string/settings"
         android:icon="@drawable/ic_settings"
         />

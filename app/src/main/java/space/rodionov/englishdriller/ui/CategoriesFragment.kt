@@ -53,8 +53,8 @@ class CategoriesFragment : Fragment(R.layout.recycler_simple_layout),
             viewModel.categoriesEvent.collect { event ->
                 when (event) {
                     is CategoriesViewModel.CategoriesEvent.NavigateToVocabularyScreen -> {
-                        val action = CategoriesFragmentDirections.actionCategoriesFragmentToVocabularyFragment(event.category.categoryNumber)
-                        findNavController().navigate(action)
+//                        val action = CategoriesFragmentDirections.actionCategoriesFragmentToVocabularyFragment(event.category.categoryNumber)
+//                        findNavController().navigate(action)
                     }
                 }.exhaustive
             }
