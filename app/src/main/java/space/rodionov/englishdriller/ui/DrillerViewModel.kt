@@ -8,6 +8,9 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.data.PreferencesManager
 import space.rodionov.englishdriller.feature_words.domain.model.Word
@@ -21,17 +24,30 @@ class DrillerViewModel @Inject constructor(
     private val wordDao: WordDao,
     private val preferencesManager: PreferencesManager
 ) : ViewModel() {
-    var mList = ArrayList<Word>()
-    val mLivedataList = MutableLiveData<List<Word>>()
-    val m4words = wordDao.get4wordsRx()
-    val m1word = wordDao.get1wordRx()
-    val composite = CompositeDisposable()
 
+    private val _wordList = MutableStateFlow<List<Word>>(listOf())
+    val wordList: StateFlow<List<Word>> = _wordList.asStateFlow()
+
+    fun getNewPage() = viewModelScope.launch {
+        val newWords = wordDao.getNewPage()
+        val fullList = _wordList.value.toMutableList()
+        fullList.addAll(newWords)
+        _wordList.value = fullList.toList()
+    }
+
+    //=====================================PREFERENCES==========================
     private val transDirFlow = preferencesManager.translationDirectionFlow
     val readTransDir = transDirFlow.asLiveData()
 
     private val modeFlow = preferencesManager.modeFlow
     val mode = modeFlow.asLiveData()
+    //===================================OLD ADAPTER METHODS===============
+
+    var mList = ArrayList<Word>()
+    val mLivedataList = MutableLiveData<List<Word>>()
+    val m4words = wordDao.get4wordsRx()
+    val m1word = wordDao.get1wordRx()
+    val composite = CompositeDisposable()
 
     fun getLivedataList(): LiveData<List<Word>> {
         return mLivedataList
@@ -86,7 +102,6 @@ class DrillerViewModel @Inject constructor(
     fun update(word: Word, isShown: Boolean) = viewModelScope.launch {
         wordDao.update(word.copy(shown = isShown))
     }
-
 }
 
 

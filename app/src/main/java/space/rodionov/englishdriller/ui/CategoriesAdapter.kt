@@ -56,7 +56,7 @@ class CategoriesAdapter(private val listener: OnItemClickListener) :
 
                 val theme = fetchTheme(mode, itemView.resources)
                 val colors = theme.fetchColors()
-                root.background = colors[1].toDrawable()
+                rl.background = colors[0].toDrawable()
                 btnSwitch.apply {
                     setTextColor(colors[3])
                     thumbTintList = ColorStateList.valueOf(colors[4])

@@ -121,6 +121,8 @@ interface WordDao {
     @Query("UPDATE category_table SET categoryShown = 1")
     suspend fun turnAllCategoriesOn()
 
+    @Query("SELECT * FROM word_table WHERE category IN (SELECT categoryNumber FROM category_table WHERE categoryShown = 1) AND shown = 1 ORDER BY RANDOM() LIMIT 20")
+    suspend fun getNewPage(): List<Word>
 }
 
 

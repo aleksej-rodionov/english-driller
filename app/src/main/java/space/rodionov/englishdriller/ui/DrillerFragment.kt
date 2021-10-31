@@ -26,7 +26,7 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
         super.onViewCreated(view, savedInstanceState)
 
         val binding = CardstackLayoutBinding.bind(view)
-        drillerAdapter = JavaDrillerAdapter(JavaDrillerAdapter.JavaDrillerDiff(), false, requireContext(), viewModel.mode, viewLifecycleOwner)
+        drillerAdapter = JavaDrillerAdapter(JavaDrillerAdapter.JavaDrillerDiff(), viewModel.readTransDir.value ?: true, viewModel.mode.value ?: 1, requireContext()/*, viewModel.mode, viewLifecycleOwner*/)
 
         viewModel.getLivedataList().observe(viewLifecycleOwner) {
             drillerAdapter.submitList(it)
@@ -49,6 +49,9 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
             cardStackView.apply {
                 viewModel.readTransDir.observe(viewLifecycleOwner) {
                     drillerAdapter.setNativToForeign(it)
+                }
+                viewModel.mode.observe(viewLifecycleOwner) {
+                    drillerAdapter.updateMode(it)
                 }
                 adapter = drillerAdapter
                 layoutManager = drillerLayoutManager

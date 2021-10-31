@@ -3,11 +3,14 @@ package space.rodionov.englishdriller.ui;
 
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -28,9 +31,9 @@ import space.rodionov.englishdriller.feature_words.domain.model.Word;
 public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.JavaDrillerViewHolder> {
 
     private Boolean nativToForeign;
-    //    private int mode;
-    private LiveData<Integer> mode;
-    private LifecycleOwner owner;
+        private int mode;
+//    private LiveData<Integer> mode;
+//    private LifecycleOwner owner;
 
     Context context;
     private TextToSpeech mTTS;
@@ -38,39 +41,43 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
     public void setNativToForeign(Boolean nativToForeign) {
         this.nativToForeign = nativToForeign;
     }
-//    public void updateMode(int newMode) {
-//        this.mode = newMode;
+    public void updateMode(int newMode) {
+        this.mode = newMode;
 //        notifyDataSetChanged();
-//    }
+    }
 
     protected JavaDrillerAdapter(@NonNull DiffUtil.ItemCallback diffCallback,
-                                 Boolean nativToForeign, /*int mode,*/
-                                 Context context, LiveData<Integer> mode,
-                                 LifecycleOwner owner) {
+                                 Boolean nativToForeign, int mode,
+                                 Context context/*, LiveData<Integer> mode,
+                                 LifecycleOwner owner*/) {
         super(diffCallback);
         this.nativToForeign = nativToForeign;
-//        this.mode = mode;
-        this.context = context;
         this.mode = mode;
-        this.owner = owner;
+        this.context = context;
+//        this.mode = mode;
+//        this.owner = owner;
     }
 
     public class JavaDrillerViewHolder extends CardStackView.ViewHolder {
         public TextView tvUpper;
         public TextView tvDowner;
         public CardView btnSpeak;
+        public ImageView ivSpeak;
         public CardView card;
+        public RelativeLayout rl;
 
         public JavaDrillerViewHolder(@NonNull View itemView) {
             super(itemView);
             tvUpper = itemView.findViewById(R.id.tv_upper);
             tvDowner = itemView.findViewById(R.id.tv_downer);
             btnSpeak = itemView.findViewById(R.id.btn_speak);
+            ivSpeak = itemView.findViewById(R.id.iv_speak);
             card = itemView.findViewById(R.id.card_view);
+            rl = itemView.findViewById(R.id.rl);
 
-            mode.observe(owner, Observer {
-
-            });
+//            mode.observe(owner, Observer {
+//
+//            });
 
             itemView.setOnClickListener(v -> {
                 int position = getAdapterPosition();
@@ -135,6 +142,23 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
             holder.btnSpeak.setEnabled(false);
         }
         holder.tvDowner.setVisibility(View.INVISIBLE);
+
+        Drawable drbl = holder.ivSpeak.getDrawable();
+        if (mode == 1) {
+            holder.rl.setBackgroundColor(context.getResources().getColor(R.color.grey));
+            holder.btnSpeak.setCardBackgroundColor(context.getResources().getColor(R.color.yellow));
+            holder.tvUpper.setTextColor(context.getResources().getColor(R.color.yellow));
+            holder.tvDowner.setTextColor(context.getResources().getColor(R.color.darkYellow));
+//            holder.ivSpeak.setBackgroundColor(context.getResources().getColor(R.color.yellow));
+//            if (drbl!=null) drbl.setTint((context.getResources().getColor(R.color.green)));
+        } else {
+            holder.rl.setBackgroundColor(context.getResources().getColor(R.color.white));
+            holder.btnSpeak.setCardBackgroundColor(context.getResources().getColor(R.color.grey));
+            holder.tvUpper.setTextColor(context.getResources().getColor(R.color.black95));
+            holder.tvDowner.setTextColor(context.getResources().getColor(R.color.grey));
+//            holder.ivSpeak.setBackgroundColor(context.getResources().getColor(R.color.grey));
+//            if (drbl!=null) drbl.setTint((context.getResources().getColor(R.color.grey)));
+        }
     }
 
     public Word getWordAt(int position) {

@@ -15,7 +15,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:id="@+id/relative_layour_child"
+            android:id="@+id/rl"
             android:layout_height="match_parent">
 
             <LinearLayout
@@ -63,6 +63,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
                         android:layout_margin="8dp"
+                        android:id="@+id/iv_speak"
                         android:src="@drawable/ic_speak" />
                 </androidx.cardview.widget.CardView>
 

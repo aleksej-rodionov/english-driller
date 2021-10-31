@@ -12,8 +12,8 @@ import space.rodionov.englishdriller.databinding.RecyclerItemBinding
 import space.rodionov.englishdriller.util.fetchColors
 import space.rodionov.englishdriller.util.fetchTheme
 
-class VocabularyAdapter(private val listener: OnVocItemClickListener/*, var nativeLanguage: NativeLanguage*/) :
-    ListAdapter<Word, VocabularyAdapter.VocabularyViewHolder>(DiffCallback()) {
+class VocabularyAdapter(private val listener: OnVocItemClickListener) :
+    ListAdapter<Word, VocabularyAdapter.VocabularyViewHolder>(WordDiff()) {
 
     private var mode: Int = 0
 
@@ -54,7 +54,7 @@ class VocabularyAdapter(private val listener: OnVocItemClickListener/*, var nati
 
                 val theme = fetchTheme(mode, itemView.resources)
                 val colors = theme.fetchColors()
-                root.background = colors[1].toDrawable()
+                rl.background = colors[0].toDrawable()
                 btnSwitch.apply {
                     setTextColor(colors[3])
                     thumbTintList = ColorStateList.valueOf(colors[4])
@@ -83,15 +83,7 @@ class VocabularyAdapter(private val listener: OnVocItemClickListener/*, var nati
         fun onSwitchClick(word: Word, isChecked: Boolean)
     }
 
-    class DiffCallback : DiffUtil.ItemCallback<Word>() {
-        override fun areItemsTheSame(oldItem: Word, newItem: Word) =
-            oldItem == newItem
 
-        override fun areContentsTheSame(oldItem: Word, newItem: Word) =
-            oldItem.foreign == newItem.foreign && oldItem.rus == newItem.rus
-                    && oldItem.category == newItem.category
-
-    }
 
 
 }
