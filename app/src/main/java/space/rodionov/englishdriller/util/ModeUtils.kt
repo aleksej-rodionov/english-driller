@@ -47,6 +47,10 @@ fun Resources.Theme.fetchColors() : Array<Int> {
     this.resolveAttribute(R.attr.text3, tv2, true)
     val text3 = tv1.data
 
+    val tv9 = TypedValue()
+    this.resolveAttribute(R.attr.bottomNavBG, tv9, true)
+    val bottomNavBG = tv1.data
+
     val colors = arrayOf(
         toolbarBG,
         cardBG,
@@ -55,7 +59,8 @@ fun Resources.Theme.fetchColors() : Array<Int> {
         switchBtn,
         iconUnselected,
         iconSelected,
-        text3
+        text3,
+        bottomNavBG
     )
 
     return colors

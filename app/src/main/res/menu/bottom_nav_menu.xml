@@ -4,7 +4,7 @@
     <item
         android:id="@+id/stack_driller"
         android:title="@string/driller"
-        android:icon="@drawable/ic_train"
+        android:icon="@drawable/ic_driller"
         />
 
     <item

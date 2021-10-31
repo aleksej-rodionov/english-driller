@@ -20,6 +20,7 @@
     <color name="colorRed">#C8102E</color>
     <color name="transparentBlue">#B3012169</color>
     <color name="transparentWhite">#80FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
 
     <color name="white">#FFFFFFFF</color>
     <color name="green">#6a8759</color>

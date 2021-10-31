@@ -10,6 +10,7 @@
         <attr name="iconUnselected" format="color"/>
         <attr name="iconSelected" format="color"/>
         <attr name="text3" format="color"/>
+        <attr name="bottomNavBG" format="color"/>
     </declare-styleable>
     
 </resources>

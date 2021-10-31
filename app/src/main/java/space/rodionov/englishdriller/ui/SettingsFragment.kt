@@ -30,6 +30,9 @@ class SettingsFragment : Fragment(R.layout.settings_layout) {
                 switchTranslationDirection.setOnCheckedChangeListener { switchBtn, isChecked ->
                     viewModel.saveTransDir(switchBtn.isChecked)
                 }
+                switchMode.setOnCheckedChangeListener { switchBtn, isChecked ->
+                    if (!isChecked) viewModel.saveMode(0) else viewModel.saveMode(1)
+                }
             }
         }
     }

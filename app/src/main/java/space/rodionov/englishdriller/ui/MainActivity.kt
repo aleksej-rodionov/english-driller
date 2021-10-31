@@ -22,8 +22,11 @@ import dagger.hilt.android.AndroidEntryPoint
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.ActivityMainBinding
 import space.rodionov.englishdriller.util.BottomNavManager
+import space.rodionov.englishdriller.util.fetchColors
+import space.rodionov.englishdriller.util.fetchTheme
 
 private const val TAG = "MainActivity LOGS"
+
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
@@ -73,30 +76,28 @@ class MainActivity : AppCompatActivity() {
 //==============================CHANGE THEME================================================
 
         viewModel.mode.observe(this, Observer {
-
             binding.apply {
                 bottomNav.itemIconTintList = null
                 bottomNav.itemTextColor = null
-                when (it) {
-                    0 -> {
-                        Log.d(TAG, "onCreate: DAY MODE")
 
-                        //fun onChangeTheme(isNightMode: Boolean?)
-                        val theme = resources.newTheme()
-                        theme.applyStyle(R.style.DayTheme, false)
-                        changeTheme(theme)
-                        setToolbarStyle(theme)
-                    }
-                    1 -> {
-                        Log.d(TAG, "onCreate: NIGHT MODE")
+                val theme = fetchTheme(1, resources)
+                val colors = theme.fetchColors()
+//                changeTheme(theme, colors)
 
-                        //fun onChangeTheme(isNightMode: Boolean?)
-                        val theme = resources.newTheme()
-                        theme.applyStyle(R.style.NightTheme, false)
-                        changeTheme(theme)
-                        setToolbarStyle(theme)
-                    }
-                }
+                toolbar.setBackgroundColor(colors[0])
+                toolbar.setTitleTextColor(colors[3])
+
+                val bottomNavBarStateList = arrayOf(
+                    intArrayOf(android.R.attr.state_checked),
+                    intArrayOf(-android.R.attr.state_checked)
+                )
+                val bottomNavColorList = intArrayOf(
+                    colors[5],
+                    colors[6]
+                )
+                bottomNav.itemTextColor = ColorStateList(bottomNavBarStateList, bottomNavColorList)
+                bottomNav.itemIconTintList= ColorStateList(bottomNavBarStateList, bottomNavColorList)
+                bottomNav.setBackgroundColor(colors[8])
             }
         })
 
@@ -135,7 +136,7 @@ class MainActivity : AppCompatActivity() {
          }*/
     }
 
-    fun fullscreenAndFreeOrientation(on: Boolean) {
+    /*fun fullscreenAndFreeOrientation(on: Boolean) {
         when (on) {
             true -> {
                 requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED
@@ -159,59 +160,50 @@ class MainActivity : AppCompatActivity() {
                 ).show(WindowInsetsCompat.Type.systemBars())
             }
         }
-    }
+    }*/
 
 //==========================STYLE CHANGE METHODS=========================
 
-    private fun changeTheme(theme: Resources.Theme) {
-        //=====================================FOREGROUND====================================
-        val bottomIcon0 =
-            ResourcesCompat.getDrawable(resources, R.drawable.ic_train_selector, theme)
-        val bottomIcon1 =
-            ResourcesCompat.getDrawable(resources, R.drawable.ic_categories_selector, theme)
-        val bottomIcon2 = ResourcesCompat.getDrawable(resources, R.drawable.ic_list_selector, theme)
-        val bottomIcon3 =
-            ResourcesCompat.getDrawable(resources, R.drawable.ic_settings_selector, theme)
-        binding.apply {
-            bottomNav.menu.getItem(0).setIcon(bottomIcon0)
-            bottomNav.menu.getItem(1).setIcon(bottomIcon1)
-            bottomNav.menu.getItem(2).setIcon(bottomIcon2)
-            bottomNav.menu.getItem(3).setIcon(bottomIcon3)
-
-            val bottomNavBarStateList = arrayOf(
-                intArrayOf(android.R.attr.state_checked),
-                intArrayOf(-android.R.attr.state_checked)
-            )
-
-            val typedValueOn = TypedValue()
-            val typedValueOff = TypedValue()
-            theme.resolveAttribute(R.attr.bottomIconOn, typedValueOn, true)
-            theme.resolveAttribute(R.attr.bottomIconOff, typedValueOff, true)
-
-            val colorList = intArrayOf(
-                typedValueOn.data,
-                typedValueOff.data
-            )
-            val colorStateList = ColorStateList(bottomNavBarStateList, colorList)
-//            bottomNav.itemIconTintList = colorStateList
-            bottomNav.itemTextColor = colorStateList
-
-            //=================================BACKGROUND===============================
-            val typedValueBottomNavBG = TypedValue()
-            theme.resolveAttribute(R.attr.cardsAndBottomBar, typedValueBottomNavBG, true)
-            bottomNav.setBackgroundColor(typedValueBottomNavBG.data)
-        }
-    }
-
-    private fun setToolbarStyle(theme: Resources.Theme) {
-        val typedValueToolbarBG = TypedValue()
-        theme.resolveAttribute(R.attr.toolbarBG, typedValueToolbarBG, true)
-        val typedValueToolbarFG = TypedValue()
-        theme.resolveAttribute(R.attr.toolbarFG, typedValueToolbarFG, true)
-
-        binding.toolbar.setBackgroundColor(typedValueToolbarBG.data)
-        binding.toolbar.setTitleTextColor(typedValueToolbarFG.data)
-    }
+//    private fun changeTheme(theme: Resources.Theme, colors: Array<Int>) {
+//        //=====================================FOREGROUND====================================
+//        val bottomIcon0 =
+//            ResourcesCompat.getDrawable(resources, R.drawable.ic_driller_selector, theme)
+//        val bottomIcon1 =
+//            ResourcesCompat.getDrawable(resources, R.drawable.ic_categories_selector, theme)
+//        val bottomIcon2 = ResourcesCompat.getDrawable(resources, R.drawable.ic_list_selector, theme)
+//        val bottomIcon3 =
+//            ResourcesCompat.getDrawable(resources, R.drawable.ic_settings_selector, theme)
+//        binding.apply {
+//            bottomNav.menu.getItem(0).setIcon(bottomIcon0)
+//            bottomNav.menu.getItem(1).setIcon(bottomIcon1)
+//            bottomNav.menu.getItem(2).setIcon(bottomIcon2)
+//            bottomNav.menu.getItem(3).setIcon(bottomIcon3)
+//
+//            val bottomNavBarStateList = arrayOf(
+//                intArrayOf(android.R.attr.state_checked),
+//                intArrayOf(-android.R.attr.state_checked)
+//            )
+//
+//            val typedValueOn = TypedValue()
+//            val typedValueOff = TypedValue()
+//            theme.resolveAttribute(R.attr.iconSelected, typedValueOn, true)
+//            theme.resolveAttribute(R.attr.iconUnselected, typedValueOff, true)
+//
+//            val colorList = intArrayOf(
+//                typedValueOn.data,
+//                typedValueOff.data
+//            )
+//            val colorStateList = ColorStateList(bottomNavBarStateList, colorList)
+////            bottomNav.itemIconTintList = colorStateList
+//            bottomNav.itemTextColor = colorStateList
+//            bottomNav.itemIconTintList
+//
+//            //=================================BACKGROUND===============================
+//            val typedValueBottomNavBG = TypedValue()
+//            theme.resolveAttribute(R.attr.bottomNavBG, typedValueBottomNavBG, true)
+//            bottomNav.setBackgroundColor(colors[8])
+//        }
+//    }
 
 //=====================OTHERS========================================
 

@@ -28,6 +28,7 @@
         <item name="iconUnselected">@color/colorBlue</item>
         <item name="iconSelected">@color/colorRed</item>
         <item name="text3">@color/transparentWhite</item>
+        <item name="bottomNavBG">@color/transparent</item>
     </style>
 
     <style name="NightTheme">
@@ -39,5 +40,6 @@
         <item name="iconUnselected">@color/moonBlue</item>
         <item name="iconSelected">@color/yellow</item>
         <item name="text3">@color/transparentWhite</item>
+        <item name="bottomNavBG">@color/transparentGrey</item>
     </style>
 </resources>

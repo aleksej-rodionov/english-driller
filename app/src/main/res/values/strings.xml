@@ -89,7 +89,7 @@
     <string name="edit_word">Редактировать слово</string>
     <string name="undo">ВЕРНУТЬ</string>
     <string name="note_deleted">Слово удалено</string>
-
+    <string name="mode">Цветовая конфигурация</string>
 
 
 </resources>

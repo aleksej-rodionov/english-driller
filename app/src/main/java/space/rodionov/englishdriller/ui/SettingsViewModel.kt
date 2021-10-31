@@ -14,10 +14,16 @@ class SettingsViewModel @Inject constructor(
 ) : ViewModel() {
 
     private val transDirFlow = preferencesManager.translationDirectionFlow
-
     val readTransDir = transDirFlow.asLiveData()
+
+    private val modeFlow = preferencesManager.modeFlow
+    val mode = modeFlow.asLiveData()
 
     fun saveTransDir(nativToForeign: Boolean) = viewModelScope.launch {
         preferencesManager.updateTranslationDirection(nativToForeign)
+    }
+
+    fun saveMode(mode: Int) = viewModelScope.launch {
+        preferencesManager.updateMode(mode)
     }
 }
