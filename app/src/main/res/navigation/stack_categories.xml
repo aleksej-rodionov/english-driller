@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/categoriesFragment"
         android:name="space.rodionov.englishdriller.ui.CategoriesFragment"
-        android:label="recycler_simple_layout"
+        android:label="Категории"
         tools:layout="@layout/recycler_simple_layout" />
 </navigation>

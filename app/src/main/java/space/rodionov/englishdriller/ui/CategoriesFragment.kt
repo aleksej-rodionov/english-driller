@@ -1,5 +1,6 @@
 package space.rodionov.englishdriller.ui
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
@@ -16,6 +17,8 @@ import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.RecyclerSimpleLayoutBinding
 import space.rodionov.englishdriller.feature_words.domain.model.Category
 import space.rodionov.englishdriller.exhaustive
+import space.rodionov.englishdriller.util.fetchColors
+import space.rodionov.englishdriller.util.fetchTheme
 
 
 //private const val TAG = "CategoriesFragment"
@@ -41,6 +44,13 @@ class CategoriesFragment : Fragment(R.layout.recycler_simple_layout),
                 layoutManager = LinearLayoutManager(requireContext())
                 setHasFixedSize(true)
                 itemAnimator = null // ХЗ НАДО ЛИ
+            }
+
+            viewModel.mode.observe(viewLifecycleOwner) {
+                val theme = fetchTheme(it, resources)
+                val colors = theme.fetchColors()
+//                root.background = colors[9].toDrawable()
+                categoriesAdapter.updateMode(it)
             }
         }
 

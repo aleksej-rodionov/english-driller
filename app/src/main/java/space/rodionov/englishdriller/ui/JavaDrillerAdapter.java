@@ -2,6 +2,7 @@ package space.rodionov.englishdriller.ui;
 
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +12,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.lifecycle.LifecycleOwner;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 
@@ -23,8 +27,10 @@ import space.rodionov.englishdriller.feature_words.domain.model.Word;
 
 public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.JavaDrillerViewHolder> {
 
-//    private NativeLanguage nativeLanguage;
     private Boolean nativToForeign;
+    //    private int mode;
+    private LiveData<Integer> mode;
+    private LifecycleOwner owner;
 
     Context context;
     private TextToSpeech mTTS;
@@ -32,23 +38,40 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
     public void setNativToForeign(Boolean nativToForeign) {
         this.nativToForeign = nativToForeign;
     }
+//    public void updateMode(int newMode) {
+//        this.mode = newMode;
+//        notifyDataSetChanged();
+//    }
 
-    protected JavaDrillerAdapter(@NonNull DiffUtil.ItemCallback diffCallback, Boolean nativToForeign, Context context) {
+    protected JavaDrillerAdapter(@NonNull DiffUtil.ItemCallback diffCallback,
+                                 Boolean nativToForeign, /*int mode,*/
+                                 Context context, LiveData<Integer> mode,
+                                 LifecycleOwner owner) {
         super(diffCallback);
         this.nativToForeign = nativToForeign;
+//        this.mode = mode;
         this.context = context;
+        this.mode = mode;
+        this.owner = owner;
     }
 
     public class JavaDrillerViewHolder extends CardStackView.ViewHolder {
         public TextView tvUpper;
         public TextView tvDowner;
         public CardView btnSpeak;
+        public CardView card;
 
         public JavaDrillerViewHolder(@NonNull View itemView) {
             super(itemView);
             tvUpper = itemView.findViewById(R.id.tv_upper);
             tvDowner = itemView.findViewById(R.id.tv_downer);
             btnSpeak = itemView.findViewById(R.id.btn_speak);
+            card = itemView.findViewById(R.id.card_view);
+
+            mode.observe(owner, Observer {
+
+            });
+
             itemView.setOnClickListener(v -> {
                 int position = getAdapterPosition();
                 if (position != CardStackView.NO_POSITION) {
@@ -87,7 +110,6 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
                     }
                 }
             });
-
         }
     }
 
@@ -105,9 +127,9 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
 
         if (!nativToForeign) {
             holder.tvUpper.setText(currentWord.getForeign());
-                holder.tvDowner.setText(currentWord.getRus());
+            holder.tvDowner.setText(currentWord.getRus());
         } else if (nativToForeign) {
-                holder.tvUpper.setText(currentWord.getRus());
+            holder.tvUpper.setText(currentWord.getRus());
             holder.tvDowner.setText(currentWord.getForeign());
             holder.btnSpeak.setVisibility(View.INVISIBLE);
             holder.btnSpeak.setEnabled(false);

@@ -1,11 +1,13 @@
 package space.rodionov.englishdriller.ui
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.widget.SearchView
+import androidx.core.graphics.drawable.toDrawable
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
 import androidx.fragment.app.viewModels
@@ -23,6 +25,8 @@ import kotlinx.coroutines.launch
 import space.rodionov.englishdriller.*
 import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.databinding.RecyclerLayoutBinding
+import space.rodionov.englishdriller.util.fetchColors
+import space.rodionov.englishdriller.util.fetchTheme
 
 private const val TAG = "VocabularyFragment"
 
@@ -50,7 +54,13 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
 //                itemAnimator = null // ХЗ НАДО ЛИ
             }
 
-//            viewModel.onChooseCategoryClick(viewModel.categoryChosen!!) // HOW I CALL THE NAV ARGUMENT //WHY I NEED THIS? DO I NEED THIS?
+            viewModel.mode.observe(viewLifecycleOwner) {
+                val theme = fetchTheme(it, resources)
+                val colors = theme.fetchColors()
+//                root.background = colors[9].toDrawable()
+                fabNewWord.backgroundTintList = ColorStateList.valueOf(colors[4])
+                vocabularyAdapter.updateMode(it)
+            }
 
             ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
                 0,

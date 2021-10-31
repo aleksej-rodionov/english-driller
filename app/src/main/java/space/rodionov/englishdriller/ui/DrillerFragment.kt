@@ -26,7 +26,7 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
         super.onViewCreated(view, savedInstanceState)
 
         val binding = CardstackLayoutBinding.bind(view)
-        drillerAdapter = JavaDrillerAdapter(JavaDrillerAdapter.JavaDrillerDiff(), false, requireContext()/*, NativeLanguage.RUS*/)
+        drillerAdapter = JavaDrillerAdapter(JavaDrillerAdapter.JavaDrillerDiff(), false, requireContext(), viewModel.mode, viewLifecycleOwner)
 
         viewModel.getLivedataList().observe(viewLifecycleOwner) {
             drillerAdapter.submitList(it)
@@ -54,11 +54,9 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
                 layoutManager = drillerLayoutManager
                 setHasFixedSize(true)
                 itemAnimator = null
-
             }
         }
         viewModel.get4words()
-
     }
 
     override fun onCardDragging(direction: Direction?, ratio: Float) {

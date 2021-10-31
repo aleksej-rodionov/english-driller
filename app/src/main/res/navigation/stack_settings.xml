@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/settingsFragment"
         android:name="space.rodionov.englishdriller.ui.SettingsFragment"
-        android:label="settings_layout"
+        android:label="Настройки"
         tools:layout="@layout/settings_layout" />
 </navigation>

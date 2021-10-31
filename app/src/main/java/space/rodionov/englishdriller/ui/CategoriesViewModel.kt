@@ -19,6 +19,9 @@ class CategoriesViewModel @Inject constructor(
     @Assisted private val state: SavedStateHandle*/
 ) : ViewModel() {
 
+    private val modeFlow = preferencesManager.modeFlow
+    val mode = modeFlow.asLiveData()
+
 //=============================RX WAY 1=============================================
 
     private val _categories = MediatorLiveData<List<Category>>()

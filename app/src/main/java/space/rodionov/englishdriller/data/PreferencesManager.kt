@@ -108,7 +108,7 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
 
     suspend fun updateMode(mode: Int) {
         dataStore.edit { preferences ->
-            preferences[PreferencesKeys.CATEGORY_CHOSEN] = mode
+            preferences[PreferencesKeys.MODE] = mode
             Log.d(TAG, "updateCategoryChosen: $mode")
         }
     }

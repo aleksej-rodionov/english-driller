@@ -92,8 +92,8 @@ class MainActivity : AppCompatActivity() {
                     intArrayOf(-android.R.attr.state_checked)
                 )
                 val bottomNavColorList = intArrayOf(
-                    colors[5],
-                    colors[6]
+                    colors[6],
+                    colors[5]
                 )
                 val colorStateList = ColorStateList(bottomNavBarStateList, bottomNavColorList)
                 bottomNav.itemTextColor = colorStateList

@@ -183,6 +183,9 @@ class VocabularyViewModel @Inject constructor(
 
 //================================COROUTINES VARIANT===================================
 
+    private val modeFlow = preferencesManager.modeFlow
+    val mode = modeFlow.asLiveData()
+
     private val vocabularyEventChannel = Channel<VocabularyEvent>()
     val vocabularyEvent = vocabularyEventChannel.receiveAsFlow()
 

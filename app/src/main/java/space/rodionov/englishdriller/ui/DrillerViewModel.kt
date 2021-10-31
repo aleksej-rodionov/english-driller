@@ -27,9 +27,11 @@ class DrillerViewModel @Inject constructor(
     val m1word = wordDao.get1wordRx()
     val composite = CompositeDisposable()
 
-
     private val transDirFlow = preferencesManager.translationDirectionFlow
     val readTransDir = transDirFlow.asLiveData()
+
+    private val modeFlow = preferencesManager.modeFlow
+    val mode = modeFlow.asLiveData()
 
     fun getLivedataList(): LiveData<List<Word>> {
         return mLivedataList

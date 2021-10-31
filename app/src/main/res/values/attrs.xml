@@ -11,6 +11,7 @@
         <attr name="iconSelected" format="color"/>
         <attr name="text3" format="color"/>
         <attr name="bottomNavBG" format="color"/>
+        <attr name="commonBG" format="color"/>
     </declare-styleable>
     
 </resources>

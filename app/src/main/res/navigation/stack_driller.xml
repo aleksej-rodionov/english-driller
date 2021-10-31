@@ -8,6 +8,6 @@
     <fragment
         android:id="@+id/drillerFragment"
         android:name="space.rodionov.englishdriller.ui.DrillerFragment"
-        android:label="cardstack_layout"
+        android:label="Практика"
         tools:layout="@layout/cardstack_layout" />
 </navigation>
