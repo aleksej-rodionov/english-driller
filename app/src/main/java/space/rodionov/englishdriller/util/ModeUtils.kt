@@ -21,35 +21,35 @@ fun Resources.Theme.fetchColors() : Array<Int> {
 
     val tv3 = TypedValue()
     this.resolveAttribute(R.attr.cardBG, tv3, true)
-    val cardBG = tv1.data
+    val cardBG = tv3.data
 
     val tv4 = TypedValue()
     this.resolveAttribute(R.attr.text1, tv4, true)
-    val text1 = tv1.data
+    val text1 = tv4.data
 
     val tv5 = TypedValue()
     this.resolveAttribute(R.attr.text2, tv5, true)
-    val text2 = tv1.data
+    val text2 = tv5.data
 
     val tv6 = TypedValue()
     this.resolveAttribute(R.attr.switchBtn, tv6, true)
-    val switchBtn = tv1.data
+    val switchBtn = tv6.data
 
     val tv7 = TypedValue()
     this.resolveAttribute(R.attr.iconUnselected, tv7, true)
-    val iconUnselected = tv1.data
+    val iconUnselected = tv7.data
 
     val tv8 = TypedValue()
     this.resolveAttribute(R.attr.iconSelected, tv8, true)
-    val iconSelected = tv1.data
+    val iconSelected = tv8.data
 
     val tv2 = TypedValue()
     this.resolveAttribute(R.attr.text3, tv2, true)
-    val text3 = tv1.data
+    val text3 = tv2.data
 
     val tv9 = TypedValue()
     this.resolveAttribute(R.attr.bottomNavBG, tv9, true)
-    val bottomNavBG = tv1.data
+    val bottomNavBG = tv9.data
 
     val colors = arrayOf(
         toolbarBG,

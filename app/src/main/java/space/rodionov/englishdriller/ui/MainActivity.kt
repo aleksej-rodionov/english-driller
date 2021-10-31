@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
 //                changeTheme(theme, colors)
 
                 toolbar.setBackgroundColor(colors[0])
-                toolbar.setTitleTextColor(colors[3])
+                toolbar.setTitleTextColor(colors[7])
 
                 val bottomNavBarStateList = arrayOf(
                     intArrayOf(android.R.attr.state_checked),
