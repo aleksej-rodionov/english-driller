@@ -57,6 +57,7 @@ class PreferencesManager @Inject constructor(@ApplicationContext context: Contex
         }
         .map { preferences ->
             val mode = preferences[PreferencesKeys.MODE] ?: 0
+            Log.d(TAG, "Mode =: $mode")
             mode
         }
 
