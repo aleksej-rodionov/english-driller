@@ -36,7 +36,7 @@
         <item name="toolbarBG">@color/transparentGrey</item>
         <item name="cardBG">@color/grey</item>
         <item name="text1">@color/yellow</item>
-        <item name="text2">@color/darkYellow</item>
+        <item name="text2">@color/moonBlue</item>
         <item name="switchBtn">@color/green</item>
         <item name="iconUnselected">@color/moonBlue</item>
         <item name="iconSelected">@color/yellow</item>

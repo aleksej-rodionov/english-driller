@@ -21,6 +21,7 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
     private val viewModel: DrillerViewModel by viewModels()
     private lateinit var currentWord: Word
     private lateinit var drillerAdapter: JavaDrillerAdapter
+    private lateinit var drillerLayoutManager: CardStackLayoutManager
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -33,7 +34,7 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
             Log.d(TAG, "drlr workWorkList.size = " + it.size)
         }
 
-        val drillerLayoutManager = CardStackLayoutManager(requireContext(), this)
+        /*val*/ drillerLayoutManager = CardStackLayoutManager(requireContext(), this)
         drillerLayoutManager.setOverlayInterpolator(LinearInterpolator())
         drillerLayoutManager.setStackFrom(StackFrom.Top)
         drillerLayoutManager.setVisibleCount(3)
@@ -71,7 +72,7 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
             viewModel.update(currentWord, false)
         }
         viewModel.removeAndAddWord(currentWord)
-        Log.d(TAG, currentWord.foreign + " is removed. (drlr)")
+//        Log.d(TAG, currentWord.foreign + " is removed. (drlr)")
     }
 
     override fun onCardRewound() {
@@ -84,18 +85,14 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
 
     override fun onCardAppeared(view: View?, position: Int) {
         currentWord = drillerAdapter.getWordAt(position)
-        Log.d(
-            TAG,
-            "onCardAppeared: " + currentWord.foreign + " IS NOW currentWord, position in adapter - " + position + " (drlr)"
-        )
+        val topPos = drillerLayoutManager.topPosition
+        Log.d(TAG, "onCardAppeared: topPos = $topPos")
+//        Log.d(TAG, "onCardAppeared: " + currentWord.foreign + " IS NOW currentWord, position in adapter - " + position + " (drlr)")
     }
 
     override fun onCardDisappeared(view: View?, position: Int) {
         currentWord = drillerAdapter.getWordAt(position)
-        Log.d(
-            TAG,
-            "onCardDisappeared: " + currentWord.foreign + " IS NOW currentWord, position in adapter - " + position + " (drlr)"
-        )
+//        Log.d(TAG, "onCardDisappeared: " + currentWord.foreign + " IS NOW currentWord, position in adapter - " + position + " (drlr)")
     }
 
     override fun onDetach() {

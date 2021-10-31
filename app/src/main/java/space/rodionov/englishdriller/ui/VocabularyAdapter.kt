@@ -82,8 +82,4 @@ class VocabularyAdapter(private val listener: OnVocItemClickListener) :
         fun onItemClick(word: Word)
         fun onSwitchClick(word: Word, isChecked: Boolean)
     }
-
-
-
-
 }

@@ -63,6 +63,10 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
         public TextView tvDowner;
         public CardView btnSpeak;
         public ImageView ivSpeak;
+        public ImageView ivTop;
+        public ImageView ivRight;
+        public ImageView ivLeft;
+        public ImageView ivBottom;
         public CardView card;
         public RelativeLayout rl;
 
@@ -72,6 +76,10 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
             tvDowner = itemView.findViewById(R.id.tv_downer);
             btnSpeak = itemView.findViewById(R.id.btn_speak);
             ivSpeak = itemView.findViewById(R.id.iv_speak);
+            ivTop = itemView.findViewById(R.id.iv_top);
+            ivRight = itemView.findViewById(R.id.iv_right);
+            ivLeft = itemView.findViewById(R.id.iv_left);
+            ivBottom = itemView.findViewById(R.id.iv_bottom);
             card = itemView.findViewById(R.id.card_view);
             rl = itemView.findViewById(R.id.rl);
 
@@ -145,17 +153,25 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
 
         Drawable drbl = holder.ivSpeak.getDrawable();
         if (mode == 1) {
-            holder.rl.setBackgroundColor(context.getResources().getColor(R.color.grey));
+            holder.card.setCardBackgroundColor(context.getResources().getColor(R.color.transparentGrey));
             holder.btnSpeak.setCardBackgroundColor(context.getResources().getColor(R.color.yellow));
             holder.tvUpper.setTextColor(context.getResources().getColor(R.color.yellow));
-            holder.tvDowner.setTextColor(context.getResources().getColor(R.color.darkYellow));
+            holder.tvDowner.setTextColor(context.getResources().getColor(R.color.moonBlue));
+            holder.ivLeft.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru_night));
+            holder.ivRight.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru_night));
+            holder.ivTop.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru_night));
+            holder.ivBottom.setImageDrawable(context.getResources().getDrawable(R.drawable.learned_ru_night));
 //            holder.ivSpeak.setBackgroundColor(context.getResources().getColor(R.color.yellow));
 //            if (drbl!=null) drbl.setTint((context.getResources().getColor(R.color.green)));
         } else {
-            holder.rl.setBackgroundColor(context.getResources().getColor(R.color.white));
+            holder.card.setCardBackgroundColor(context.getResources().getColor(R.color.white));
             holder.btnSpeak.setCardBackgroundColor(context.getResources().getColor(R.color.grey));
             holder.tvUpper.setTextColor(context.getResources().getColor(R.color.black95));
             holder.tvDowner.setTextColor(context.getResources().getColor(R.color.grey));
+            holder.ivLeft.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru));
+            holder.ivRight.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru));
+            holder.ivTop.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru));
+            holder.ivBottom.setImageDrawable(context.getResources().getDrawable(R.drawable.learned_ru));
 //            holder.ivSpeak.setBackgroundColor(context.getResources().getColor(R.color.grey));
 //            if (drbl!=null) drbl.setTint((context.getResources().getColor(R.color.grey)));
         }
