@@ -151,7 +151,6 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
         }
         holder.tvDowner.setVisibility(View.INVISIBLE);
 
-        Drawable drbl = holder.ivSpeak.getDrawable();
         if (mode == 1) {
             holder.card.setCardBackgroundColor(context.getResources().getColor(R.color.transparentGrey));
             holder.btnSpeak.setCardBackgroundColor(context.getResources().getColor(R.color.yellow));
@@ -161,8 +160,6 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
             holder.ivRight.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru_night));
             holder.ivTop.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru_night));
             holder.ivBottom.setImageDrawable(context.getResources().getDrawable(R.drawable.learned_ru_night));
-//            holder.ivSpeak.setBackgroundColor(context.getResources().getColor(R.color.yellow));
-//            if (drbl!=null) drbl.setTint((context.getResources().getColor(R.color.green)));
         } else {
             holder.card.setCardBackgroundColor(context.getResources().getColor(R.color.white));
             holder.btnSpeak.setCardBackgroundColor(context.getResources().getColor(R.color.grey));
@@ -172,8 +169,6 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
             holder.ivRight.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru));
             holder.ivTop.setImageDrawable(context.getResources().getDrawable(R.drawable.repeat_practice_ru));
             holder.ivBottom.setImageDrawable(context.getResources().getDrawable(R.drawable.learned_ru));
-//            holder.ivSpeak.setBackgroundColor(context.getResources().getColor(R.color.grey));
-//            if (drbl!=null) drbl.setTint((context.getResources().getColor(R.color.grey)));
         }
     }
 
@@ -197,6 +192,5 @@ public class JavaDrillerAdapter extends ListAdapter<Word, JavaDrillerAdapter.Jav
         String text = tv.getText().toString();
         mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
-
 }
 
