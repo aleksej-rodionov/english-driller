@@ -18,13 +18,13 @@
     <fragment
         android:id="@+id/addEditWordFragment"
         android:name="space.rodionov.englishdriller.ui.AddEditWordFragment"
-        android:label="add_edit_word_layout"
-        tools:layout="@layout/add_edit_word_layout" >
+        android:label="{title}"
+        tools:layout="@layout/add_edit_word_layout">
         <argument
             android:name="word"
+            android:defaultValue="@null"
             app:argType="space.rodionov.englishdriller.feature_words.domain.model.Word"
-            app:nullable="true"
-            android:defaultValue="@null" />
+            app:nullable="true" />
         <argument
             android:name="title"
             app:argType="string" />

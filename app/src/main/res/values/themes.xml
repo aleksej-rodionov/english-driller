@@ -34,7 +34,7 @@
 
     <style name="NightTheme">
         <item name="toolbarBG">@color/transparentGrey</item>
-        <item name="cardBG">@color/grey</item>
+        <item name="cardBG">@color/transparentGrey</item>
         <item name="text1">@color/yellow</item>
         <item name="text2">@color/moonBlue</item>
         <item name="switchBtn">@color/green</item>

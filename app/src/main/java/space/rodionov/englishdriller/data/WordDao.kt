@@ -11,8 +11,11 @@ import space.rodionov.englishdriller.feature_words.domain.model.Word
 @Dao
 interface WordDao {
 
+//    @Insert(onConflict = OnConflictStrategy.REPLACE)
+//    suspend fun insert(word: Word)
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-     fun insert(word: Word)
+    fun insert(word: Word)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertCategory(category: Category)

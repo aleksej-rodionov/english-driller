@@ -107,6 +107,8 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
                           //null,
                                 requireContext().resources.getString(R.string.new_word)
                             )
+                        action.setWord(null)
+                        action.setTitle(action.title)
                         findNavController().navigate(action)
                     }
                     is VocabularyViewModel.VocabularyEvent.NavigateToEditWordScreen -> {
@@ -115,6 +117,8 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
                                 //event.word,
                                 requireContext().resources.getString(R.string.edit_word)
                             )
+                        action.setWord(event.word)
+                        action.setTitle(action.title)
                         findNavController().navigate(action)
                     }
                     is VocabularyViewModel.VocabularyEvent.ShowWordSavedConfirmationMessage -> {

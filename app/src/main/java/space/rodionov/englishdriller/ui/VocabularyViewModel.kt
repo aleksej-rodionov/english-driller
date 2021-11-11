@@ -7,6 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Observable
 import io.reactivex.Observer
+import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
@@ -231,7 +232,19 @@ class VocabularyViewModel @Inject constructor(
     }
 
     fun onUndoDeleteClick(word: Word) = viewModelScope.launch {
-        wordDao.insert(word)
+//        wordDao.insert(word)
+        insertWord(word)
+    }
+
+    private fun insertWord(word: Word) {
+        val disposable: Disposable = Single.just(word)
+            .subscribeOn(Schedulers.io())
+            .subscribe({
+                wordDao.insert(it)
+            }, {
+                Log.d(TAG, it.localizedMessage)
+            })
+        compositeDisposable.add(disposable)
     }
 
     suspend fun turnAllWordsOn(categoryNumber: Int) = wordDao.turnAllWordsOn(categoryNumber)

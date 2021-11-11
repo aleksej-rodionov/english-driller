@@ -1,12 +1,15 @@
 package space.rodionov.englishdriller.ui
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.View
+import androidx.core.graphics.drawable.toDrawable
 import androidx.core.os.bundleOf
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResult
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.Observer
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
@@ -15,6 +18,8 @@ import kotlinx.coroutines.flow.collect
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.databinding.AddEditWordLayoutBinding
 import space.rodionov.englishdriller.exhaustive
+import space.rodionov.englishdriller.util.fetchColors
+import space.rodionov.englishdriller.util.fetchTheme
 
 @AndroidEntryPoint
 class AddEditWordFragment : Fragment(R.layout.add_edit_word_layout) {
@@ -60,6 +65,24 @@ class AddEditWordFragment : Fragment(R.layout.add_edit_word_layout) {
                 }.exhaustive
             }
         }
+
+        viewModel.mode.observe(viewLifecycleOwner, Observer {
+            val theme = fetchTheme(it, resources)
+            val colors = theme.fetchColors()
+
+            binding.apply {
+                root.background = colors[9].toDrawable()
+                etForeignWord.apply {
+                    setTextColor(colors[2])
+                    setHintTextColor(colors[3])
+                }
+                etRussianWord.apply {
+                    setTextColor(colors[2])
+                    setHintTextColor(colors[3])
+                }
+                fabSaveWord.backgroundTintList = ColorStateList.valueOf(colors[4])
+            }
+        })
     }
 
     override fun onDestroyView() {

@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.hilt.Assisted
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.Single
@@ -13,6 +14,7 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.receiveAsFlow
 import kotlinx.coroutines.launch
+import space.rodionov.englishdriller.data.PreferencesManager
 import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.data.WordDao
 import javax.inject.Inject
@@ -22,8 +24,12 @@ private const val TAG = "LOGS"
 @HiltViewModel
 class AddEditWordViewModel @Inject constructor(
     private val wordDao: WordDao,
-    @Assisted private val state: SavedStateHandle
+    private val preferencesManager: PreferencesManager, //DOBAVIL 17.04 // Dagger automatically Injected it, 'cause we added @Inject in PM.class
+ @Assisted private val state: SavedStateHandle
 ) : ViewModel() {
+
+    private val modeFlow = preferencesManager.modeFlow
+    val mode = modeFlow.asLiveData()
 
     private val compositeDisposable = CompositeDisposable()
 

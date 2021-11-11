@@ -54,7 +54,7 @@ class VocabularyAdapter(private val listener: OnVocItemClickListener) :
 
                 val theme = fetchTheme(mode, itemView.resources)
                 val colors = theme.fetchColors()
-                rl.background = colors[0].toDrawable()
+                rl.background = colors[1].toDrawable()
                 btnSwitch.apply {
                     setTextColor(colors[3])
                     thumbTintList = ColorStateList.valueOf(colors[4])
