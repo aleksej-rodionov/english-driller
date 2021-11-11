@@ -41,7 +41,7 @@ class SettingsFragment : Fragment(R.layout.settings_layout) {
 
                 val theme = fetchTheme(it, resources)
                 val colors = theme.fetchColors()
-                root.background = colors[9].toDrawable()
+                root.background = colors[8].toDrawable()
                 tvMode.setTextColor(colors[2])
                 tvTranslationDirection.setTextColor(colors[2])
                 switchMode.apply {

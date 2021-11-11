@@ -32,6 +32,11 @@
     <color name="darkGrey">#2b2b2b</color>
     <color name="grey">#3c3f41</color>
     <color name="transparentGrey">#D92B2B2B</color>
+    <color name="transparentLightGrey">#A62B2B2B</color>
 
+    <color name="colorGamma25">#40004581</color>
+    <color name="colorOmega">#003861</color>
+    <color name="colorMainBeta">#9CB8C1</color>
+    <color name="colorMainBeta25">#409CB8C1</color>
 
 </resources>

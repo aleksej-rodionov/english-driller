@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
+import androidx.core.graphics.drawable.toDrawable
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
@@ -49,7 +50,7 @@ class CategoriesFragment : Fragment(R.layout.recycler_simple_layout),
             viewModel.mode.observe(viewLifecycleOwner) {
                 val theme = fetchTheme(it, resources)
                 val colors = theme.fetchColors()
-//                root.background = colors[9].toDrawable()
+                root.background = colors[9].toDrawable()
                 categoriesAdapter.updateMode(it)
             }
         }

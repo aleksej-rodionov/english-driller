@@ -71,14 +71,16 @@ class AddEditWordFragment : Fragment(R.layout.add_edit_word_layout) {
             val colors = theme.fetchColors()
 
             binding.apply {
-                root.background = colors[9].toDrawable()
+                root.background = colors[8].toDrawable()
                 etForeignWord.apply {
-                    setTextColor(colors[2])
+                    setTextColor(colors[3])
                     setHintTextColor(colors[3])
+                    setBackgroundColor(colors[9])
                 }
                 etRussianWord.apply {
-                    setTextColor(colors[2])
+                    setTextColor(colors[3])
                     setHintTextColor(colors[3])
+                    setBackgroundColor(colors[9])
                 }
                 fabSaveWord.backgroundTintList = ColorStateList.valueOf(colors[4])
             }

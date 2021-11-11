@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.View
 import android.view.WindowManager
 import android.view.animation.LinearInterpolator
+import androidx.core.graphics.drawable.toDrawable
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.yuyakaido.android.cardstackview.*
@@ -12,6 +13,8 @@ import dagger.hilt.android.AndroidEntryPoint
 import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.feature_words.domain.model.Word
 import space.rodionov.englishdriller.databinding.CardstackLayoutBinding
+import space.rodionov.englishdriller.util.fetchColors
+import space.rodionov.englishdriller.util.fetchTheme
 
 private const val TAG = "DrillerFragment"
 
@@ -53,6 +56,9 @@ class DrillerFragment : Fragment(R.layout.cardstack_layout), CardStackListener {
                 }
                 viewModel.mode.observe(viewLifecycleOwner) {
                     drillerAdapter.updateMode(it)
+                    val theme = fetchTheme(it, resources)
+                    val colors = theme.fetchColors()
+                    root.background = colors[9].toDrawable()
                 }
                 adapter = drillerAdapter
                 layoutManager = drillerLayoutManager

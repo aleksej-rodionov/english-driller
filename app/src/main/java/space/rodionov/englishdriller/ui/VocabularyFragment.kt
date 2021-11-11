@@ -57,7 +57,7 @@ class VocabularyFragment : Fragment(R.layout.recycler_layout),
             viewModel.mode.observe(viewLifecycleOwner) {
                 val theme = fetchTheme(it, resources)
                 val colors = theme.fetchColors()
-//                root.background = colors[9].toDrawable()
+                root.background = colors[9].toDrawable()
                 fabNewWord.backgroundTintList = ColorStateList.valueOf(colors[4])
                 vocabularyAdapter.updateMode(it)
             }
