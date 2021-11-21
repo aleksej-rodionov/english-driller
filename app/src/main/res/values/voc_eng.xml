@@ -3,7 +3,7 @@
 
     <string-array name="eng1">	<item>it keeps me up</item>
         <item>Full steam ahead (for ...)</item>
-        <item>we intuitively learn how to handle things it used to baffle us</item>
+        <item>we intuitively learn how to handle things that used to baffle us</item>
         <item>please be specific</item>
         <item>apologies for the delay</item>
         <item>for a specific purpose</item>
@@ -319,6 +319,57 @@
         <item>I don’t think that’s fair.</item>
         <item>It must be…</item>
         <item>It can’t be…</item>
+        <item>in original packaging</item>
+        <item>to do nothing much</item>
+        <item>Once we...</item>
+        <item>We gonna supply the data into the cell</item>
+        <item>designed to...</item>
+        <item>This gives me the misconception that ...</item>
+        <item>to scale our projects</item>
+        <item>pretty straightforward</item>
+        <item>This time around</item>
+        <item>worst case scenario</item>
+        <item>to keep up with the Joneses</item>
+        <item>this is not an issue</item>
+        <item>odds are ...</item>
+        <item>rash decisions</item>
+        <item>it\'s not a place for me to be</item>
+        <item>morals are subjective</item>
+        <item>i wanted to discount, to play down, to minimize</item>
+        <item>at the expense of ...</item>
+        <item>no wasted words</item>
+        <item>hook up with someone</item>
+        <item>from the ground up</item>
+        <item>we are good to go</item>
+        <item>it is not my concern</item>
+        <item>behind the scenes</item>
+        <item>a lot of things had been popping up.</item>
+        <item>it makes me feel pathetic about playing that role.</item>
+        <item>by the end of the meeting</item>
+        <item>to exert control</item>
+        <item>I am hugely against it</item>
+        <item>Into his eminently imprudent brain</item>
+        <item>i\'ve ended up with it</item>
+        <item>universal acclaim</item>
+        <item>to tap on glass</item>
+        <item>Brilliant </item>
+        <item>To feature a close attention to... </item>
+        <item>Enviable </item>
+        <item>firm determination</item>
+        <item>Unshakable determination</item>
+        <item>Firm (прил.)</item>
+        <item>To captivate her with his eloquence</item>
+        <item>formidable</item>
+        <item>to turn attention to... </item>
+        <item>Richly reimagined </item>
+        <item>Spellbinding </item>
+        <item>Bewitching </item>
+        <item>Despair </item>
+        <item>Revenge </item>
+        <item>Timeless </item>
+        <item>... alongside (smth)</item>
+        <item>Severe </item>
+        <item>It was a rubbishy, cheap and offensive remark that I have been regretting ever since.</item>
         <item>It’s definitely (not)…</item>
         <item>I prefer … to …</item>
         <item>There is nothing like…</item>
@@ -493,7 +544,7 @@
         <item>it exhausts my soul</item>	</string-array>
     <string-array name="eng2">	<item>to lay off, to dismiss, to fire</item>
         <item>work is being carried out</item>
-        <item>to run our of (fuel)</item>
+        <item>to run out of (fuel)</item>
         <item>to come up with (the answer)</item>
         <item>to make for (a strong bond)</item>
         <item>to snatch up</item>
@@ -702,6 +753,7 @@
         <item>to arrange (for)</item>
         <item>to assert</item>
         <item>to assess</item>
+        <item>Join...</item>
         <item>to assign</item>
         <item>to assist (smb in …) </item>
         <item>to astonish</item>
@@ -781,6 +833,7 @@
         <item>to dye (hair)</item>
         <item>to eliminate</item>
         <item>to emanate</item>
+        <item>to may</item>
         <item>to embrace his message</item>
         <item>to emit</item>
         <item>to endanger</item>
@@ -789,7 +842,7 @@
         <item>to establish</item>
         <item>to exaggerate</item>
         <item>to exclaim</item>
-        <item>to exert an influence</item>
+        <item>to exert an influence on ...</item>
         <item>to expand</item>
         <item>to exploit</item>
         <item>to expose</item>
@@ -905,6 +958,7 @@
         <item>to refine</item>
         <item>to refrain from …</item>
         <item>to refrain from</item>
+        <item>to decline the offer</item>
         <item>to reinforce</item>
         <item>to reinvigorate …</item>
         <item>to rejoice</item>
@@ -930,7 +984,7 @@
         <item>to shiver</item>
         <item>to shrank</item>
         <item>to shred</item>
-        <item>fancy</item>
+        <item>to fancy</item>
         <item>to shuffle</item>
         <item>to sift</item>
         <item>to dismantle</item>
@@ -1151,6 +1205,7 @@
         <item>carbohydrates</item>
         <item>carpenter</item>
         <item>casement</item>
+        <item>accordingly</item>
         <item>cast</item>
         <item>catchy</item>
         <item>cathedral</item>
@@ -1470,7 +1525,7 @@
         <item>in a timely fashion, timely</item>
         <item>in a way / in a sense</item>
         <item>in a workplace</item>
-        <item>in advane</item>
+        <item>in advance</item>
         <item>in captivity</item>
         <item>in charge of …</item>
         <item>in detail</item>
@@ -1559,7 +1614,7 @@
         <item>livelihood</item>
         <item>lively</item>
         <item>lodge</item>
-        <item>loeaded</item>
+        <item>loaded</item>
         <item>lofty</item>
         <item>log</item>
         <item>loop</item>
@@ -1877,7 +1932,7 @@
         <item>stewardship</item>
         <item>sticky</item>
         <item>still</item>
-        <item>stinless</item>
+        <item>stainless</item>
         <item>stitches</item>
         <item>stonecutting</item>
         <item>storage space</item>
@@ -2428,7 +2483,7 @@
         <item>coffee</item>
         <item>cold</item>
         <item>colleague (AmE: co-worker)</item>
-        <item>Colour (AmE: color) ― цвет</item>
+        <item>colour (AmE: color)</item>
         <item>colourful</item>
         <item>comfortable</item>
         <item>company</item>
@@ -2436,7 +2491,7 @@
         <item>cooker (AmE: stove)</item>
         <item>cool</item>
         <item>corn</item>
-        "<item>cough
+        "<item>cough /
 to cough</item>"
         <item>country</item>
         <item>courgette (AmE: zucchini)</item>
@@ -2482,7 +2537,7 @@ to cough</item>"
         <item>dog</item>
         <item>door</item>
         <item>down</item>
-        "<item>dress
+        "<item>dress /
 to dress</item>"
         <item>drink</item>
         <item>driver</item>
@@ -2503,7 +2558,7 @@ to dress</item>"
         <item>elephant</item>
         <item>eleven</item>
         <item>embarrassed</item>
-        <item>Emotions ― эмоции</item>
+        <item>emotions</item>
         <item>energetic</item>
         <item>engineer</item>
         <item>enough</item>
@@ -2647,7 +2702,7 @@ to dress</item>"
         <item>January</item>
         <item>jealous</item>
         <item>jeans</item>
-        <item>Job ― работа</item>
+        <item>job</item>
         <item>journalist</item>
         <item>juice</item>
         <item>July</item>
@@ -2680,8 +2735,7 @@ to dress</item>"
         <item>letter</item>
         <item>lifeguard</item>
         <item>light</item>
-        "<item>lion
-lioness</item>"
+        <item>lion / lioness</item>
         <item>lips</item>
         "<item>list
 to list</item>"
@@ -2708,7 +2762,7 @@ to list</item>"
         <item>market</item>
         <item>married</item>
         <item>May</item>
-        <item>may</item>
+
         <item>maybe</item>
         <item>meal</item>
         <item>meaning</item>
@@ -2853,7 +2907,7 @@ to list</item>"
         <item>pyjamas (AmE: pajamas)</item>
         <item>quick</item>
         <item>quiet</item>
-        <item>rabbit</item>
+        <item>hare</item>
         <item>radio</item>
         <item>rainy</item>
         <item>raspberry</item>
@@ -2891,7 +2945,7 @@ to list</item>"
         <item>season</item>
         <item>second</item>
         <item>second</item>
-        <item>Senses ― чувства</item>
+        <item>senses</item>
         <item>September</item>
         <item>seven</item>
         <item>seventeen</item>
@@ -2959,7 +3013,7 @@ to list</item>"
         <item>street</item>
         <item>strength</item>
         <item>student</item>
-        <item>Study ― учеба</item>
+        <item>study</item>
         <item>success</item>
         <item>sugar</item>
         <item>suit</item>
@@ -3084,6 +3138,14 @@ to list</item>"
         <item>you</item>
         <item>young</item>
         <item>your/you</item>
-        <item>zero</item>	</string-array>
+        <item>zero</item>
+        <item>forthright</item>
+        <item>overkill</item>
+        <item>afterwards</item>
+        <item>intermediaries</item>
+        <item>sharp</item>
+        <item>rabbit</item>
+        <item>stalemate</item>
+        <item>witty</item>	</string-array>
 
 </resources>
