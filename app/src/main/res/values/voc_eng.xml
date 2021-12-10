@@ -9,6 +9,10 @@
         <item>for a specific purpose</item>
         <item>for a particular purpose</item>
         <item>I\'m rapidly opposed</item>
+        <item>imposed a fine on the company</item>
+        <item>In return for the ability to maintain a monopoly on the drug\'s manufacture, Lundbeck offered payments and other kickbacks</item>
+        <item>product that you end up with</item>
+        <item>without conscious planning or premeditation</item>
         <item>sentenced to death</item>
         <item>it may come in handy</item>
         <item>as long as we haven\'t stopped this process</item>
@@ -215,6 +219,9 @@
         <item>to some extent</item>
         <item>that is to say, …</item>
         <item>in other words, …</item>
+        <item>it goes with ...</item>
+        <item>it never hurts to...</item>
+        <item>for clarity</item>
         <item>as far as \'X\' concerned, …</item>
         <item>as for \'X\', …</item>
         <item>regarding \'X\', …</item>
@@ -288,7 +295,7 @@
         <item>I was wondering if…</item>
         <item>Do you think I could…</item>
         <item>Will you be…</item>
-        <item>Is it all right if…</item>
+        <item>Is it all right if I…</item>
         <item>If you’d like…</item>
         <item>Could you possibly…</item>
         <item>I wonder if….</item>
@@ -351,7 +358,8 @@
         <item>Into his eminently imprudent brain</item>
         <item>i\'ve ended up with it</item>
         <item>universal acclaim</item>
-        <item>to tap on glass</item>
+
+
         <item>Brilliant </item>
         <item>To feature a close attention to... </item>
         <item>Enviable </item>
@@ -360,7 +368,7 @@
         <item>Firm (прил.)</item>
         <item>To captivate her with his eloquence</item>
         <item>formidable</item>
-        <item>to turn attention to... </item>
+
         <item>Richly reimagined </item>
         <item>Spellbinding </item>
         <item>Bewitching </item>
@@ -665,6 +673,7 @@
         <item>to get by</item>
         <item>to get by</item>
         <item>to end up</item>
+        <item>to cover up </item>
         <item>to get on</item>
         <item>to get on (well) (with)</item>
         <item>to take up</item>
@@ -738,7 +747,6 @@
         <item>to acquit oneself</item>
         <item>to adjust</item>
         <item>to admire</item>
-        <item>to adopt … position</item>
         <item>to affect (on)</item>
         <item>to aim low enough</item>
         <item>to allocate to ...</item>
@@ -855,6 +863,8 @@
         <item>to fetch (money)</item>
         <item>to flatter</item>
         <item>to flit</item>
+        <item>to hit upon the solution</item>
+        <item>to make up your mind</item>
         <item>to foresee</item>
         <item>to foresee</item>
         <item>to foster</item>
@@ -2164,6 +2174,7 @@
         <item>to answer</item>
         <item>to argue</item>
         <item>to arrive</item>
+        <item>to abide by ...</item>
         <item>to ask</item>
         <item>to be (was/were – been)</item>
         <item>to become (became – become)</item>
@@ -2226,6 +2237,8 @@
         <item>to help</item>
         <item>to hit (hit – hit)</item>
         <item>to hold (held – held)</item>
+        <item>to tap on glass</item>
+        <item>to turn attention to... </item>
         <item>to hope</item>
         <item>to hurt (hurt – hurt)</item>
         <item>to join</item>
@@ -2491,8 +2504,7 @@
         <item>cooker (AmE: stove)</item>
         <item>cool</item>
         <item>corn</item>
-        "<item>cough /
-to cough</item>"
+        <item>cough / to cough</item>
         <item>country</item>
         <item>courgette (AmE: zucchini)</item>
         <item>cousin</item>
@@ -2737,8 +2749,7 @@ to dress</item>"
         <item>light</item>
         <item>lion / lioness</item>
         <item>lips</item>
-        "<item>list
-to list</item>"
+        <item>list / to list</item>
         <item>literature</item>
         <item>little</item>
         <item>living room</item>
@@ -2762,7 +2773,7 @@ to list</item>"
         <item>market</item>
         <item>married</item>
         <item>May</item>
-
+        <item>purport</item>
         <item>maybe</item>
         <item>meal</item>
         <item>meaning</item>
@@ -3146,6 +3157,12 @@ to list</item>"
         <item>sharp</item>
         <item>rabbit</item>
         <item>stalemate</item>
-        <item>witty</item>	</string-array>
+        <item>witty</item>
+        <item>submission</item>
+        <item>skill</item>
+        <item>Craftsmanship</item>
+        <item>incongruity</item>
+        <item>kickbacks</item>
+        <item>inanimate objects</item>	</string-array>
 
 </resources>
