@@ -6,6 +6,10 @@ import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
+import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.feature_driller.data.local.entity.CategoryEntity
+import space.rodionov.englishdriller.feature_driller.data.local.entity.WordEntity
+import space.rodionov.englishdriller.feature_driller.di.ApplicationScope
 import javax.inject.Inject
 import javax.inject.Provider
 

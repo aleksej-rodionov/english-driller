@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/drillerFragment"
-        android:name="space.rodionov.porosenokpetr.feature_driller.presentation.driller.DrillerFragment"
+        android:name="space.rodionov.englishdriller.feature_driller.presentation.driller.DrillerFragment"
         android:label="fragment_driller"
         tools:layout="@layout/fragment_driller" >
         <action
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/collectionFragment"
-        android:name="space.rodionov.porosenokpetr.feature_driller.presentation.collection.CollectionFragment"
+        android:name="space.rodionov.englishdriller.feature_driller.presentation.collection.CollectionFragment"
         android:label="fragment_collection"
         tools:layout="@layout/fragment_collection" >
         <action
@@ -28,18 +28,18 @@
     </fragment>
     <fragment
         android:id="@+id/wordlistFragment"
-        android:name="space.rodionov.porosenokpetr.feature_driller.presentation.wordlist.WordlistFragment"
+        android:name="space.rodionov.englishdriller.feature_driller.presentation.wordlist.WordlistFragment"
         android:label="fragment_wordlist"
         tools:layout="@layout/fragment_wordlist" >
         <argument
             android:name="category"
-            app:argType="space.rodionov.porosenokpetr.feature_driller.domain.models.Category"
+            app:argType="space.rodionov.englishdriller.feature_driller.domain.models.Category"
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>
     <fragment
         android:id="@+id/settingsFragment"
-        android:name="space.rodionov.porosenokpetr.feature_driller.presentation.settings.SettingsFragment"
+        android:name="space.rodionov.englishdriller.feature_driller.presentation.settings.SettingsFragment"
         android:label="@string/settings"
         tools:layout="@layout/fragment_settings" />
 </navigation>

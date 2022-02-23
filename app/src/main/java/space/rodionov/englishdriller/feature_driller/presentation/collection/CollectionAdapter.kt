@@ -4,8 +4,15 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import space.rodionov.englishdriller.core.ModeForAdapter
+import space.rodionov.englishdriller.core.redrawViewGroup
+import space.rodionov.englishdriller.databinding.ItemCategoryBinding
 import space.rodionov.englishdriller.feature_driller.domain.models.CatWithWords
 import space.rodionov.englishdriller.feature_driller.domain.models.Category
+import space.rodionov.englishdriller.feature_driller.presentation.CatWithWordsDiff
+import space.rodionov.englishdriller.feature_driller.utils.Constants.TAG_PETR
+import space.rodionov.englishdriller.feature_driller.utils.countPercentage
 
 class CollectionAdapter(
     private val onSwitchCatActive: (Category, Boolean) -> Unit = { _, _ -> },

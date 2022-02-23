@@ -7,7 +7,16 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
+import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.core.redrawViewGroup
+import space.rodionov.englishdriller.databinding.BottomsheetWordlistBinding
+import space.rodionov.englishdriller.feature_driller.utils.Constants
+import space.rodionov.englishdriller.feature_driller.utils.Constants.TAG_PETR
 
 @AndroidEntryPoint
 class WordlistBottomSheet : BottomSheetDialogFragment() {

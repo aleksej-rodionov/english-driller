@@ -1,12 +1,19 @@
 package space.rodionov.englishdriller.feature_driller.di
 
 import android.app.Application
+import androidx.room.Room
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
+import space.rodionov.englishdriller.feature_driller.data.local.WordDatabase
+import space.rodionov.englishdriller.feature_driller.data.repository.WordRepoImpl
+import space.rodionov.englishdriller.feature_driller.data.storage.Datastore
+import space.rodionov.englishdriller.feature_driller.domain.repository.WordRepo
+import space.rodionov.englishdriller.feature_driller.domain.use_cases.*
+import space.rodionov.englishdriller.feature_driller.utils.Constants
 import javax.inject.Qualifier
 import javax.inject.Singleton
 

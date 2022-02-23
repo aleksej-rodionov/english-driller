@@ -19,6 +19,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
 import com.yuyakaido.android.cardstackview.CardStackView
+import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.feature_driller.utils.Constants.TAG_MODE
 
 fun fetchTheme(mode: Int, res: Resources): Resources.Theme {
     val theme = res.newTheme()

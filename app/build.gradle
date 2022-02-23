@@ -101,3 +101,8 @@ dependencies {
     // CardView
     implementation 'androidx.cardview:cardview:1.0.0'
 }
+
+//added:
+kapt {
+    correctErrorTypes true
+}

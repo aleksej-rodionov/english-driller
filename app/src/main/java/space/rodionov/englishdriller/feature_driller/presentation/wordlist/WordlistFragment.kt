@@ -5,12 +5,27 @@ import android.speech.tts.TextToSpeech
 import android.util.Log
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
+import androidx.core.widget.addTextChangedListener
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import androidx.recyclerview.widget.DividerItemDecoration
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
+import space.rodionov.englishdriller.MainActivity
+import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.core.redrawViewGroup
+import space.rodionov.englishdriller.core.showKeyboard
+import space.rodionov.englishdriller.databinding.FragmentWordlistBinding
+import space.rodionov.englishdriller.feature_driller.domain.models.Word
+import space.rodionov.englishdriller.feature_driller.utils.Constants.EMPTY_STRING
+import space.rodionov.englishdriller.feature_driller.utils.Constants.TAG_PETR
 import java.lang.Exception
 import java.util.*
 
 @AndroidEntryPoint
-class WordlistFragment : BaseFragment(R.layout.fragment_wordlist), TextToSpeech.OnInitListener {
+class WordlistFragment : Fragment(R.layout.fragment_wordlist), TextToSpeech.OnInitListener {
 
     private val vmWordlist: WordlistViewModel by viewModels()
     private var _binding: FragmentWordlistBinding? = null

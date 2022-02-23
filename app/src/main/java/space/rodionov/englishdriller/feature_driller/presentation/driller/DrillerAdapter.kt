@@ -2,6 +2,14 @@ package space.rodionov.englishdriller.feature_driller.presentation.driller
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.view.isVisible
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import space.rodionov.englishdriller.core.ModeForAdapter
+import space.rodionov.englishdriller.core.redrawViewGroup
+import space.rodionov.englishdriller.databinding.ItemWordCardBinding
+import space.rodionov.englishdriller.feature_driller.domain.models.Word
+import space.rodionov.englishdriller.feature_driller.presentation.WordDiff
 
 class DrillerAdapter(
     private val onSpeakWord: (String) -> Unit = {}

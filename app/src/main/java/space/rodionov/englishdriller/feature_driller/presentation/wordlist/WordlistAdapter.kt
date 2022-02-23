@@ -3,8 +3,15 @@ package space.rodionov.englishdriller.feature_driller.presentation.wordlist
 import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView
+import space.rodionov.englishdriller.R
 import space.rodionov.englishdriller.core.ModeForAdapter
+import space.rodionov.englishdriller.core.fetchColors
+import space.rodionov.englishdriller.core.redrawViewGroup
+import space.rodionov.englishdriller.databinding.ItemWordHorizontalBinding
 import space.rodionov.englishdriller.feature_driller.domain.models.Word
+import space.rodionov.englishdriller.feature_driller.presentation.WordDiff
 
 class WordlistAdapter(
     private val onClickLearned: (Word)-> Unit = {},

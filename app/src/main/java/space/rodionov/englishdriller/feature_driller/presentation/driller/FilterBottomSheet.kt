@@ -8,7 +8,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.CompoundButton
+import androidx.core.view.children
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
+import com.google.android.material.chip.Chip
+import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
+import space.rodionov.englishdriller.R
+import space.rodionov.englishdriller.core.fetchColors
+import space.rodionov.englishdriller.core.redrawChips
+import space.rodionov.englishdriller.core.redrawViewGroup
+import space.rodionov.englishdriller.databinding.BottomsheetFilterBinding
+import space.rodionov.englishdriller.feature_driller.utils.Constants
 
 @AndroidEntryPoint
 class FilterBottomSheet : BottomSheetDialogFragment(), CompoundButton.OnCheckedChangeListener {

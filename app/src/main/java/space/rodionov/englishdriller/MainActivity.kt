@@ -11,6 +11,7 @@ import androidx.core.view.WindowCompat
 import androidx.core.view.updatePadding
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
 import space.rodionov.englishdriller.databinding.ActivityMainBinding
 import space.rodionov.englishdriller.feature_driller.utils.Constants.MODE_DARK
 import space.rodionov.englishdriller.feature_driller.utils.Constants.MODE_LIGHT

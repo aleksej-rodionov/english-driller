@@ -2,6 +2,9 @@ package space.rodionov.englishdriller.feature_driller.data.local
 
 import androidx.room.*
 import kotlinx.coroutines.flow.Flow
+import space.rodionov.englishdriller.feature_driller.data.local.entity.CategoryEntity
+import space.rodionov.englishdriller.feature_driller.data.local.entity.CategoryWithWords
+import space.rodionov.englishdriller.feature_driller.data.local.entity.WordEntity
 
 @Dao
 interface WordDao {
