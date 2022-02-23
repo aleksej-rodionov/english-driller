@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller.feature_driller
+package space.rodionov.englishdriller
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

@@ -1,4 +1,4 @@
-package space.rodionov.englishdriller.feature_driller
+package space.rodionov.englishdriller.feature_driller.utils
 
 object Constants {
 

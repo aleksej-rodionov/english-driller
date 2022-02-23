@@ -4,7 +4,7 @@ import android.app.Application
 import android.content.Context
 import android.util.Log
 import androidx.datastore.preferences.emptyPreferences
-import space.rodionov.englishdriller.feature_driller.Constants.TAG_PETR
+import space.rodionov.englishdriller.feature_driller.utils.Constants.TAG_PETR
 import java.io.IOException
 
 private val Context.datastore by preferencesDataStore("datastore")

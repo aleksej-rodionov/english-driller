@@ -19,16 +19,6 @@ fun Float.roundToTwoDecimals(): Float {
 //    return bd.toFloat()
 //}
 
-fun List<Word>.countPercentage(): Int {
-    val learnedCount = this.filter {
-        !it.isWordActive
-    }.size
-    val totalCount = this.size
-    val lch = learnedCount * 100.0f
-    val percentage = (lch / totalCount).roundToInt()
-    return percentage
-}
-
 fun AutoCompleteTextView.showKeyboard() {
     this.requestFocus()
     val inputMethodManager = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager

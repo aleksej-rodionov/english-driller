@@ -1,5 +1,9 @@
 package space.rodionov.englishdriller.feature_driller.presentation
 
+import space.rodionov.englishdriller.feature_driller.domain.models.CatWithWords
+import space.rodionov.englishdriller.feature_driller.domain.models.Category
+import space.rodionov.englishdriller.feature_driller.domain.models.Word
+
 class WordDiff : DiffUtil.ItemCallback<Word>() {
     override fun areItemsTheSame(oldItem: Word, newItem: Word) =
         oldItem == newItem

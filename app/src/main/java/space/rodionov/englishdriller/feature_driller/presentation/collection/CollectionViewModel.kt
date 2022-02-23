@@ -5,7 +5,7 @@ import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.stateIn
-import space.rodionov.englishdriller.feature_driller.Constants.MODE_LIGHT
+import space.rodionov.englishdriller.feature_driller.utils.Constants.MODE_LIGHT
 import space.rodionov.englishdriller.feature_driller.domain.models.Category
 import space.rodionov.englishdriller.feature_driller.domain.use_cases.MakeCategoryActiveUseCase
 import space.rodionov.englishdriller.feature_driller.domain.use_cases.ObserveAllActiveCatsNamesUseCase

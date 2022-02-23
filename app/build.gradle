@@ -100,14 +100,4 @@ dependencies {
 
     // CardView
     implementation 'androidx.cardview:cardview:1.0.0'
-    implementation "androidx.core:core-ktx:+"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-}
-
-//added:
-kapt {
-    correctErrorTypes true
-}
-repositories {
-    mavenCentral()
 }
