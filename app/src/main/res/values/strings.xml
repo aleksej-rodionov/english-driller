@@ -1,95 +1,40 @@
 <resources>
-    <string name="app_name">EnglishDriller</string>
+    <string name="app_name">PorosenokPetr</string>
 
-    <string name="all_categories">Все категории</string>
-    <string name="driller">Зубрим</string>
-    <string name="categories">Категории</string>
-    <string name="vocabulary">Словарь</string>
+    <string name="top_800_words">Топ 800 слов</string>
+    <string name="top_200_verbs">Топ 200 глаголов</string>
+    <string name="usual_words">Обычные слова</string>
+    <string name="usual_verbs">Обычные глаголы</string>
+    <string name="phrasal_verbs">Фразовые глаголы</string>
+    <string name="phrases">Речевые связки</string>
+
+    <string name="item_count">В колоде %1$d слов</string>
+    <string name="current_position">Текущая позиция: %1$d</string>
+    <string name="on_card_appeared">onCardAppeared(%1$d)</string>
+    <string name="on_card_disappeared">onCardDisappeared(%1$d)</string>
+
+    <string name="active_categories">Изучаемые категории</string>
+    <string name="active_all_categories">Включить все категории</string>
+    <string name="cannot_turn_all_cats_off">Вы не можете выбрать менее 1 категории</string>
+
+    <string name="collection">Коллекция</string>
+    <string name="search_word">Искать слово ..</string>
+    <string name="search_among_all_words">Поиск среди всех слов</string>
+    <string name="search_in">Поиск в: %1$s</string>
+    <string name="percentage">%1$s \%</string>
+
+    <string name="category">Категория</string>
+    <string name="word_in_dialog">%1$s - %2$s</string>
+    <string name="word_learned">Слово выучено</string>
+    <string name="word_not_learned">Слово не выучено</string>
+    <string name="word_description">%1$s.\nВы можете пометить слово как выученное, и оно больше не будет встречаться в колоде.\nЕсли пометите слово как НЕвыученное, оно будет попадаться в колоде.</string>
+    <string name="translation_direction">Направление перевода</string>
+    <string name="from_en_to_ru">С инглиша на русский</string>
+    <string name="from_ru_to_en">С русского на инглиш</string>
+    <string name="dark_mode">Тёмная тема</string>
+    <string name="follow_system_mode">Использовать тему телефона</string>
+    <string name="appearance">Внешний вид</string>
+
     <string name="settings">Настройки</string>
-    <string name="translation_direction">Направление перевода:</string>
-    <string name="native_to_foreign">С русского на инглиш</string>
-    <string name="foreign_to_native">С инглиша на русский</string>
-    <string name="native_language">Выберите ваш родной язык:</string>
-    <string name="no_languages">Других локализаций пока нет,
-        \nно скоро будут =)</string>
-    <string name="turn_all_categories_on">Включить все категории</string>
-    <string name="turn_all_words_on">Включить все слова в списке</string>
-    <string name="show_only_off">Только выключенные слова</string>
-    <string name="show_all_categories">Показать все категории</string>
-    <string name="filter_by_categories">Фильтр по категориям</string>
-
-    <string name="btn_learn">Учить</string>
-    <string name="btn_practice">Ералаш</string>
-    <string name="btn_vocabulary">Словарь</string>
-    <string name="btn_settings">Опции</string>
-    <string name="btn_back">&#60;</string>
-    <string name="cat1">Фразочки и речевые связки</string>
-    <string name="cat2">Фразовые глаголы</string>
-    <string name="cat3">Обычные глаголы</string>
-    <string name="cat4">Просто разные слова</string>
-    <string name="cat5">Топ 800 слов</string>
-    <string name="cat6">Топ 200 глаголов</string>
-    <string name="cat7">Свои слова</string>
-    <string name="only_cat1">Только речевые связки</string>
-    <string name="only_cat2">Только фразовые глаголы</string>
-    <string name="only_cat3">Только обычные глаголы</string>
-    <string name="only_cat4">Только просто слова</string>
-    <string name="only_cat5">Только топ 800 слов</string>
-    <string name="only_cat6">Только топ 200 глаголов</string>
-    <string name="only_cat7">Только свои слова</string>
-
-    <string name="archived">Слово отправлено в архив</string>
-    <string name="preview1">Чтобы увидеть перевод, нажмите на карточку.
-        Чтобы увидеть следующее слово, смахните карточку вправо.
-        Смахнутое слово встретится вам снова в будущем.</string>
-    <string name="preview2">Если вы выучили это слово, смахните его влево.
-        Слово отправится в раздел "Ералаш", где вы сможете его повторять.</string>
-    <string name="preview3"></string>
-    <string name="proceed">Продолжить</string>
-    <string name="preview1practice">В разделе "Ералаш" вы будете повторять выученные слова,
-        \nпереводя их уже с русского на шведский.
-        \nНужно, чтобы мозг привыкал переводить мысли на шведский язык.
-        \nФормируем новые нейронные связи!</string>
-    <string name="preview2practice">Можно смахивать в любую сторону.
-        \nСлова все равно останутся в разделе "Ералаш"".</string>
-
-    <string name="on">Вкл</string>
-    <string name="off">Выкл</string>
-
-
-    <string name="topic">Тема:</string>
-    <string name="not_memorized">Заучивать</string>
-    <string name="memorized">Запомнил!</string>
-    <string name="flip">Перевернуть</string>
-    <string name="congratulations">Все слова раздела выучены!
-        \nGrattis)</string>
-    <string name="congratulations2">\nВы можете повторять выученные слова в разделе Практика.
-        \nЩелкните по карточке, чтобы перейти в главное меню.</string>
-    <string name="ok">ОК</string>
-    <string name="practice">Ералаш</string>
-    <string name="nothing_learned">На данный момент выученных слов для практики нет.</string>
-    <string name="nothing_learned2">Выучите слова в тематических разделах,
-        \nи они станут доступны в разделе "Ералаш"".
-        \nЩелкните для выхода.</string>
-    <string name="retrieve_all">Восстановить все слова</string>
-    <string name="archive_is_empty1">Архив пуст.</string>
-    <string name="archive_is_empty2">Нет слов, отправленных в архив.</string>
-    <string name="archive_is_empty3">Все слова из архива восстановлены.</string>
-    <string name="archive_is_empty4">Все слова снова участвуют в разеле Ералаш.</string>
-    <string name="archive">Архив</string>
-    <string name="go_back">Вернуться</string>
-    <string name="search">поиск</string>
-    <string name="language">Язык</string>
-    <string name="en">Инглиш</string>
-    <string name="ru">Русский</string>
-    <string name="english_word">Слово на английском</string>
-    <string name="russian_translation">Русский перевод</string>
-    <string name="category">Категория:</string>
-    <string name="new_word">Новое слово</string>
-    <string name="edit_word">Редактировать слово</string>
-    <string name="undo">ВЕРНУТЬ</string>
-    <string name="note_deleted">Слово удалено</string>
-
-
 
 </resources>

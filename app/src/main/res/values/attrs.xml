@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ModeColorsStyleable">
+        <attr name="bg_main" format="color" />
+        <attr name="bg_beta" format="color" />
+        <attr name="bg_contrast" format="color"/>
+        <attr name="text_main" format="color"/>
+        <attr name="text_beta" format="color"/>
+        <attr name="bg_accent_alpha" format="color"/>
+        <attr name="bg_accent_bravo" format="color"/>
+        <attr name="bg_accent_charlie" format="color"/>
+        <attr name="bg_accent_delta" format="color"/>
+    </declare-styleable>
+
+</resources>

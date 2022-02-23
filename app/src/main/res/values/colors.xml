@@ -3,24 +3,33 @@
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#009dff</color>
-    <color name="teal_200old">#FF03DAC5</color>
+    <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="colorPrimary">#009dff</color>
-    <color name="colorPrimaryDark">#009dff</color>
-    <color name="colorAccent">#009dff</color>
-    <color name="colorYellow">#0065A4</color>
-    <color name="colorRed">#C8102E</color>
-    <color name="colorLightRed">#60C8102E</color>
-    <color name="colorBlue">#012169</color>
-    <color name="colorLightBlue">#BF012169</color>
-    <color name="colorDeepBlue">#003E65</color>
-    <color name="black95">#95000000</color>
-    <color name="card">#FFDE00</color>
-    <color name="colorSoftBlue">#fff08b</color>
-    <color name="colorPaper">#fff6d5</color>
-    <color name="colorWords">#0065A4</color>
+    <color name="violet">#9876AA</color>
+    <color name="green">#6a8759</color>
+    <color name="yellow">#ffc66d</color>
+    <color name="deepYellow">#cc7832</color>
+    <color name="moonBlue">#a9b7c6</color>
+    <color name="nightFgGray">#808080</color>
+    <color name="nightBgDarkGray">#2B2B2B</color>
+    <color name="nightBgGray">#3C3F41</color>
+
+    <color name="colorBeta">#9CB8C1</color>
+    <color name="textGray">#A2ACB6</color>
+    <color name="gray100">#F6F7FB</color>
+    <color name="gray200">#EFF1F5</color>
+    <color name="gray400">#CDCFD4</color>
+    <color name="gray600">#A7A7AB</color>
+    <color name="gray800">#686868</color>
+    <color name="gray850">#3D3D3D</color>
+    <color name="gray900">#282828</color>
+    <color name="blueDull">#13657E</color>
+
+    <color name="transparentGray15">#26858585</color>
+    <color name="transparentGray30">#4D858585</color>
+    <color name="transparent">#00000000</color>
+
 </resources>
