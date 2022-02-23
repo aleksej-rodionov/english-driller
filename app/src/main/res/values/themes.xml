@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.PorosenokPetr" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.EnglishDriller" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -54,7 +54,7 @@
     </style>
 
 
-    <style name="SuggestionStyle" parent="Theme.PorosenokPetr">
+    <style name="SuggestionStyle" parent="Theme.EnglishDriller">
         <item name="colorControlHighlight">@android:color/transparent</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListViewStyle</item>
     </style>
